@@ -7,3 +7,13 @@ function up() {
         cd ..
     done
 }
+
+# directory shortcuts
+alias docs="cd ~/Documents"
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias reps="cd ~/Repositories"
+
+# misc
+alias h='history'
+alias c='clear'
