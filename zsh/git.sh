@@ -6,7 +6,7 @@ alias gm='git merge'
 alias gd='git diff'
 alias gl='git log'
 alias gcm='git commit'
-alias gco='git checkout'
+alias gc='git checkout'
 alias gp='git pull'
 alias gps='git push'
 
