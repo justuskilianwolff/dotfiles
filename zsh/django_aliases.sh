@@ -1,6 +1,0 @@
-alias djr='python manage.py runserver'
-alias dja='python manage.py startapp'
-alias djm='python manage.py migrate'
-alias djmm='python manage.py makemigrations'
-alias djcsu='python manage.py createsuperuser'
-alias djs='python manage.py shell'
