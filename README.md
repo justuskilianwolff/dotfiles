@@ -11,3 +11,9 @@ for file in /path/to/dotfiles/zsh/*; do
 done
 ```
 
+## Homebrew
+Within the `brew` directory run
+```shel
+ brew bundle dump --cask --formula -f
+``` 
+to list all casks and formulas, while forcing the overrride.
