@@ -13,7 +13,11 @@ done
 
 ## Homebrew
 Within the `brew` directory run
-```shel
- brew bundle dump --cask --formula -f
+```shell
+brew bundle [--cleanup]
+```
+to install the Brewfile (and optionally) removing your other installations. To add your local installations run
+```shell
+ brew bundle dump --cask --formula --tap --force
 ``` 
-to list all casks and formulas, while forcing the overrride.
+to list all casks and formulaes and forcing the overrride.
