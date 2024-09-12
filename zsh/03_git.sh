@@ -8,7 +8,7 @@ alias gl='git log'
 alias gcm='git commit'
 alias gc='git checkout'
 alias gp='git pull'
-alias gps='git push'
+alias gh='git push'
 
 # convenienve aliases
 alias gundo='git reset --soft HEAD~1' # Undo last commit
