@@ -6,7 +6,7 @@ More advanced approaches like stow or chezmoi don’t seem to be necessary yet, 
 ## zsh 
 To source all files in the `zsh` directory you can run following command in your `.zshrc` file:
 ```shell
-for file in /path/to/folder/*; do
+for file in /path/to/dotfiles/zsh/*; do
   [ -f "$file" ] && source "$file"
 done
 ```
