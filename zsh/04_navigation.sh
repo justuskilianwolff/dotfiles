@@ -17,3 +17,7 @@ alias reps="cd ~/Repositories"
 # misc
 alias h='history'
 alias c='clear'
+
+# key bindings
+bindkey '^I' autosuggest-accept
+
