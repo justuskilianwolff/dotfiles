@@ -21,3 +21,6 @@ to install the Brewfile (and optionally) removing your other installations. To a
  brew bundle dump --cask --formula --tap --force
 ``` 
 to list all casks and formulaes and forcing the overrride.
+
+## iTerm2
+Load and/or export the profile configured here. I could not get the profile used by iTerm2 to be also used by VSCode but the natural key editing seems to be similar :)
