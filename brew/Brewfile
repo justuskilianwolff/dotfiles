@@ -1,3 +1,4 @@
+tap "homebrew/bundle"
 brew "jpeg-xl"
 brew "aom"
 brew "python@3.12"
