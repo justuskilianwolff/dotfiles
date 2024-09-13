@@ -18,7 +18,7 @@ brew bundle [--cleanup]
 ```
 to install the Brewfile (and optionally) removing your other installations. To add your local installations run
 ```shell
- brew bundle dump --cask --formula --tap --force
+brew bundle dump --cask --formula --tap --force
 ``` 
 to list all casks and formulaes and forcing the overrride.
 
