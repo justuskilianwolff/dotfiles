@@ -1,3 +1,7 @@
+# general python alias
+alias p='python'
+alias p3='python3'
+
 # basic aliases for the rye package manager in python
 alias rs='rye sync'
 alias ri='rye init'
