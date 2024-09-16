@@ -17,4 +17,4 @@ alias reps="cd ~/Repositories"
 # misc
 alias h='history'
 alias c='clear'
-alias l='ls -al'
+alias l='ls -lahF --color=auto'
