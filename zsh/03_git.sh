@@ -12,9 +12,23 @@ alias gcm='git commit'
 alias gp='git pull'
 alias gh='git push'
 
-# convenienve aliases
-alias gundo='git reset --soft HEAD~1' # Undo last commit
-alias gdelloc='git branch --merged | grep -v "\*" | grep -v "main" | grep -v "master" | xargs -n 1 git branch -d' # Delete all local branches that have been merged
+# convenienve functions
+
+# undo the last x commits (defaults to 1)
+function gundo(){
+    if [ $# -eq 0 ]; then
+        git reset --soft HEAD~1
+    else
+        git reset --soft HEAD~$1
+    fi
+}
+
+function gdelloc(){
+    # Delete all local branches that have been merged
+    git branch --merged | grep -v "\*" | grep -v "main" | grep -v "master" | xargs -n 1 git branch -d
+    # delete all local branches that were deleted on remote
+    git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -d
+}
 
 # git checkout function
 function gc(){
