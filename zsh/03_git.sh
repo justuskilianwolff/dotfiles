@@ -10,7 +10,7 @@ alias gd='git diff'
 alias gl='git log'
 alias gcm='git commit'
 alias gp='git pull'
-alias gh='git push'
+alias gph='git push'
 
 # convenienve functions
 
