@@ -8,6 +8,7 @@ alias pm='python main.py'
 alias rs='rye sync'
 alias ri='rye init'
 alias ra='rye add'
+alias rad='rye add --dev'
 alias rr='rye remove'
 function rf(){
     # format the code using ruff
