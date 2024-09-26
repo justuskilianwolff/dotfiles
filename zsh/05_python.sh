@@ -3,6 +3,7 @@ alias p='python'
 alias p3='python3'
 alias i='ipython'
 alias pm='python main.py'
+alias pt='python test.py'
 
 # basic aliases for the rye package manager in python
 alias rs='rye sync'
