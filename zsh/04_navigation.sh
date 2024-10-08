@@ -10,9 +10,9 @@ function up() {
 
 # directory shortcuts
 alias docs="cd ~/Documents"
-alias dl="cd ~/Downloads"
-alias dt="cd ~/Desktop"
-alias reps="cd ~/Repositories"
+alias down="cd ~/Downloads"
+alias desk="cd ~/Desktop"
+alias repos="cd ~/Repositories"
 
 # misc
 alias h='history'
