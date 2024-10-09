@@ -1,0 +1,8 @@
+# Inserts a blank line between shell prompts
+add_newline = true
+
+[time]
+time_format = "%T"
+format = "🕙 $time($style) "
+style = "bright-white"
+disabled = false
