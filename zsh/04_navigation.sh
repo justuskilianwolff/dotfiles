@@ -19,6 +19,7 @@ alias dotfiles="code ~/Repositories/dotfiles"
 alias h='history'
 alias c='clear'
 alias l='ls -lahF --color=auto'
+alias rdf='rm -rf'
 
 # run last command if empty
 # repeat_last_command() {
