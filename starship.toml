@@ -24,3 +24,6 @@ time_format = "%T"
 format = "🕙 $time($style)"
 style = "bright-white"
 disabled = false
+
+[python]
+disabled = false
