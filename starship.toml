@@ -1,7 +1,21 @@
 # Inserts a blank line between shell prompts
 add_newline = true
 
-right_format = """$time"""
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$git_metrics\
+$fill\
+$cmd_duration $jobs $time\
+$line_break\
+$character"""
+
+[fill]
+symbol = " "
 
 [time]
 time_format = "%T"
