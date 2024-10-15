@@ -10,7 +10,9 @@ $git_state\
 $git_status\
 $git_metrics\
 $fill\
-$cmd_duration $jobs $time\
+$cmd_duration\ 
+$python\
+$time\
 $line_break\
 $character"""
 
