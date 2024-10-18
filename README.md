@@ -7,7 +7,6 @@ More advanced approaches like stow or chezmoi don’t seem to be necessary yet, 
 To source all files in the `zsh` directory you can run following command in your `.zshrc` file:
 ```shell
 DOTFILES_PATH="/Users/justuswolff/Repositories/dotfiles"
-export STARSHIP_CONFIG="$DOTFILES_PATH/starship.toml"
 
 # source all files in the zsh folder of teh dotfiles repo
 for file in "$DOTFILES_PATH/zsh/"*; do
