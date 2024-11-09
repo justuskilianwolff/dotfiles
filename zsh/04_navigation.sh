@@ -20,14 +20,4 @@ alias h='history'
 alias c='clear'
 alias l='ls -lahF --color=auto'
 alias rdf='rm -rf'
-
-# run last command if empty
-# repeat_last_command() {
-#     if [[ -z $BUFFER ]]; then
-#         zle up-history
-#     fi
-#     zle accept-line
-# }
-
-# zle -N repeat_last_command
-# bindkey '^M' repeat_last_command
+alias o='open .'

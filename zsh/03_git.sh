@@ -10,7 +10,7 @@ alias gd='git diff'
 alias gl='git log'
 alias gcm='git commit'
 alias gp='git pull'
-alias gph='git push'
+alias gh='git push'
 alias go='git remote get-url origin | sed "s/git@/https:\/\//; s/com:/com\//; s/\.git$//" | xargs open'
 
 # convenienve functions
