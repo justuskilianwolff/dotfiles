@@ -13,7 +13,7 @@ alias docs="cd ~/Documents"
 alias down="cd ~/Downloads"
 alias desk="cd ~/Desktop"
 alias repos="cd ~/Repositories"
-alias dotfiles="cd ~/Repositories/dotfiles"
+alias dotfiles="code ~/Repositories/dotfiles"
 
 # misc
 alias h='history'
