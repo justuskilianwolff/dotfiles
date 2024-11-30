@@ -28,5 +28,9 @@ to list all casks and formulaes and forcing the overrride. This just handles ins
 brew upgrade --cask --greedy  
 ```
 
+### Using on multiple accounts on same machine
+- Followed the [untar anywhere approach](https://stackoverflow.com/questions/41840479/how-to-use-homebrew-on-a-multi-user-macos-sierra-setup)
+- Export in .zshrc: `export HOMEBREW_PREFIX="/Users/justuswolff_private/brew"`
+
 ## iTerm2
 Load and/or export the profile configured here. I could not get the profile used by iTerm2 to be also used by VSCode but the natural key editing seems to be similar :)
