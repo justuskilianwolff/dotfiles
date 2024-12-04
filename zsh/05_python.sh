@@ -11,12 +11,13 @@ alias ri='rye init'
 alias ra='rye add'
 alias rad='rye add --dev'
 alias rr='rye remove'
-function rf(){
-    # remove unused imports using ruff
-    ruff check --extend-select F401 --fix
-    # lint and fix the code using ruff
-    rye lint --fix
-    # format the code using ruff
+function rf() {
+    if [[ "$1" == "--keep" ]]; then
+        ruff check --fix
+    else
+        ruff check --extend-select F401 --fix
+    fi    
+    
     rye fmt
 }
 
