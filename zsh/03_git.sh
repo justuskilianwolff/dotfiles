@@ -28,7 +28,7 @@ function gdelloc(){
     # Delete all local branches that have been merged
     git branch --merged | grep -v "\*" | grep -v "main" | grep -v "master" | xargs -n 1 git branch -d
     # delete all local branches that were deleted on remote
-    git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -d
+    git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -D
 }
 
 # git checkout function
