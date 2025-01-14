@@ -1,0 +1,64 @@
+{
+  // editor
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "editor.defaultFormatter": "charliermarsh.ruff",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "never"
+  },
+
+  // default formatter for specific file types
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml,yml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+
+  // python
+  "python.analysis.typeCheckingMode": "basic",
+  "notebook.formatOnCellExecution": true,
+  "notebook.formatOnSave.enabled": true,
+
+  // todo tree
+  "todo-tree.general.tags": [
+    "TODO",
+    "FIXME",
+    "THINK",
+    "BUG",
+    "DISCUSS",
+    "CHECK",
+    "UPDATE",
+    "IMPROVE"
+  ],
+  "todo-tree.highlights.customHighlight": {
+    "THINK": {
+      "icon": "light-bulb",
+      "foreground": "#0000FF", // blue
+      "background": "#808080" // gray
+    },
+    "DISCUSS": {
+      "icon": "comment",
+      "foreground": "#000000", // black
+      "background": "#808080" // gray
+    },
+    "CHECK": {
+      "icon": "check",
+      "foreground": "#008000", // green
+      "background": "#808080" // gray
+    },
+    "UPDATE": {
+      "icon": "sync",
+      "foreground": "#0000FF", // blue
+      "background": "#808080" // gray
+    },
+    "IMPROVE": {
+      "icon": "star",
+      "foreground": "#FFFF00", // yellow
+      "background": "#808080" // gray
+    }
+  }
+}
