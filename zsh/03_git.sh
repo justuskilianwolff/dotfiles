@@ -1,17 +1,17 @@
 # basic aliases
 alias g='git'
-alias gs='git status'
 alias ga='git add'
 alias gb='git branch'
 alias gf='git fetch'
-alias gcb='git checkout -b'
 alias gm='git merge'
 alias gd='git diff'
 alias gl='git log'
-alias gcm='git commit'
+alias gc='git commit'
 alias gp='git pull'
 alias gh='git push'
+alias gr='git restore'
 alias go='git remote get-url origin | sed "s/git@/https:\/\//; s/com:/com\//; s/\.git$//" | xargs open'
+alias gsn='git switch -c'
 
 # convenienve functions
 
@@ -32,10 +32,10 @@ function gdelloc(){
 }
 
 # git checkout function
-function gc(){
+function gs(){
     if [ $# -eq 0 ]; then
-        git checkout main
+        git switch main
     else
-        git checkout "$@"
+        git switch "$@"
     fi
 }
