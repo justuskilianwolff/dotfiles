@@ -68,7 +68,7 @@
       "iconColour": "#33aadd"
     },
     "CHECK": {
-      "icon": "verify",
+      "icon": "verified",
       "foreground": "#ffffff",
       "background": "#00cc66",
       "iconColour": "#00cc66"
