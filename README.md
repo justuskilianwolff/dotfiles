@@ -35,5 +35,5 @@ brew upgrade --cask --greedy
 ## iTerm2
 Load and/or export the profile configured here. I could not get the profile used by iTerm2 to be also used by VSCode but the natural key editing seems to be similar :)
 
-## To Do
-- [ ] [Toggle function keys](https://superuser.com/questions/1755750/how-can-i-toggle-between-fn-and-function-f-keys-on-mac)
+## Shortcuts
+- [Toggle function keys](https://www.icloud.com/shortcuts/cefa67692db14ed6abdb3a9150a2638c)
