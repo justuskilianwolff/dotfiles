@@ -25,7 +25,7 @@ brew bundle dump --cask --formula --tap --force
 ``` 
 to list all casks and formulaes and forcing the overrride. This just handles installation. To upgrade already installed casks run
 ```shell
-brew upgrade --cask --greedy  
+brew upgrade --cask
 ```
 
 ### Using on multiple accounts on same machine
