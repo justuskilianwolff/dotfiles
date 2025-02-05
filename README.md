@@ -28,7 +28,7 @@ to list all casks and formulaes and forcing the overrride. This just handles ins
 brew upgrade --cask
 ```
 ### CU for updating
-Pin the versions of apps that usually make problems (spotify, stats): `brew cu pin <app_name>`. Then run all updates with: `brew cu -ya`.
+Pin the versions of apps that usually make problems (spotify, stats): `brew cu pin <app_name>`. Then run all updates with: `brew cu -yaf`.
 
 ### Using on multiple accounts on same machine
 - Followed the [untar anywhere approach](https://stackoverflow.com/questions/41840479/how-to-use-homebrew-on-a-multi-user-macos-sierra-setup)
