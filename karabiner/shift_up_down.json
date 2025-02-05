@@ -1,0 +1,47 @@
+{
+  "description": "Shift + Up/Down to Move 10 Lines",
+  "manipulators": [
+    {
+      "from": {
+        "key_code": "up_arrow",
+        "modifiers": {
+          "mandatory": ["shift"]
+        }
+      },
+      "to": [
+        { "key_code": "up_arrow" },
+        { "key_code": "up_arrow" },
+        { "key_code": "up_arrow" },
+        { "key_code": "up_arrow" },
+        { "key_code": "up_arrow" },
+        { "key_code": "up_arrow" },
+        { "key_code": "up_arrow" },
+        { "key_code": "up_arrow" },
+        { "key_code": "up_arrow" },
+        { "key_code": "up_arrow" }
+      ],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "key_code": "down_arrow",
+        "modifiers": {
+          "mandatory": ["shift"]
+        }
+      },
+      "to": [
+        { "key_code": "down_arrow" },
+        { "key_code": "down_arrow" },
+        { "key_code": "down_arrow" },
+        { "key_code": "down_arrow" },
+        { "key_code": "down_arrow" },
+        { "key_code": "down_arrow" },
+        { "key_code": "down_arrow" },
+        { "key_code": "down_arrow" },
+        { "key_code": "down_arrow" },
+        { "key_code": "down_arrow" }
+      ],
+      "type": "basic"
+    }
+  ]
+}
