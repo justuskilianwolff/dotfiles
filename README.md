@@ -35,5 +35,6 @@ brew upgrade --cask
 ## iTerm2
 Load and/or export the profile configured here. I could not get the profile used by iTerm2 to be also used by VSCode but the natural key editing seems to be similar :)
 
-## Shortcuts
-- [Toggle function keys](https://www.icloud.com/shortcuts/cefa67692db14ed6abdb3a9150a2638c)
+## Karabiner
+- Some useful shortcuts are [here](https://ke-complex-modifications.pqrs.org/)
+- [ ] Use caps lock as hyper key and update move and and down
