@@ -17,7 +17,7 @@ alias us='uv sync'
 alias ui='uv init'
 alias ua='uv add'
 alias uad='uv add --dev'
-alias uv='uv venv'
+alias uvv='uv venv'
 
 # ruff 
 function rf() {
