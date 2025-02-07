@@ -11,6 +11,15 @@ alias ri='rye init'
 alias ra='rye add'
 alias rad='rye add --dev'
 alias rr='rye remove'
+
+# basic aliases for the uv package manager in python
+alias us='uv sync'
+alias ui='uv init'
+alias ua='uv add'
+alias uad='uv add --dev'
+alias uv='uv venv'
+
+# ruff 
 function rf() {
     if [[ "$1" == "--keep" ]]; then
         ruff check --fix
