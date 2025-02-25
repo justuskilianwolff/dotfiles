@@ -40,3 +40,25 @@ Load and/or export the profile configured here. I could not get the profile used
 ## Karabiner
 - Some useful shortcuts are [here](https://ke-complex-modifications.pqrs.org/)
 - [ ] Use caps lock as hyper key and update move and and down
+### Shortcuts
+These global shortcuts use **Capslock** + [key] to quickly launch applications.
+
+| Key | Application |
+|-----|-------------|
+| B | Brave Browser |
+| C | Calendar |
+| F | Finder |
+| H | Home Assistant |
+| I | iTerm |
+| L | Bitwarden |
+| O | Microsoft Outlook |
+| P | Microsoft PowerPoint |
+| R | Reminders |
+| S | Spotify |
+| T | Microsoft Teams |
+| V | Visual Studio Code |
+| W | WhatsApp |
+| X | Microsoft Excel |
+| Y | Obsidian |
+| , | System Settings |
+
