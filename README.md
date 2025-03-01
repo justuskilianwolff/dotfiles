@@ -60,5 +60,6 @@ These global shortcuts use **Capslock** + [key] to quickly launch applications.
 | W | WhatsApp |
 | X | Microsoft Excel |
 | Y | Obsidian |
+| M | Mail |
 | , | System Settings |
 
