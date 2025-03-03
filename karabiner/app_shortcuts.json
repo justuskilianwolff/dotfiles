@@ -323,6 +323,44 @@
         }
       ],
       "type": "basic"
+    },
+    {
+      "from": {
+        "key_code": "d",
+        "modifiers": {
+          "mandatory": [
+            "left_shift",
+            "left_command",
+            "left_control",
+            "left_option"
+          ]
+        }
+      },
+      "to": [
+        {
+          "shell_command": "open -a 'Microsoft Word.app'"
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "key_code": "n",
+        "modifiers": {
+          "mandatory": [
+            "left_shift",
+            "left_command",
+            "left_control",
+            "left_option"
+          ]
+        }
+      },
+      "to": [
+        {
+          "shell_command": "open -a 'Microsoft To Do.app'"
+        }
+      ],
+      "type": "basic"
     }
   ]
 }

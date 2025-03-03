@@ -61,5 +61,6 @@ These global shortcuts use **Capslock** + [key] to quickly launch applications.
 | X | Microsoft Excel |
 | Y | Obsidian |
 | M | Mail |
+| D | Microsoft Word |
+| N | Microsoft To Do
 | , | System Settings |
-
