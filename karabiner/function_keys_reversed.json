@@ -1,5 +1,5 @@
 {
-  "description": "Reverse fn+f to f keys in VSCode",
+  "description": "Reverse fn+f to f keys in VSCode using Hyper key",
   "manipulators": [
     {
       "conditions": [
@@ -14,7 +14,7 @@
       "from": {
         "key_code": "f1",
         "modifiers": {
-          "mandatory": ["shift"]
+          "mandatory": ["command", "option", "control", "shift"]
         }
       },
       "to": [{ "key_code": "f1" }],
@@ -33,7 +33,7 @@
       "from": {
         "key_code": "f2",
         "modifiers": {
-          "mandatory": ["shift"]
+          "mandatory": ["command", "option", "control", "shift"]
         }
       },
       "to": [{ "key_code": "f2" }],
@@ -52,7 +52,7 @@
       "from": {
         "key_code": "f3",
         "modifiers": {
-          "mandatory": ["shift"]
+          "mandatory": ["command", "option", "control", "shift"]
         }
       },
       "to": [{ "key_code": "f3" }],
@@ -71,7 +71,7 @@
       "from": {
         "key_code": "f4",
         "modifiers": {
-          "mandatory": ["shift"]
+          "mandatory": ["command", "option", "control", "shift"]
         }
       },
       "to": [{ "key_code": "f4" }],
@@ -90,7 +90,7 @@
       "from": {
         "key_code": "f5",
         "modifiers": {
-          "mandatory": ["shift"]
+          "mandatory": ["command", "option", "control", "shift"]
         }
       },
       "to": [{ "key_code": "f5" }],
@@ -109,7 +109,7 @@
       "from": {
         "key_code": "f6",
         "modifiers": {
-          "mandatory": ["shift"]
+          "mandatory": ["command", "option", "control", "shift"]
         }
       },
       "to": [{ "key_code": "f6" }],
@@ -128,7 +128,7 @@
       "from": {
         "key_code": "f7",
         "modifiers": {
-          "mandatory": ["shift"]
+          "mandatory": ["command", "option", "control", "shift"]
         }
       },
       "to": [{ "key_code": "f7" }],
@@ -147,7 +147,7 @@
       "from": {
         "key_code": "f8",
         "modifiers": {
-          "mandatory": ["shift"]
+          "mandatory": ["command", "option", "control", "shift"]
         }
       },
       "to": [{ "key_code": "f8" }],
@@ -166,7 +166,7 @@
       "from": {
         "key_code": "f9",
         "modifiers": {
-          "mandatory": ["shift"]
+          "mandatory": ["command", "option", "control", "shift"]
         }
       },
       "to": [{ "key_code": "f9" }],
@@ -185,7 +185,7 @@
       "from": {
         "key_code": "f10",
         "modifiers": {
-          "mandatory": ["shift"]
+          "mandatory": ["command", "option", "control", "shift"]
         }
       },
       "to": [{ "key_code": "f10" }],
@@ -204,7 +204,7 @@
       "from": {
         "key_code": "f11",
         "modifiers": {
-          "mandatory": ["shift"]
+          "mandatory": ["command", "option", "control", "shift"]
         }
       },
       "to": [{ "key_code": "f11" }],
@@ -223,7 +223,7 @@
       "from": {
         "key_code": "f12",
         "modifiers": {
-          "mandatory": ["shift"]
+          "mandatory": ["command", "option", "control", "shift"]
         }
       },
       "to": [{ "key_code": "f12" }],
