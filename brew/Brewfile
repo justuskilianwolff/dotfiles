@@ -1,6 +1,4 @@
 tap "buo/cask-upgrade"
-tap "homebrew/bundle"
-tap "homebrew/services"
 brew "jpeg-xl"
 brew "aom"
 brew "bat"
