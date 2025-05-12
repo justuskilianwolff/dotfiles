@@ -30,6 +30,17 @@ function rf() {
     rye fmt
 }
 
+# uv 
+function uf() {
+    if [[ "$1" == "--keep" ]]; then
+        ruff check --fix
+    else
+        ruff check --extend-select F401 --fix
+    fi    
+}
+
+
+
 # django aliases
 alias dj='python manage.py'
 alias djr='python manage.py runserver'
