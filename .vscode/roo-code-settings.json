@@ -1,0 +1,51 @@
+{
+  "providerProfiles": {
+    "currentApiConfigName": "gemini-flash-preview",
+    "apiConfigs": {
+      "sonnet-4": {
+        "openRouterApiKey": "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",
+        "openRouterModelId": "anthropic/claude-sonnet-4",
+        "openRouterBaseUrl": "",
+        "openRouterUseMiddleOutTransform": true,
+        "apiProvider": "openrouter",
+        "id": "yl139n5rvb"
+      },
+      "gemini-pro-preview": {
+        "openRouterApiKey": "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",
+        "openRouterModelId": "google/gemini-2.5-pro-preview",
+        "openRouterBaseUrl": "",
+        "openRouterUseMiddleOutTransform": false,
+        "apiProvider": "openrouter",
+        "id": "s7ejtt4uwis"
+      },
+      "gemini-flash-preview": {
+        "openRouterApiKey": "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",
+        "openRouterModelId": "google/gemini-2.5-flash-preview-05-20",
+        "openRouterBaseUrl": "",
+        "openRouterUseMiddleOutTransform": false,
+        "apiProvider": "openrouter",
+        "id": "9t9wngyohq"
+      },
+      "04-mini-high": {
+        "openRouterApiKey": "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",
+        "openRouterModelId": "openai/o4-mini-high",
+        "openRouterBaseUrl": "",
+        "openRouterUseMiddleOutTransform": false,
+        "apiProvider": "openrouter",
+        "id": "nirovqz1gvo"
+      }
+    },
+    "modeApiConfigs": {
+      "code": "9t9wngyohq",
+      "architect": "s7ejtt4uwis",
+      "ask": "yl139n5rvb",
+      "debug": "nirovqz1gvo",
+      "orchestrator": "yl139n5rvb"
+    },
+    "migrations": {
+      "rateLimitSecondsMigrated": true,
+      "diffSettingsMigrated": true,
+      "openAiHeadersMigrated": true
+    }
+  }
+}
