@@ -1,6 +1,6 @@
 {
   "providerProfiles": {
-    "currentApiConfigName": "gemini-flash-preview",
+    "currentApiConfigName": "gemini-pro-preview",
     "apiConfigs": {
       "sonnet-4": {
         "openRouterApiKey": "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",
@@ -36,7 +36,7 @@
       }
     },
     "modeApiConfigs": {
-      "code": "9t9wngyohq",
+      "code": "yl139n5rvb",
       "architect": "s7ejtt4uwis",
       "ask": "yl139n5rvb",
       "debug": "nirovqz1gvo",
