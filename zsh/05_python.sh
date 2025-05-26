@@ -19,7 +19,7 @@ alias ua='uv add'
 alias uad='uv add --dev'
 alias uvv='uv venv'
 
-# ruff 
+# ruff format
 function rf() {
     if [[ "$1" == "--keep" ]]; then
         ruff check --fix
@@ -27,19 +27,8 @@ function rf() {
         ruff check --extend-select F401 --fix
     fi    
     
-    rye fmt
+    ruff format
 }
-
-# uv 
-function uf() {
-    if [[ "$1" == "--keep" ]]; then
-        ruff check --fix
-    else
-        ruff check --extend-select F401 --fix
-    fi    
-}
-
-
 
 # django aliases
 alias dj='python manage.py'
