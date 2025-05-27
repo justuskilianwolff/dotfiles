@@ -31,6 +31,9 @@
   "notebook.formatOnCellExecution": true,
   "notebook.formatOnSave.enabled": true,
 
+  // spell checker
+  "cSpell.ignoreRegExpList": ["/\\w*_\\w*/g"],
+
   // todo tree
   "todo-tree.general.tags": [
     "TODO",
