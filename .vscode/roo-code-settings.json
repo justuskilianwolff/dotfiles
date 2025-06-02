@@ -1,8 +1,9 @@
 {
   "providerProfiles": {
-    "currentApiConfigName": "gemini-pro-preview",
+    "currentApiConfigName": "gpt-4.1",
     "apiConfigs": {
       "gemini-pro-preview": {
+        "enableReasoningEffort": false,
         "openRouterApiKey": "-----",
         "openRouterModelId": "google/gemini-2.5-pro-preview",
         "openRouterBaseUrl": "",
@@ -10,6 +11,7 @@
         "id": "t3vgyi4r2oh"
       },
       "gemini-flash-preview": {
+        "enableReasoningEffort": false,
         "openRouterApiKey": "-----",
         "openRouterModelId": "google/gemini-2.5-flash-preview-05-20",
         "openRouterBaseUrl": "",
@@ -17,6 +19,7 @@
         "id": "dclynbpmwx6"
       },
       "sonnet-4": {
+        "enableReasoningEffort": false,
         "openRouterApiKey": "-----",
         "openRouterModelId": "anthropic/claude-sonnet-4",
         "openRouterBaseUrl": "",
@@ -50,13 +53,60 @@
   },
   "globalSettings": {
     "pinnedApiConfigs": {},
-    "lastShownAnnouncementId": "may-21-2025-3-18",
+    "lastShownAnnouncementId": "may-29-2025-3-19",
     "customInstructions": "When using terminal commands, try to use to run them without unnecessary additions. For example, instead of \npython -m pytest ..\nuse \npytest ...",
     "condensingApiConfigId": "dclynbpmwx6",
     "customCondensingPrompt": "",
     "autoApprovalEnabled": true,
     "alwaysAllowReadOnly": true,
     "alwaysAllowReadOnlyOutsideWorkspace": false,
+    "alwaysAllowWrite": true,
+    "alwaysAllowWriteOutsideWorkspace": false,
+    "writeDelayMs": 1000,
+    "alwaysAllowBrowser": true,
+    "alwaysApproveResubmit": false,
+    "requestDelaySeconds": 10,
+    "alwaysAllowMcp": false,
+    "alwaysAllowModeSwitch": true,
+    "alwaysAllowSubtasks": true,
+    "alwaysAllowExecute": true,
+    "allowedCommands": [
+      "git log",
+      "git diff",
+      "git show",
+      "pytest",
+      "coverage"
+    ],
+    "autoCondenseContext": true,
+    "autoCondenseContextPercent": 40,
+    "maxConcurrentFileReads": 1,
+    "browserToolEnabled": true,
+    "browserViewportSize": "900x600",
+    "screenshotQuality": 75,
+    "remoteBrowserEnabled": false,
+    "enableCheckpoints": true,
+    "ttsEnabled": false,
+    "ttsSpeed": 1,
+    "soundEnabled": true,
+    "soundVolume": 0.5,
+    "maxOpenTabsContext": 20,
+    "maxWorkspaceFiles": 200,
+    "showRooIgnoredFiles": true,
+    "maxReadFileLine": 500,
+    "terminalOutputLineLimit": 500,
+    "terminalShellIntegrationTimeout": 5000,
+    "terminalShellIntegrationDisabled": false,
+    "terminalCommandDelay": 0,
+    "terminalPowershellCounter": false,
+    "terminalZshClearEolMark": true,
+    "terminalZshOhMy": false,
+    "terminalZshP10k": false,
+    "terminalZdotdir": false,
+    "terminalCompressProgressBar": true,
+    "experiments": {
+      "powerSteering": true,
+      "concurrentFileReads": false
+    },
     "codebaseIndexModels": {
       "openai": {
         "text-embedding-3-small": {
@@ -88,55 +138,10 @@
       "codebaseIndexEmbedderBaseUrl": "",
       "codebaseIndexEmbedderModelId": ""
     },
-    "alwaysAllowWrite": true,
-    "alwaysAllowWriteOutsideWorkspace": false,
-    "writeDelayMs": 1000,
-    "alwaysAllowBrowser": true,
-    "alwaysApproveResubmit": false,
-    "requestDelaySeconds": 10,
-    "alwaysAllowMcp": false,
-    "alwaysAllowModeSwitch": true,
-    "alwaysAllowSubtasks": true,
-    "alwaysAllowExecute": true,
-    "allowedCommands": [
-      "git log",
-      "git diff",
-      "git show",
-      "pytest",
-      "coverage"
-    ],
-    "autoCondenseContextPercent": 40,
-    "browserToolEnabled": true,
-    "browserViewportSize": "900x600",
-    "screenshotQuality": 75,
-    "remoteBrowserEnabled": false,
-    "enableCheckpoints": true,
-    "ttsEnabled": false,
-    "ttsSpeed": 1,
-    "soundEnabled": true,
-    "soundVolume": 0.5,
-    "maxOpenTabsContext": 20,
-    "maxWorkspaceFiles": 200,
-    "showRooIgnoredFiles": true,
-    "maxReadFileLine": 500,
-    "terminalOutputLineLimit": 500,
-    "terminalShellIntegrationTimeout": 5000,
-    "terminalShellIntegrationDisabled": false,
-    "terminalCommandDelay": 0,
-    "terminalPowershellCounter": false,
-    "terminalZshClearEolMark": true,
-    "terminalZshOhMy": false,
-    "terminalZshP10k": false,
-    "terminalZdotdir": false,
-    "terminalCompressProgressBar": true,
-    "experiments": {
-      "autoCondenseContext": true,
-      "powerSteering": true
-    },
     "language": "en",
     "telemetrySetting": "disabled",
     "mcpEnabled": true,
-    "mode": "orchestrator",
+    "mode": "debug-mid-level",
     "customModes": [
       {
         "slug": "code-junior",
@@ -156,19 +161,19 @@
         "source": "global"
       },
       {
+        "slug": "code-mid-level",
+        "name": "🖥️ Code Mid Level",
+        "roleDefinition": "You are Roo, a highly skilled software engineer with extensive knowledge in many programming languages, frameworks, design patterns, and best practices.",
+        "whenToUse": "Use this mode for moderately complex engineering work that requires good reasoning ability and context awareness. Ideal for mid-level software engineers working on integration tasks, debugging, or designing standard systems. Use it when accuracy matters but the task doesn’t require top-tier comprehension or creative problem solving. A good default when in doubt and cost is a moderate concern.",
+        "groups": ["read", "edit", "browser", "command", "mcp"],
+        "source": "global"
+      },
+      {
         "slug": "debug-mid-level",
         "name": "🐞 Debug Mid Level",
         "roleDefinition": "You are Roo, a capable software debugger who can trace logic, follow stack traces, and diagnose mid-complexity issues with code and systems.",
         "whenToUse": "Use this assistant when debugging requires tracing medium-complexity logic, following function calls across files, or analyzing less-obvious control flow issues. Effective for helping mid-level engineers walk through stack traces, inspect intermediate values, or isolate performance regressions. Recommended for issues involving moderate system knowledge but where Claude 4’s deep reasoning isn't needed.",
         "customInstructions": "Reflect on 5-7 different possible sources of the problem, distill those down to 1-2 most likely sources, and then add logs to validate your assumptions. Explicitly ask the user to confirm the diagnosis before fixing the problem.",
-        "groups": ["read", "edit", "browser", "command", "mcp"],
-        "source": "global"
-      },
-      {
-        "slug": "code-mid-level",
-        "name": "🖥️ Code Mid Level",
-        "roleDefinition": "You are Roo, a highly skilled software engineer with extensive knowledge in many programming languages, frameworks, design patterns, and best practices.",
-        "whenToUse": "Use this mode for moderately complex engineering work that requires good reasoning ability and context awareness. Ideal for mid-level software engineers working on integration tasks, debugging, or designing standard systems. Use it when accuracy matters but the task doesn’t require top-tier comprehension or creative problem solving. A good default when in doubt and cost is a moderate concern.",
         "groups": ["read", "edit", "browser", "command", "mcp"],
         "source": "global"
       }
