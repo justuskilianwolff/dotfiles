@@ -54,7 +54,7 @@
   "globalSettings": {
     "pinnedApiConfigs": {},
     "lastShownAnnouncementId": "may-29-2025-3-19",
-    "customInstructions": "When using terminal commands, try to use to run them without unnecessary additions. For example, instead of \npython -m pytest ..\nuse \npytest ...",
+    "customInstructions": "When using terminal commands, try to use to run them without unnecessary additions. For example, instead of \npython -m pytest ..\nuse \npytest ...\n\nAdditionally, always check if the MCP servers are relevant for the current task. If documentation is needed and there is a specific MCP server for the current language, query it for information. If there is no specific MCP server for the language, use context 7 instead.",
     "condensingApiConfigId": "dclynbpmwx6",
     "customCondensingPrompt": "",
     "autoApprovalEnabled": true,
