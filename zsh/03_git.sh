@@ -18,7 +18,7 @@ alias gsn='git switch -c'
 # convenienve functions
 
 # undo the last x commits (defaults to 1)
-function gundo(){
+function gundo() {
     if [ $# -eq 0 ]; then
         git reset --soft HEAD~1
     else
@@ -26,7 +26,7 @@ function gundo(){
     fi
 }
 
-function gdelloc(){
+function gdelloc() {
     # Delete all local branches that have been merged
     git branch --merged | grep -v "\*" | grep -v "main" | grep -v "master" | xargs -n 1 git branch -d
     # delete all local branches that were deleted on remote
@@ -34,7 +34,7 @@ function gdelloc(){
 }
 
 # git checkout function
-function gs(){
+function gs() {
     if [ $# -eq 0 ]; then
         git switch main
     else

@@ -1,4 +1,4 @@
-# source cargo 
+# source cargo
 source $HOME/.cargo/env
 
 # add some shortcuts

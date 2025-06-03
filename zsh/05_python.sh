@@ -25,8 +25,8 @@ function rf() {
         ruff check --fix
     else
         ruff check --extend-select F401 --fix
-    fi    
-    
+    fi
+
     ruff format
 }
 
