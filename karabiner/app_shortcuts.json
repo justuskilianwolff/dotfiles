@@ -288,7 +288,7 @@
     },
     {
       "from": {
-        "key_code": "3",
+        "key_code": "backslash",
         "modifiers": {
           "mandatory": [
             "left_shift",
