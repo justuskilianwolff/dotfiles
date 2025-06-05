@@ -56,26 +56,49 @@ Load and/or export the profile configured here. I could not get the profile used
 
 ### Shortcuts
 
+#### App Shortcuts
+
 These global shortcuts use **Capslock** + [key] to quickly launch applications.
 
-| Key | Application          |
-| --- | -------------------- |
-| B   | Brave Browser        |
-| C   | Calendar             |
-| F   | Finder               |
-| H   | Home Assistant       |
-| I   | iTerm                |
-| L   | Bitwarden            |
-| O   | Microsoft Outlook    |
-| P   | Microsoft PowerPoint |
-| R   | Reminders            |
-| S   | Spotify              |
-| T   | Microsoft Teams      |
-| V   | Visual Studio Code   |
-| W   | WhatsApp             |
-| X   | Microsoft Excel      |
-| Y   | Obsidian             |
-| M   | Mail                 |
-| D   | Microsoft Word       |
-| N   | Microsoft To Do      |
-| ,   | System Settings      |
+| Key | Application              |
+| --- | ------------------------ |
+| B   | Browser (Brave)          |
+| C   | Calendar                 |
+| F   | Finder                   |
+| P   | Passwords(Bitwarden)     |
+| R   | Reminders                |
+| S   | Spotify                  |
+| T   | Microsoft Teams          |
+| V   | Visual Studio Code       |
+| W   | WhatsApp                 |
+| X   | Microsoft Excel          |
+| N   | Notes (Obsidian)         |
+| M   | Mail                     |
+| E   | Outlook                  |
+| D   | Microsoft Word           |
+| #   | terminal (# shell start) |
+| ,   | System Settings          |
+
+#### Arrow Keys
+
+These shortcuts use **Capslock** + [key] to emulate arrow key navigation using the home row:
+
+| Key | Arrow Key |
+| --- | --------- |
+| H   | Left      |
+| J   | Down      |
+| K   | Up        |
+| L   | Right     |
+
+#### Brackets
+
+These shortcuts use **Capslock** + [key] to type brackets quickly:
+
+| Key | Bracket |
+| --- | ------- |
+| U   | [       |
+| I   | (       |
+| O   | {       |
+| 7   | ]       |
+| 8   | )       |
+| 9   | }       |
