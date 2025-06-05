@@ -76,7 +76,7 @@ These global shortcuts use **Capslock** + [key] to quickly launch applications.
 | M   | Mail                     |
 | E   | Outlook                  |
 | D   | Microsoft Word           |
-| #   | terminal (# shell start) |
+| #   | iTerm (# shell start) |
 | ,   | System Settings          |
 
 #### Arrow Keys
