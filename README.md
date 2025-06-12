@@ -102,3 +102,11 @@ These shortcuts use **Capslock** + [key] to type brackets quickly:
 | Left Cmd + U    | ]       |
 | Left Cmd + I    | )       |
 | Left Cmd + O    | }       |
+
+## Miscellaneous Key Bindings
+
+These shortcuts use **Capslock** + [key] to perform various actions:
+
+| Key Combination | Result |
+| --------------- | ------ |
+| ö       | Left Shift + 0 (=) |
