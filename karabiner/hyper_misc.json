@@ -20,6 +20,26 @@
         }
       ],
       "type": "basic"
+    },
+    {
+      "from": {
+        "key_code": "open_bracket",
+        "modifiers": {
+          "mandatory": [
+            "left_shift",
+            "right_command",
+            "left_control",
+            "left_option"
+          ]
+        }
+      },
+      "to": [
+        {
+          "key_code": "7",
+          "modifiers": ["left_shift", "left_option"]
+        }
+      ],
+      "type": "basic"
     }
   ]
 }

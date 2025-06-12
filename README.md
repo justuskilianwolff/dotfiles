@@ -110,3 +110,4 @@ These shortcuts use **Capslock** + [key] to perform various actions:
 | Key Combination | Result |
 | --------------- | ------ |
 | Ä               | =      |
+| Ü               | \      |
