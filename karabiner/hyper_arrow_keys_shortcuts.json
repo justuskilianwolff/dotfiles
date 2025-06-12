@@ -1,9 +1,9 @@
 {
-  "description": "HYPER + h/j/k/l for arrow keys",
+  "description": "HYPER + j/k/l/ö for arrow keys",
   "manipulators": [
     {
       "from": {
-        "key_code": "h",
+        "key_code": "j",
         "modifiers": {
           "mandatory": [
             "left_shift",
@@ -22,7 +22,7 @@
     },
     {
       "from": {
-        "key_code": "j",
+        "key_code": "k",
         "modifiers": {
           "mandatory": [
             "left_shift",
@@ -41,7 +41,7 @@
     },
     {
       "from": {
-        "key_code": "k",
+        "key_code": "l",
         "modifiers": {
           "mandatory": [
             "left_shift",
@@ -60,7 +60,7 @@
     },
     {
       "from": {
-        "key_code": "l",
+        "key_code": "semicolon",
         "modifiers": {
           "mandatory": [
             "left_shift",

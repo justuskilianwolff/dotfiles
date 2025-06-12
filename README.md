@@ -81,14 +81,14 @@ These global shortcuts use **Capslock** + [key] to quickly launch applications.
 
 #### Arrow Keys
 
-These shortcuts use **Capslock** + [key] to emulate arrow key navigation using the home row:
+These shortcuts use **Capslock** + [key] to emulate arrow key navigation:
 
 | Key | Arrow Key |
 | --- | --------- |
-| H   | Left      |
-| J   | Down      |
-| K   | Up        |
-| L   | Right     |
+| J   | Left      |
+| K   | Down      |
+| L   | Up        |
+| Ö   | Right     |
 
 #### Brackets
 
@@ -109,4 +109,4 @@ These shortcuts use **Capslock** + [key] to perform various actions:
 
 | Key Combination | Result |
 | --------------- | ------ |
-| ö       | Left Shift + 0 (=) |
+| Ä               | =      |
