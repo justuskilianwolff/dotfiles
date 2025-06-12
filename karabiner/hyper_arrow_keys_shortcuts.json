@@ -1,5 +1,5 @@
 {
-  "description": "CAPS_LOCK + h/j/k/l for arrow keys",
+  "description": "HYPER + h/j/k/l for arrow keys",
   "manipulators": [
     {
       "from": {

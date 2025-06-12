@@ -1,5 +1,5 @@
 {
-  "description": "CAPS_LOCK + Up/Down to Move 10 Lines",
+  "description": "HYPER + Up/Down to Move 10 Lines",
   "manipulators": [
     {
       "from": {
