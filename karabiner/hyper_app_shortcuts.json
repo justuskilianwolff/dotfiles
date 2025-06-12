@@ -7,7 +7,7 @@
         "modifiers": {
           "mandatory": [
             "left_shift",
-            "left_command",
+            "right_command",
             "left_control",
             "left_option"
           ]
@@ -26,7 +26,7 @@
         "modifiers": {
           "mandatory": [
             "left_shift",
-            "left_command",
+            "right_command",
             "left_control",
             "left_option"
           ]
@@ -45,7 +45,7 @@
         "modifiers": {
           "mandatory": [
             "left_shift",
-            "left_command",
+            "right_command",
             "left_control",
             "left_option"
           ]
@@ -64,7 +64,7 @@
         "modifiers": {
           "mandatory": [
             "left_shift",
-            "left_command",
+            "right_command",
             "left_control",
             "left_option"
           ]
@@ -83,7 +83,7 @@
         "modifiers": {
           "mandatory": [
             "left_shift",
-            "left_command",
+            "right_command",
             "left_control",
             "left_option"
           ]
@@ -102,7 +102,7 @@
         "modifiers": {
           "mandatory": [
             "left_shift",
-            "left_command",
+            "right_command",
             "left_control",
             "left_option"
           ]
@@ -121,7 +121,7 @@
         "modifiers": {
           "mandatory": [
             "left_shift",
-            "left_command",
+            "right_command",
             "left_control",
             "left_option"
           ]
@@ -140,7 +140,7 @@
         "modifiers": {
           "mandatory": [
             "left_shift",
-            "left_command",
+            "right_command",
             "left_control",
             "left_option"
           ]
@@ -159,7 +159,7 @@
         "modifiers": {
           "mandatory": [
             "left_shift",
-            "left_command",
+            "right_command",
             "left_control",
             "left_option"
           ]
@@ -178,7 +178,7 @@
         "modifiers": {
           "mandatory": [
             "left_shift",
-            "left_command",
+            "right_command",
             "left_control",
             "left_option"
           ]
@@ -197,7 +197,7 @@
         "modifiers": {
           "mandatory": [
             "left_shift",
-            "left_command",
+            "right_command",
             "left_control",
             "left_option"
           ]
@@ -216,7 +216,7 @@
         "modifiers": {
           "mandatory": [
             "left_shift",
-            "left_command",
+            "right_command",
             "left_control",
             "left_option"
           ]
@@ -235,7 +235,7 @@
         "modifiers": {
           "mandatory": [
             "left_shift",
-            "left_command",
+            "right_command",
             "left_control",
             "left_option"
           ]
@@ -254,7 +254,7 @@
         "modifiers": {
           "mandatory": [
             "left_shift",
-            "left_command",
+            "right_command",
             "left_control",
             "left_option"
           ]
@@ -273,7 +273,7 @@
         "modifiers": {
           "mandatory": [
             "left_shift",
-            "left_command",
+            "right_command",
             "left_control",
             "left_option"
           ]
@@ -292,7 +292,7 @@
         "modifiers": {
           "mandatory": [
             "left_shift",
-            "left_command",
+            "right_command",
             "left_control",
             "left_option"
           ]
