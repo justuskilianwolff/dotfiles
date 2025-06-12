@@ -60,24 +60,24 @@ Load and/or export the profile configured here. I could not get the profile used
 
 These global shortcuts use **Capslock** + [key] to quickly launch applications.
 
-| Key | Application              |
-| --- | ------------------------ |
-| B   | Browser (Brave)          |
-| C   | Calendar                 |
-| F   | Finder                   |
-| P   | Passwords(Bitwarden)     |
-| R   | Reminders                |
-| S   | Spotify                  |
-| T   | Microsoft Teams          |
-| V   | Visual Studio Code       |
-| W   | WhatsApp                 |
-| X   | Microsoft Excel          |
-| N   | Notes (Obsidian)         |
-| M   | Mail                     |
-| E   | Outlook                  |
-| D   | Microsoft Word           |
+| Key | Application           |
+| --- | --------------------- |
+| B   | Browser (Brave)       |
+| C   | Calendar              |
+| F   | Finder                |
+| P   | Passwords(Bitwarden)  |
+| R   | Reminders             |
+| S   | Spotify               |
+| T   | Microsoft Teams       |
+| V   | Visual Studio Code    |
+| W   | WhatsApp              |
+| X   | Microsoft Excel       |
+| N   | Notes (Obsidian)      |
+| M   | Mail                  |
+| E   | Outlook               |
+| D   | Microsoft Word        |
 | #   | iTerm (# shell start) |
-| ,   | System Settings          |
+| ,   | System Settings       |
 
 #### Arrow Keys
 
@@ -94,11 +94,11 @@ These shortcuts use **Capslock** + [key] to emulate arrow key navigation using t
 
 These shortcuts use **Capslock** + [key] to type brackets quickly:
 
-| Key | Bracket |
-| --- | ------- |
-| U   | [       |
-| I   | (       |
-| O   | {       |
-| 7   | ]       |
-| 8   | )       |
-| 9   | }       |
+| Key Combination | Bracket |
+| --------------- | ------- |
+| U               | [       |
+| I               | (       |
+| O               | {       |
+| Left Cmd + U    | ]       |
+| Left Cmd + I    | )       |
+| Left Cmd + O    | }       |

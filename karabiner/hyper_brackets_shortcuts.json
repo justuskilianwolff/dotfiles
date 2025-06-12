@@ -63,13 +63,14 @@
     },
     {
       "from": {
-        "key_code": "7",
+        "key_code": "u",
         "modifiers": {
           "mandatory": [
             "left_shift",
             "right_command",
             "left_control",
-            "left_option"
+            "left_option",
+            "left_command"
           ]
         }
       },
@@ -83,13 +84,14 @@
     },
     {
       "from": {
-        "key_code": "8",
+        "key_code": "i",
         "modifiers": {
           "mandatory": [
             "left_shift",
             "right_command",
             "left_control",
-            "left_option"
+            "left_option",
+            "left_command"
           ]
         }
       },
@@ -103,13 +105,14 @@
     },
     {
       "from": {
-        "key_code": "9",
+        "key_code": "o",
         "modifiers": {
           "mandatory": [
             "left_shift",
             "right_command",
             "left_control",
-            "left_option"
+            "left_option",
+            "left_command"
           ]
         }
       },
