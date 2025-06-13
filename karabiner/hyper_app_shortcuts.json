@@ -231,7 +231,7 @@
     },
     {
       "from": {
-        "key_code": "comma",
+        "key_code": "g",
         "modifiers": {
           "mandatory": [
             "left_shift",
