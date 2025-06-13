@@ -1,21 +1,48 @@
 # basic aliases
-alias g='git'
-alias ga='git add'
-alias gb='git branch'
-alias gf='git fetch'
-alias gm='git merge'
-alias gmnc='git merge --no-commit --no-ff'
-alias gd='git diff'
-alias gl='git log'
-alias gc='git commit'
-alias gpl='git pull'
-alias gph='git push'
-alias gr='git restore'
-alias go='git remote get-url origin | sed "s/git@/https:\/\//; s/com:/com\//; s/\.git$//" | xargs open' # open the repo in the browser
-alias gcl='git clone'
-alias gsn='git switch -c'
+alias g='git' #
+compdef g=git
 
-# convenienve functions
+alias ga='git add'
+compdef ga=git
+
+alias gb='git branch'
+compdef gb=git
+
+alias gf='git fetch'
+compdef gf=git
+
+alias gm='git merge'
+compdef gm=git
+
+alias gmnc='git merge --no-commit --no-ff'
+compdef gmnc=git
+
+alias gd='git diff'
+compdef gd=git
+
+alias gl='git log'
+compdef gl=git
+
+alias gc='git commit'
+compdef gc=git
+
+alias gpl='git pull'
+compdef gpl=git
+
+alias gph='git push'
+compdef gph=git
+
+alias gr='git restore'
+compdef gr=git
+
+alias gsn='git switch -c'
+compdef gsn=git
+
+alias gcl='git clone'
+compdef gcl=git
+
+# convenienve functions and aliases (without tab completion)
+alias go='git remote get-url origin | sed "s/git@/https:\/\//; s/com:/com\//; s/\.git$//" | xargs open' # open the repo in the browser
 
 # undo the last x commits (defaults to 1)
 function gundo() {
