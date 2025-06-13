@@ -83,12 +83,16 @@ These global shortcuts use **Capslock** + [key] to quickly launch applications.
 
 These shortcuts use **Capslock** + [key] to emulate arrow key navigation:
 
-| Key | Arrow Key |
-| --- | --------- |
-| J   | Left      |
-| K   | Down      |
-| L   | Up        |
-| Ö   | Right     |
+| Key          | Arrow Key           |
+| ------------ | ------------------- |
+| J            | Left                |
+| K            | Down                |
+| L            | Up                  |
+| Ö            | Right               |
+| Left Cmd + J | Left + Left Option  |
+| Left Cmd + K | Down + Left Option  |
+| Left Cmd + L | Up + Left Option    |
+| Left Cmd + Ö | Right + Left Option |
 
 #### Brackets
 
