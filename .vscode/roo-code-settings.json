@@ -1,33 +1,33 @@
 {
   "providerProfiles": {
-    "currentApiConfigName": "gpt-4.1",
+    "currentApiConfigName": "sonnet-4",
     "apiConfigs": {
       "gemini-pro-preview": {
         "enableReasoningEffort": false,
-        "openRouterApiKey": "-----",
         "openRouterModelId": "google/gemini-2.5-pro-preview",
         "openRouterBaseUrl": "",
         "apiProvider": "openrouter",
         "id": "t3vgyi4r2oh"
       },
       "gemini-flash-preview": {
+        "modelTemperature": null,
         "enableReasoningEffort": false,
-        "openRouterApiKey": "-----",
         "openRouterModelId": "google/gemini-2.5-flash-preview-05-20",
         "openRouterBaseUrl": "",
         "apiProvider": "openrouter",
         "id": "dclynbpmwx6"
       },
       "sonnet-4": {
+        "modelTemperature": null,
         "enableReasoningEffort": false,
-        "openRouterApiKey": "-----",
         "openRouterModelId": "anthropic/claude-sonnet-4",
         "openRouterBaseUrl": "",
         "apiProvider": "openrouter",
         "id": "49ssq3mzw78"
       },
       "gpt-4.1": {
-        "openRouterApiKey": "-----",
+        "modelTemperature": null,
+        "enableReasoningEffort": false,
         "openRouterModelId": "openai/gpt-4.1",
         "openRouterBaseUrl": "",
         "apiProvider": "openrouter",
@@ -54,7 +54,7 @@
   },
   "globalSettings": {
     "pinnedApiConfigs": {},
-    "lastShownAnnouncementId": "may-29-2025-3-19",
+    "lastShownAnnouncementId": "dec-12-2025-3-20",
     "customInstructions": "When using terminal commands, try to use to run them without unnecessary additions. For example, instead of \npython -m pytest ..\nuse \npytest ...\n\nAdditionally, always check if the MCP servers are relevant for the current task. If documentation is needed and there is a specific MCP server for the current language, query it for information. If there is no specific MCP server for the language, use context 7 instead.",
     "condensingApiConfigId": "dclynbpmwx6",
     "customCondensingPrompt": "",
@@ -64,10 +64,10 @@
     "alwaysAllowWrite": true,
     "alwaysAllowWriteOutsideWorkspace": false,
     "writeDelayMs": 1000,
-    "alwaysAllowBrowser": true,
+    "alwaysAllowBrowser": false,
     "alwaysApproveResubmit": false,
     "requestDelaySeconds": 10,
-    "alwaysAllowMcp": false,
+    "alwaysAllowMcp": true,
     "alwaysAllowModeSwitch": true,
     "alwaysAllowSubtasks": true,
     "alwaysAllowExecute": true,
@@ -79,8 +79,8 @@
       "coverage"
     ],
     "autoCondenseContext": true,
-    "autoCondenseContextPercent": 40,
-    "maxConcurrentFileReads": 1,
+    "autoCondenseContextPercent": 30,
+    "maxConcurrentFileReads": 5,
     "browserToolEnabled": true,
     "browserViewportSize": "900x600",
     "screenshotQuality": 75,
@@ -106,7 +106,9 @@
     "terminalCompressProgressBar": true,
     "experiments": {
       "powerSteering": true,
-      "concurrentFileReads": false
+      "disableCompletionCommand": false,
+      "marketplace": false,
+      "multiFileApplyDiff": false
     },
     "codebaseIndexModels": {
       "openai": {
@@ -130,6 +132,17 @@
         "all-minilm": {
           "dimension": 384
         }
+      },
+      "openai-compatible": {
+        "text-embedding-3-small": {
+          "dimension": 1536
+        },
+        "text-embedding-3-large": {
+          "dimension": 3072
+        },
+        "text-embedding-ada-002": {
+          "dimension": 1536
+        }
       }
     },
     "codebaseIndexConfig": {
@@ -142,7 +155,7 @@
     "language": "en",
     "telemetrySetting": "disabled",
     "mcpEnabled": true,
-    "mode": "debug-mid-level",
+    "mode": "code",
     "customModes": [
       {
         "slug": "code-junior",
@@ -182,7 +195,7 @@
         "slug": "documentation-writer",
         "name": "📚 Documentation Writer",
         "roleDefinition": "You are Roo, a technical documentation expert specializing in creating clear, comprehensive documentation for software projects. Your expertise includes:\nWriting clear, concise technical documentation\nCreating and maintaining README files, API documentation, and user guides\nFollowing documentation best practices and style guides\nUnderstanding code to accurately document its functionality\nOrganizing documentation in a logical, easily navigable structure",
-        "whenToUse": "Use this mode to create, edit, or improve technical documentation for software projects. Ideal for writing and maintaining README files, API documentation, user guides, and in-code comments. Recommended when clarity, consistency, and best practices in documentation are essential.",
+        "whenToUse": "Use this mode to create, edit, or improve technical documentation for software projects. Ideal for writing and maintaining README files, API documentation, user guides, and in-code comments. Recommended when clarity, consistency, and best practices in documentation are essential.\"",
         "customInstructions": "Focus on creating documentation that is clear, concise, and follows a consistent style. Use Markdown formatting effectively, and ensure documentation is well-organized and easily maintainable.",
         "groups": ["read", "edit", "command"],
         "source": "global"
