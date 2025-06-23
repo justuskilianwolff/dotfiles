@@ -368,21 +368,6 @@
               },
               {
                 "from": {
-                  "key_code": "p",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_shift",
-                      "right_command",
-                      "left_control",
-                      "left_option"
-                    ]
-                  }
-                },
-                "to": [{ "shell_command": "open -a 'Bitwarden.app'" }],
-                "type": "basic"
-              },
-              {
-                "from": {
                   "key_code": "t",
                   "modifiers": {
                     "mandatory": [
@@ -951,6 +936,26 @@
                   {
                     "key_code": "7",
                     "modifiers": ["left_shift", "left_option"]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "key_code": "p",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_shift",
+                      "right_command",
+                      "left_control",
+                      "left_option"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "7",
+                    "modifiers": ["left_option"]
                   }
                 ],
                 "type": "basic"

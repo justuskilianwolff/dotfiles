@@ -65,7 +65,6 @@ These global shortcuts use **Capslock** + [key] to quickly launch applications.
 | B   | Browser (Brave)       |
 | C   | Calendar              |
 | F   | Finder                |
-| P   | Passwords(Bitwarden)  |
 | R   | Reminders             |
 | S   | Spotify               |
 | T   | Microsoft Teams       |
@@ -113,5 +112,6 @@ These shortcuts use **Capslock** + [key] to perform various actions:
 
 | Key Combination | Result |
 | --------------- | ------ |
-| Ä               | =      |
+| P (Pipe)        | &#124; |
 | Ü               | \      |
+| Ä (Äquals)      | =      |
