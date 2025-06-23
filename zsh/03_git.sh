@@ -68,3 +68,4 @@ function gs() {
         git switch "$@"
     fi
 }
+compdef _git gs=git-switch
