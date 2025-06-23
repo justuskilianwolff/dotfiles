@@ -115,3 +115,15 @@ These shortcuts use **Capslock** + [key] to perform various actions:
 | P (Pipe)        | &#124; |
 | Ü               | \      |
 | Ä (Äquals)      | =      |
+
+## Hammerspoon
+
+Since symlinking currently does not work as mentioned in this [issue](https://github.com/Hammerspoon/hammerspoon/issues/3706), just copy the `hammerspoon` folder to `~/.hammerspoon/` and run `hs.reload()` in the Hammerspoon console.
+
+### Mouse
+
+- Double right click maps to enter
+
+### Key Bindings
+
+> Will be updated here and take over the Karabiner shortcuts in the future.
