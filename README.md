@@ -51,8 +51,7 @@ Load and/or export the profile configured here. I could not get the profile used
 
 ## Karabiner
 
-- Some useful shortcuts are [here](https://ke-complex-modifications.pqrs.org/)
-- [ ] Use caps lock as hyper key and update move and and down
+- Some useful shortcuts are at this [marketplace](https://ke-complex-modifications.pqrs.org/)
 
 ### Shortcuts
 
