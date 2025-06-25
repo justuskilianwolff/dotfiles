@@ -16,6 +16,24 @@ for file in "$DOTFILES_PATH/zsh/"*; do
 done
 ```
 
+### zsh Navigation Shortcuts
+
+The `zsh/04_navigation.sh` file provides helpful navigation functions and aliases:
+
+- `up [N]`: Go up N directories (defaults to 1 if not specified).
+- Directory shortcuts:
+  - `docs`: `cd ~/Documents`
+  - `down`: `cd ~/Downloads`
+  - `desk`: `cd ~/Desktop`
+  - `repos`: `cd ~/Repositories`
+  - `f`: Open the dotfiles repo in VS Code
+- Miscellaneous:
+  - `h`: Show command history
+  - `c`: Clear the terminal
+  - `l`: List files with details and color
+  - `rdf`: Shortcut for `rm -rf`
+  - `o`: Open the current directory in Finder
+
 ## Homebrew
 
 Within the `brew` directory run
