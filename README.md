@@ -144,3 +144,49 @@ Since symlinking currently does not work as mentioned in this [issue](https://gi
 ### Key Bindings
 
 > Will be updated here and take over the Karabiner shortcuts in the future.
+
+## Espanso
+
+[Espanso](https://espanso.org/) is a cross-platform text expander that automatically replaces text snippets as you type.
+
+### Setup on New Machines
+
+1. **Install Espanso** (if not already installed via Homebrew):
+   ```shell
+   brew install espanso
+   ```
+
+2. **Remove any existing espanso configuration** (if it exists):
+   ```shell
+   rm -rf "$HOME/Library/Application Support/espanso"
+   ```
+
+3. **Create symlink to entire dotfiles espanso directory**:
+   ```shell
+   ln -s "$HOME/Repositories/dotfiles/espanso" "$HOME/Library/Application Support/espanso"
+   ```
+
+4. **Start espanso** (if not already running):
+   ```shell
+   espanso start
+   ```
+
+### Configuration
+
+The configuration includes automatic text expansion for common contractions:
+
+- **Negative contractions**: `dont` → `don't`, `cant` → `can't`, `wont` → `won't`, etc.
+- **Question words**: `whats` → `what's`, `wheres` → `where's`, `hows` → `how's`, etc.
+- **Pronouns**: `youre` → `you're`, `theyre` → `they're`, `were` → `we're`, etc.
+- **Auxiliary verbs**: `ive` → `I've`, `youll` → `you'll`, `hed` → `he'd`, etc.
+
+### Usage
+
+Simply type any of the trigger words (e.g., `dont`) and espanso will automatically replace it with the correct contraction (`don't`). The expansion happens in real-time across all applications.
+
+### Troubleshooting
+
+- **Check if espanso is running**: `espanso status`
+- **Restart espanso**: `espanso restart`
+- **View logs**: `espanso log`
+- **Test configuration**: Try typing `dont` in any text field
