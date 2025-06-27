@@ -1,0 +1,24 @@
+matches:
+  - trigger: ":street"
+    replace: "{{my_street}}"
+    vars:
+      - name: my_street
+        type: shell
+        params:
+          cmd: source $HOME/Repositories/dotfiles/espanso/.env; echo $MY_STREET
+
+  - trigger: ":phone"
+    replace: "{{my_phone}}"
+    vars:
+      - name: my_phone
+        type: shell
+        params:
+          cmd: source $HOME/Repositories/dotfiles/espanso/.env; echo $MY_PHONE
+
+  - trigger: ":mail"
+    replace: "{{my_email}}"
+    vars:
+      - name: my_email
+        type: shell
+        params:
+          cmd: source $HOME/Repositories/dotfiles/espanso/.env; echo $MY_EMAIL
