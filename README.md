@@ -152,21 +152,26 @@ Since symlinking currently does not work as mentioned in this [issue](https://gi
 ### Setup on New Machines
 
 1. **Install Espanso** (if not already installed via Homebrew):
+
    ```shell
    brew install espanso
    ```
 
 2. **Remove any existing espanso configuration** (if it exists):
+   Remove this if espanso is not running, otherwise it will be recreated automatically.
+
    ```shell
    rm -rf "$HOME/Library/Application Support/espanso"
    ```
 
 3. **Create symlink to entire dotfiles espanso directory**:
+
    ```shell
    ln -s "$HOME/Repositories/dotfiles/espanso" "$HOME/Library/Application Support/espanso"
    ```
 
 4. **Start espanso** (if not already running):
+
    ```shell
    espanso start
    ```
