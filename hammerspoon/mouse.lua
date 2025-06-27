@@ -5,7 +5,7 @@ local M = {}
 
 local tap = nil   -- Event tap for intercepting right mouse clicks
 local timer = nil -- Timer for detecting double-click timing
-local delay = 0.3 -- Double-click detection window in seconds
+local delay = 0.2 -- Double-click detection window in seconds
 
 --- Handles right-click events and detects double-clicks
 --- @param event table The mouse event
@@ -23,7 +23,7 @@ local function handleRightClick(event)
         timer = nil
         if tap then tap:stop() end
         hs.eventtap.rightClick(location)
-        hs.timer.doAfter(delay * 0.033, function() if tap then tap:start() end end)
+        hs.timer.doAfter(0.01, function() if tap then tap:start() end end)
     end)
     return true
 end
