@@ -1,0 +1,116 @@
+matches:
+  # Print the current date
+  # Example: 27.06.2025
+  - trigger: ":date"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%d.%m.%Y"
+
+  # Print the current time
+  # Example: 17:17
+  - trigger: ":time"
+    replace: "{{mytime}}"
+    vars:
+      - name: mytime
+        type: date
+        params:
+          format: "%H:%M"
+
+  # Print ISO date format
+  # Example: 2025-06-27
+  - trigger: ":isodate"
+    replace: "{{isodate}}"
+    vars:
+      - name: isodate
+        type: date
+        params:
+          format: "%Y-%m-%d"
+
+  # Print ISO time format
+  # Example: 17:17:00
+  - trigger: ":isotime"
+    replace: "{{isotime}}"
+    vars:
+      - name: isotime
+        type: date
+        params:
+          format: "%H:%M:%S"
+
+  # Print day of the month
+  # Example: 27.
+  - trigger: ":day"
+    replace: "{{day}}"
+    vars:
+      - name: day
+        type: date
+        params:
+          format: "%d."
+
+  # Print current weekday (English)
+  # Example: Thursday
+  - trigger: ":weekday-en"
+    replace: "{{weekday_en}}"
+    vars:
+      - name: weekday_en
+        type: date
+        params:
+          format: "%A"
+          locale: "en-US"
+
+  # Print current weekday (German)
+  # Example: Donnerstag
+  - trigger: ":weekday-de"
+    replace: "{{weekday_de}}"
+    vars:
+      - name: weekday_de
+        type: date
+        params:
+          format: "%A"
+          locale: "de-DE"
+
+  # Print month name (English)
+  # Example: June
+  - trigger: ":month-en"
+    replace: "{{month_en}}"
+    vars:
+      - name: month_en
+        type: date
+        params:
+          format: "%B"
+          locale: "en-US"
+
+  # Print month name (German)
+  # Example: Juni
+  - trigger: ":month-de"
+    replace: "{{month_de}}"
+    vars:
+      - name: month_de
+        type: date
+        params:
+          format: "%B"
+          locale: "de-DE"
+
+  # Print full date with weekday (German)
+  # Example: Donnerstag, 27. Juni 2025
+  - trigger: ":fulldate-de"
+    replace: "{{fulldate_de}}"
+    vars:
+      - name: fulldate_de
+        type: date
+        params:
+          format: "%A, %d. %B %Y"
+          locale: "de-DE"
+
+  # Print full date with weekday (English)
+  # Example: Thursday, June 27, 2025
+  - trigger: ":fulldate-en"
+    replace: "{{fulldate_en}}"
+    vars:
+      - name: fulldate_en
+        type: date
+        params:
+          format: "%A, %B %d, %Y"
+          locale: "en-US"
