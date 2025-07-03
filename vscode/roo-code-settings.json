@@ -1,10 +1,11 @@
 {
   "providerProfiles": {
-    "currentApiConfigName": "sonnet-4",
+    "currentApiConfigName": "gemini-pro-preview",
     "apiConfigs": {
       "gemini-pro-preview": {
+        "modelTemperature": null,
         "enableReasoningEffort": false,
-        "openRouterModelId": "google/gemini-2.5-pro-preview",
+        "openRouterModelId": "google/gemini-2.5-pro-preview-05-06",
         "openRouterBaseUrl": "",
         "apiProvider": "openrouter",
         "id": "t3vgyi4r2oh"
@@ -54,7 +55,7 @@
   },
   "globalSettings": {
     "pinnedApiConfigs": {},
-    "lastShownAnnouncementId": "dec-12-2025-3-20",
+    "lastShownAnnouncementId": "jul-02-2025-3-22-6",
     "customInstructions": "# Coding Assistant Guidelines\n\n## Terminal Command Execution\nExecute commands directly without unnecessary module prefixes when possible\n- Use `pytest ...` instead of `python -m pytest ...`\n- Use `coverage ...` instead of `python -m coverage ...`\n- Use `black ...` instead of `python -m black ...`\n- **Rationale**: Direct command execution is allowed for non-destructive operations, while python module execution may be restricted\n\n## Python Type Hints (Modern Syntax)\n- Use modern union syntax with `|` (pipe operator) for all type hints\n- Replace `Optional[T]` with `T | None`\n- Replace `Union[A, B, C]` with `A | B | C`\n- Replace `List[T]` with `list[T]` (Python 3.9+)\n- Replace `Dict[K, V]` with `dict[K, V]` (Python 3.9+)\n- Replace `Tuple[A, B]` with `tuple[A, B]` (Python 3.9+)\n\n### Examples:\n```python\n# Old style - avoid\nfrom typing import Optional, Union, List, Dict\n\ndef process_data(items: Optional[List[str]], config: Union[str, int, bool]) -> Dict[str, int]:\n    pass\n\n# Modern style - use this\ndef process_data(items: list[str] | None, config: str | int | bool) -> dict[str, int]:\n    pass\n```\n\n## Documentation and Context Management\n1. **Check MCP server availability** first for language-specific documentation\n2. **Language-specific MCP servers**: Query the appropriate server for documentation, examples, and best practices\n3. **Fallback strategy**: If no specific MCP server exists for the current language/framework, use context 7 for general documentation\n4. **Always verify** if MCP servers are relevant before proceeding with any coding task\n\n## Additional Best Practices\n- Follow language-specific conventions and idioms\n- Provide clear error handling and meaningful error messages\n- Include type hints for all function parameters and return values\n- Write docstrings for public functions and classes\n- Consider performance implications of code suggestions",
     "condensingApiConfigId": "dclynbpmwx6",
     "customCondensingPrompt": "",
@@ -63,6 +64,7 @@
     "alwaysAllowReadOnlyOutsideWorkspace": false,
     "alwaysAllowWrite": true,
     "alwaysAllowWriteOutsideWorkspace": false,
+    "alwaysAllowWriteProtected": false,
     "writeDelayMs": 1000,
     "alwaysAllowBrowser": false,
     "alwaysApproveResubmit": false,
@@ -71,6 +73,8 @@
     "alwaysAllowModeSwitch": true,
     "alwaysAllowSubtasks": true,
     "alwaysAllowExecute": true,
+    "alwaysAllowFollowupQuestions": false,
+    "followupAutoApproveTimeoutMs": 60000,
     "allowedCommands": [
       "git log",
       "git diff",
@@ -104,45 +108,24 @@
     "terminalZshP10k": false,
     "terminalZdotdir": false,
     "terminalCompressProgressBar": true,
-    "experiments": {
-      "powerSteering": true,
-      "disableCompletionCommand": false,
-      "marketplace": false,
-      "multiFileApplyDiff": false
-    },
+    "experiments": { "powerSteering": true, "multiFileApplyDiff": true },
     "codebaseIndexModels": {
       "openai": {
-        "text-embedding-3-small": {
-          "dimension": 1536
-        },
-        "text-embedding-3-large": {
-          "dimension": 3072
-        },
-        "text-embedding-ada-002": {
-          "dimension": 1536
-        }
+        "text-embedding-3-small": { "dimension": 1536 },
+        "text-embedding-3-large": { "dimension": 3072 },
+        "text-embedding-ada-002": { "dimension": 1536 }
       },
       "ollama": {
-        "nomic-embed-text": {
-          "dimension": 768
-        },
-        "mxbai-embed-large": {
-          "dimension": 1024
-        },
-        "all-minilm": {
-          "dimension": 384
-        }
+        "nomic-embed-text": { "dimension": 768 },
+        "nomic-embed-code": { "dimension": 3584 },
+        "mxbai-embed-large": { "dimension": 1024 },
+        "all-minilm": { "dimension": 384 }
       },
       "openai-compatible": {
-        "text-embedding-3-small": {
-          "dimension": 1536
-        },
-        "text-embedding-3-large": {
-          "dimension": 3072
-        },
-        "text-embedding-ada-002": {
-          "dimension": 1536
-        }
+        "text-embedding-3-small": { "dimension": 1536 },
+        "text-embedding-3-large": { "dimension": 3072 },
+        "text-embedding-ada-002": { "dimension": 1536 },
+        "nomic-embed-code": { "dimension": 3584 }
       }
     },
     "codebaseIndexConfig": {
@@ -155,13 +138,14 @@
     "language": "en",
     "telemetrySetting": "disabled",
     "mcpEnabled": true,
-    "mode": "code",
+    "mode": "orchestrator",
     "customModes": [
       {
-        "slug": "code-junior",
-        "name": "💾 Code Junior",
-        "roleDefinition": "You are Roo, a highly skilled software engineer with extensive knowledge in many programming languages, frameworks, design patterns, and best practices.",
-        "whenToUse": "Use this mode for simple, well-scoped tasks where cost-efficiency is key. Ideal for generating boilerplate code, refactoring small functions, writing tests, or answering straightforward programming questions. Recommended when working on non-critical paths or prototyping ideas rapidly. This assistant is well-suited for usage by junior engineers or for tasks that require speed over depth.",
+        "slug": "debug-mid-level",
+        "name": "🐞 Debug Mid Level",
+        "roleDefinition": "You are Roo, a capable software debugger who can trace logic, follow stack traces, and diagnose mid-complexity issues with code and systems.",
+        "whenToUse": "Use this assistant when debugging requires tracing medium-complexity logic, following function calls across files, or analyzing less-obvious control flow issues. Effective for helping mid-level engineers walk through stack traces, inspect intermediate values, or isolate performance regressions. Recommended for issues involving moderate system knowledge but where Claude 4's deep reasoning isn't needed.",
+        "customInstructions": "Reflect on 5-7 different possible sources of the problem, distill those down to 1-2 most likely sources, and then add logs to validate your assumptions. Explicitly ask the user to confirm the diagnosis before fixing the problem.",
         "groups": ["read", "edit", "browser", "command", "mcp"],
         "source": "global"
       },
@@ -175,19 +159,18 @@
         "source": "global"
       },
       {
-        "slug": "code-mid-level",
-        "name": "🖥️ Code Mid Level",
+        "slug": "code-junior",
+        "name": "💾 Code Junior",
         "roleDefinition": "You are Roo, a highly skilled software engineer with extensive knowledge in many programming languages, frameworks, design patterns, and best practices.",
-        "whenToUse": "Use this mode for moderately complex engineering work that requires good reasoning ability and context awareness. Ideal for mid-level software engineers working on integration tasks, debugging, or designing standard systems. Use it when accuracy matters but the task doesn’t require top-tier comprehension or creative problem solving. A good default when in doubt and cost is a moderate concern.",
+        "whenToUse": "Use this mode for simple, well-scoped tasks where cost-efficiency is key. Ideal for generating boilerplate code, refactoring small functions, writing tests, or answering straightforward programming questions. Recommended when working on non-critical paths or prototyping ideas rapidly. This assistant is well-suited for usage by junior engineers or for tasks that require speed over depth.",
         "groups": ["read", "edit", "browser", "command", "mcp"],
         "source": "global"
       },
       {
-        "slug": "debug-mid-level",
-        "name": "🐞 Debug Mid Level",
-        "roleDefinition": "You are Roo, a capable software debugger who can trace logic, follow stack traces, and diagnose mid-complexity issues with code and systems.",
-        "whenToUse": "Use this assistant when debugging requires tracing medium-complexity logic, following function calls across files, or analyzing less-obvious control flow issues. Effective for helping mid-level engineers walk through stack traces, inspect intermediate values, or isolate performance regressions. Recommended for issues involving moderate system knowledge but where Claude 4’s deep reasoning isn't needed.",
-        "customInstructions": "Reflect on 5-7 different possible sources of the problem, distill those down to 1-2 most likely sources, and then add logs to validate your assumptions. Explicitly ask the user to confirm the diagnosis before fixing the problem.",
+        "slug": "code-mid-level",
+        "name": "🖥️ Code Mid Level",
+        "roleDefinition": "You are Roo, a highly skilled software engineer with extensive knowledge in many programming languages, frameworks, design patterns, and best practices.",
+        "whenToUse": "Use this mode for moderately complex engineering work that requires good reasoning ability and context awareness. Ideal for mid-level software engineers working on integration tasks, debugging, or designing standard systems. Use it when accuracy matters but the task doesn't require top-tier comprehension or creative problem solving. A good default when in doubt and cost is a moderate concern.",
         "groups": ["read", "edit", "browser", "command", "mcp"],
         "source": "global"
       },
