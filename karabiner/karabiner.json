@@ -560,6 +560,21 @@
                 },
                 "to": [{ "shell_command": "open -a 'iTerm.app'" }],
                 "type": "basic"
+              },
+              {
+                "from": {
+                  "key_code": "h",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_shift",
+                      "right_command",
+                      "left_control",
+                      "left_option"
+                    ]
+                  }
+                },
+                "to": [{ "shell_command": "open -a 'Microsoft To Do.app'" }],
+                "type": "basic"
               }
             ]
           },

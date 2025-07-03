@@ -94,6 +94,7 @@ These global shortcuts use **Capslock** + [key] to quickly launch applications.
 | D   | Microsoft Word        |
 | #   | iTerm (# shell start) |
 | G   | System Settings       |
+| H   | Microsoft To Do       |
 
 #### Arrow Keys
 
