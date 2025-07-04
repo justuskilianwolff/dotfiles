@@ -138,13 +138,11 @@ These shortcuts use **Capslock** + [key] to perform various actions:
 
 Since symlinking currently does not work as mentioned in this [issue](https://github.com/Hammerspoon/hammerspoon/issues/3706), just copy the `hammerspoon` folder to `~/.hammerspoon/` and run `hs.reload()` in the Hammerspoon console.
 
-### Mouse
+### Auto-Mute Speakers
 
-- Double right click maps to enter
+The `init.lua` script automatically mutes the MacBook's built-in speakers when the audio output is switched to them. This prevents unexpected sound output from the internal speakers.
 
-### Key Bindings
 
-> Will be updated here and take over the Karabiner shortcuts in the future.
 
 ## Espanso
 
