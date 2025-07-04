@@ -1,6 +1,6 @@
 {
   "providerProfiles": {
-    "currentApiConfigName": "gemini-pro-preview",
+    "currentApiConfigName": "gemini-flash-preview",
     "apiConfigs": {
       "gemini-pro-preview": {
         "modelTemperature": null,
@@ -45,7 +45,7 @@
       "debug-junior": "dclynbpmwx6",
       "code-mid-level": "ykesr0f9nna",
       "debug-mid-level": "ykesr0f9nna",
-      "documentation-writer": "ykesr0f9nna"
+      "documentation-writer": "dclynbpmwx6"
     },
     "migrations": {
       "rateLimitSecondsMigrated": true,
@@ -138,7 +138,7 @@
     "language": "en",
     "telemetrySetting": "disabled",
     "mcpEnabled": true,
-    "mode": "orchestrator",
+    "mode": "debug-junior",
     "customModes": [
       {
         "slug": "debug-mid-level",
