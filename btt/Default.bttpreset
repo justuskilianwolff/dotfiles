@@ -2,7 +2,7 @@
   "BTTPresetCreatorNotes" : "",
   "BTTPresetInfoURL" : "",
   "BTTPresetName" : "Default",
-  "BTTPresetColor" : "41.401800, 230.010000, 72.836500, 255.000000",
+  "BTTPresetColor" : "17.340000, 216.750000, 146.956500, 255.000000",
   "BTTGeneralSettings" : {
     "BTTPathSampleSize" : 100,
     "BTTCMOnTop" : true,
@@ -52,7 +52,7 @@
     "BTTTpFourFingerSwipeSensitivity" : 0.40000000000000002,
     "BSTMoveTreshold" : 2,
     "BTTHideFomControlStripWhenOpen" : false,
-    "BTTNumberOfStarts" : 10,
+    "BTTNumberOfStarts" : 12,
     "BTTForceNormalClickPressure3F" : 150,
     "showSiriRemoteTab" : true,
     "SIRIScrollSpeed" : 1,
@@ -156,8 +156,16 @@
     "BTTNotchBarNotchMenubarModeHideRightScrollable" : true,
     "BSTSnapAreaDefaultPictoDistanceFromLeft" : 0.10000000149011612
   },
-  "BTTPresetUUID" : "BA3F0471-6C08-4CE5-B4CC-5C88554D7705",
+  "BTTPresetUUID" : "60910C4B-86DE-4C1B-A837-7DE88C402E95",
   "BTTPresetContent" : [
+    {
+      "BTTAppBundleIdentifier" : "com.apple.finder",
+      "BTTAppName" : "Finder",
+      "BTTAppAutoInvertIcon" : 1,
+      "BTTTriggers" : [
+
+      ]
+    },
     {
       "BTTAppBundleIdentifier" : "BT.L",
       "BTTAppName" : "Recently Used",
@@ -176,7 +184,40 @@
       "BTTTriggers" : [
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1751612927.3260789,
+          "BTTLastUpdatedAt" : 1751643234.480675,
+          "BTTTriggerType" : 173,
+          "BTTTriggerTypeDescriptionReadOnly" : "2 Finger Tap",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTUUID" : "B3111F59-9F4C-40C6-AAFC-1C37722A5637",
+          "BTTPredefinedActionType" : 366,
+          "BTTPredefinedActionName" : "Empty Placeholder",
+          "BTTEnabled" : 1,
+          "BTTEnabled2" : 1,
+          "BTTRequiredModifierKeys" : 131072,
+          "BTTOrder" : 1,
+          "BTTAdditionalActions" : [
+            {
+              "BTTActionCategory" : 0,
+              "BTTLastUpdatedAt" : 1751643191.7566972,
+              "BTTTriggerParentUUID" : "B3111F59-9F4C-40C6-AAFC-1C37722A5637",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+              "BTTUUID" : "97E8CF4B-03A7-4B69-A2C7-85BC0523CA0E",
+              "BTTLayoutIndependentActionChar" : "RETURN",
+              "BTTShortcutToSend" : "36",
+              "BTTEnabled" : 1,
+              "BTTEnabled2" : 1,
+              "BTTOrder" : 3
+            }
+          ],
+          "BTTTriggerConfig" : {
+            "BTTNoTouchTimeout" : 0,
+            "BTTHUDText" : "Enter"
+          }
+        },
+        {
+          "BTTActionCategory" : 0,
+          "BTTLastUpdatedAt" : 1751643290.2188392,
           "BTTTriggerType" : 1001,
           "BTTTriggerTypeDescriptionReadOnly" : "Rightclick",
           "BTTTriggerTypeDescription" : "Shift + RC -> Enter",
@@ -192,12 +233,11 @@
           "BTTAdditionalActions" : [
             {
               "BTTActionCategory" : 0,
-              "BTTLastUpdatedAt" : 1751281108.2520552,
+              "BTTLastUpdatedAt" : 1751643290.2188249,
               "BTTTriggerParentUUID" : "7B9CCADD-0421-4468-9E81-F779B00E240F",
               "BTTIsPureAction" : true,
               "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
               "BTTUUID" : "BFB020E6-BF5E-4717-B7EA-1487981DFAB4",
-              "BTTLayoutIndependentActionChar" : "RETURN",
               "BTTShortcutToSend" : "36",
               "BTTEnabled" : 1,
               "BTTEnabled2" : 1,
@@ -208,7 +248,7 @@
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1751613604.6052589,
+          "BTTLastUpdatedAt" : 1751643290.2188179,
           "BTTTriggerType" : 1001,
           "BTTTriggerTypeDescriptionReadOnly" : "Rightclick",
           "BTTTriggerTypeDescription" : "Cmd + RC -> AirPods connected",
@@ -224,7 +264,7 @@
           "BTTAdditionalActions" : [
             {
               "BTTActionCategory" : 0,
-              "BTTLastUpdatedAt" : 1751613439.7332258,
+              "BTTLastUpdatedAt" : 1751643290.2187881,
               "BTTTriggerParentUUID" : "FF180CA0-35EB-4BC2-B936-D830B49F1E77",
               "BTTIsPureAction" : true,
               "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
@@ -239,15 +279,42 @@
             }
           ],
           "BTTGestureNotes" : "Cmd + RC -> AirPods connected"
+        },
+        {
+          "BTTActionCategory" : 0,
+          "BTTLastUpdatedAt" : 1751643230.726671,
+          "BTTTriggerType" : 173,
+          "BTTTriggerTypeDescriptionReadOnly" : "2 Finger Tap",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTUUID" : "E53D0EC5-E3C7-4679-A01C-503E35E1FDE7",
+          "BTTPredefinedActionType" : 366,
+          "BTTPredefinedActionName" : "Empty Placeholder",
+          "BTTEnabled" : 1,
+          "BTTEnabled2" : 1,
+          "BTTRequiredModifierKeys" : 1048576,
+          "BTTOrder" : 0,
+          "BTTAdditionalActions" : [
+            {
+              "BTTActionCategory" : 0,
+              "BTTLastUpdatedAt" : 1751643126.677948,
+              "BTTTriggerParentUUID" : "E53D0EC5-E3C7-4679-A01C-503E35E1FDE7",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+              "BTTUUID" : "BFA224D4-AC6C-45D8-B111-226AF1B5A266",
+              "BTTPredefinedActionType" : 274,
+              "BTTPredefinedActionName" : "Connect Bluetooth Device",
+              "BTTActionBluetoothDeviceName" : "AirPods Pro",
+              "BTTActionBluetoothDeviceAddress" : "b4-40-a4-c5-8e-f7",
+              "BTTEnabled" : 1,
+              "BTTEnabled2" : 1,
+              "BTTOrder" : 2
+            }
+          ],
+          "BTTTriggerConfig" : {
+            "BTTNoTouchTimeout" : 0,
+            "BTTHUDText" : "Connected Airpods"
+          }
         }
-      ]
-    },
-    {
-      "BTTAppBundleIdentifier" : "com.apple.finder",
-      "BTTAppName" : "Finder",
-      "BTTAppAutoInvertIcon" : 1,
-      "BTTTriggers" : [
-
       ]
     }
   ],
