@@ -142,8 +142,6 @@ Since symlinking currently does not work as mentioned in this [issue](https://gi
 
 The `init.lua` script automatically mutes the MacBook's built-in speakers when the audio output is switched to them. This prevents unexpected sound output from the internal speakers.
 
-
-
 ## Espanso
 
 [Espanso](https://espanso.org/) is a cross-platform text expander that automatically replaces text snippets as you type.
@@ -194,3 +192,16 @@ Simply type any of the trigger words (e.g., `dont`) and espanso will automatical
 - **Restart espanso**: `espanso restart`
 - **View logs**: `espanso log`
 - **Test configuration**: Try typing `dont` in any text field
+
+## BetterTouchTool
+
+The `btt/Default.bttpreset` file contains custom triggers for BetterTouchTool.
+
+### Global Triggers
+
+These triggers are active globally across all applications.
+
+| Trigger              | Action                                     | Notes                                  |
+| -------------------- | ------------------------------------------ | -------------------------------------- |
+| `Shift + Rightclick` | Sends the `Enter` key                      | Useful for quickly confirming actions. |
+| `Cmd + Rightclick`   | Connects to "AirPods Pro" Bluetooth device | Quickly connect to your AirPods.       |
