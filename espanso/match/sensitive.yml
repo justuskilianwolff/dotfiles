@@ -15,18 +15,18 @@ matches:
         params:
           cmd: source $HOME/Repositories/dotfiles/espanso/.env; echo $PHONE
 
-  - trigger: ":pemail" # Personal email
-    replace: "{{pemail}}"
+  - trigger: ":pmail" # Personal mail
+    replace: "{{pmail}}"
     vars:
-      - name: pemail
+      - name: pmail
         type: shell
         params:
-          cmd: source $HOME/Repositories/dotfiles/espanso/.env; echo $PEMAIL
+          cmd: source $HOME/Repositories/dotfiles/espanso/.env; echo $PMAIL
 
-  - trigger: ":wemail" # Work email
-    replace: "{{wemail}}"
+  - trigger: ":wmail" # Work mail
+    replace: "{{wmail}}"
     vars:
-      - name: wemail
+      - name: wmail
         type: shell
         params:
-          cmd: source $HOME/Repositories/dotfiles/espanso/.env; echo $WEMAIL
+          cmd: source $HOME/Repositories/dotfiles/espanso/.env; echo $WMAIL
