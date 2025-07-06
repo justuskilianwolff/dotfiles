@@ -58,6 +58,27 @@ brew upgrade --cask
 
 Pin the versions of apps that usually make problems (spotify, stats): `brew cu pin <app_name>`. Then run all updates with: `brew cu -yaf`.
 
+## BetterTouchTool Preset
+
+The [`btt/Shared.bttpreset`](btt/Shared.bttpreset) file contains a set of custom [BetterTouchTool](https://folivora.ai/) triggers and settings for macOS automation.
+
+### Key Features
+
+- **Global Triggers:**
+  - Example: `Cmd + Right Click` connects AirPods Pro via Bluetooth.
+  - Example: `Shift + Right Click` sends an Enter key.
+  - Example: `Cmd + 2 Finger Tap` connects AirPods Pro.
+  - Example: `Shift + 2 Finger Tap` sends an Enter key.
+- **VS Code Integration:**
+  - Example: `Shift + Left Click` sends `Shift + Enter` in VS Code.
+
+### Usage
+
+1. Open BetterTouchTool.
+2. Go to the "Manage Presets" section.
+3. Click "Import" and select the [`btt/Shared.bttpreset`](btt/Shared.bttpreset) file.
+4. Enable the "Shared" preset to activate the included triggers and settings.
+
 ### Using on multiple accounts on same machine
 
 - Followed the [untar anywhere approach](https://stackoverflow.com/questions/41840479/how-to-use-homebrew-on-a-multi-user-macos-sierra-setup)
