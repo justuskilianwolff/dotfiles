@@ -1,7 +1,7 @@
 {
   "BTTPresetCreatorNotes" : "",
   "BTTPresetInfoURL" : "",
-  "BTTPresetName" : "Default",
+  "BTTPresetName" : "Shared",
   "BTTPresetColor" : "17.340000, 216.750000, 146.956500, 255.000000",
   "BTTGeneralSettings" : {
     "BTTPathSampleSize" : 100,
@@ -67,6 +67,7 @@
     "BTTConvertedDevices" : true,
     "snapBottomRight" : true,
     "BTTThreeFingerTipTapMinSpread" : 0.029999999999999999,
+    "BTTTouchBarVisible" : false,
     "BTTIMGURDefault" : true,
     "BTTNotchBarShowOnStandardScreens" : true,
     "BSTSnapAreaDefaultBackgroundColor" : "129.991390, 201.122858, 227.012328, 104.550000",
@@ -114,6 +115,7 @@
     "BTTNotchBarNotchWidgetModeShowOriginalStatusIcons" : false,
     "BTTAlwaysShowPresetIndicators" : true,
     "BTTStageManagerIncreaseEvenIfHiding" : true,
+    "BTTForcedHidden" : false,
     "showTouchBarTab" : false,
     "BTTFreeSpaceAfterBTT" : 20,
     "BTTNotchBarStandardWidgetModeHideRightFixed" : false,
@@ -156,24 +158,8 @@
     "BTTNotchBarNotchMenubarModeHideRightScrollable" : true,
     "BSTSnapAreaDefaultPictoDistanceFromLeft" : 0.10000000149011612
   },
-  "BTTPresetUUID" : "60910C4B-86DE-4C1B-A837-7DE88C402E95",
+  "BTTPresetUUID" : "1217F7A8-A89C-407F-9714-2CE8CC0F0C4A",
   "BTTPresetContent" : [
-    {
-      "BTTAppBundleIdentifier" : "com.apple.finder",
-      "BTTAppName" : "Finder",
-      "BTTAppAutoInvertIcon" : 1,
-      "BTTTriggers" : [
-
-      ]
-    },
-    {
-      "BTTAppBundleIdentifier" : "BT.L",
-      "BTTAppName" : "Recently Used",
-      "BTTAppAutoInvertIcon" : 1,
-      "BTTTriggers" : [
-
-      ]
-    },
     {
       "BTTAppBundleIdentifier" : "BT.G",
       "BTTAppName" : "Global",
@@ -184,71 +170,7 @@
       "BTTTriggers" : [
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1751643234.480675,
-          "BTTTriggerType" : 173,
-          "BTTTriggerTypeDescriptionReadOnly" : "2 Finger Tap",
-          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-          "BTTUUID" : "B3111F59-9F4C-40C6-AAFC-1C37722A5637",
-          "BTTPredefinedActionType" : 366,
-          "BTTPredefinedActionName" : "Empty Placeholder",
-          "BTTEnabled" : 1,
-          "BTTEnabled2" : 1,
-          "BTTRequiredModifierKeys" : 131072,
-          "BTTOrder" : 1,
-          "BTTAdditionalActions" : [
-            {
-              "BTTActionCategory" : 0,
-              "BTTLastUpdatedAt" : 1751643191.7566972,
-              "BTTTriggerParentUUID" : "B3111F59-9F4C-40C6-AAFC-1C37722A5637",
-              "BTTIsPureAction" : true,
-              "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-              "BTTUUID" : "97E8CF4B-03A7-4B69-A2C7-85BC0523CA0E",
-              "BTTLayoutIndependentActionChar" : "RETURN",
-              "BTTShortcutToSend" : "36",
-              "BTTEnabled" : 1,
-              "BTTEnabled2" : 1,
-              "BTTOrder" : 3
-            }
-          ],
-          "BTTTriggerConfig" : {
-            "BTTNoTouchTimeout" : 0,
-            "BTTHUDText" : "Enter"
-          }
-        },
-        {
-          "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1751643290.2188392,
-          "BTTTriggerType" : 1001,
-          "BTTTriggerTypeDescriptionReadOnly" : "Rightclick",
-          "BTTTriggerTypeDescription" : "Shift + RC -> Enter",
-          "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
-          "BTTUUID" : "7B9CCADD-0421-4468-9E81-F779B00E240F",
-          "BTTPredefinedActionType" : 366,
-          "BTTPredefinedActionName" : "Empty Placeholder",
-          "BTTNotesInsteadOfDescription" : 1,
-          "BTTEnabled" : 1,
-          "BTTEnabled2" : 1,
-          "BTTRequiredModifierKeys" : 131072,
-          "BTTOrder" : 0,
-          "BTTAdditionalActions" : [
-            {
-              "BTTActionCategory" : 0,
-              "BTTLastUpdatedAt" : 1751643290.2188249,
-              "BTTTriggerParentUUID" : "7B9CCADD-0421-4468-9E81-F779B00E240F",
-              "BTTIsPureAction" : true,
-              "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
-              "BTTUUID" : "BFB020E6-BF5E-4717-B7EA-1487981DFAB4",
-              "BTTShortcutToSend" : "36",
-              "BTTEnabled" : 1,
-              "BTTEnabled2" : 1,
-              "BTTOrder" : 1
-            }
-          ],
-          "BTTGestureNotes" : "Shift + RC -> Enter"
-        },
-        {
-          "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1751643290.2188179,
+          "BTTLastUpdatedAt" : 1751719625.387336,
           "BTTTriggerType" : 1001,
           "BTTTriggerTypeDescriptionReadOnly" : "Rightclick",
           "BTTTriggerTypeDescription" : "Cmd + RC -> AirPods connected",
@@ -264,7 +186,7 @@
           "BTTAdditionalActions" : [
             {
               "BTTActionCategory" : 0,
-              "BTTLastUpdatedAt" : 1751643290.2187881,
+              "BTTLastUpdatedAt" : 1751719625.387496,
               "BTTTriggerParentUUID" : "FF180CA0-35EB-4BC2-B936-D830B49F1E77",
               "BTTIsPureAction" : true,
               "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
@@ -282,7 +204,39 @@
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1751643230.726671,
+          "BTTLastUpdatedAt" : 1751719625.3840199,
+          "BTTTriggerType" : 173,
+          "BTTTriggerTypeDescriptionReadOnly" : "2 Finger Tap",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTUUID" : "B3111F59-9F4C-40C6-AAFC-1C37722A5637",
+          "BTTPredefinedActionType" : 366,
+          "BTTPredefinedActionName" : "Empty Placeholder",
+          "BTTEnabled" : 1,
+          "BTTEnabled2" : 1,
+          "BTTRequiredModifierKeys" : 131072,
+          "BTTOrder" : 1,
+          "BTTAdditionalActions" : [
+            {
+              "BTTActionCategory" : 0,
+              "BTTLastUpdatedAt" : 1751719625.3843551,
+              "BTTTriggerParentUUID" : "B3111F59-9F4C-40C6-AAFC-1C37722A5637",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+              "BTTUUID" : "97E8CF4B-03A7-4B69-A2C7-85BC0523CA0E",
+              "BTTShortcutToSend" : "36",
+              "BTTEnabled" : 1,
+              "BTTEnabled2" : 1,
+              "BTTOrder" : 3
+            }
+          ],
+          "BTTTriggerConfig" : {
+            "BTTNoTouchTimeout" : 0,
+            "BTTHUDText" : "Enter"
+          }
+        },
+        {
+          "BTTActionCategory" : 0,
+          "BTTLastUpdatedAt" : 1751719625.3876991,
           "BTTTriggerType" : 173,
           "BTTTriggerTypeDescriptionReadOnly" : "2 Finger Tap",
           "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
@@ -296,7 +250,7 @@
           "BTTAdditionalActions" : [
             {
               "BTTActionCategory" : 0,
-              "BTTLastUpdatedAt" : 1751643126.677948,
+              "BTTLastUpdatedAt" : 1751719625.3878598,
               "BTTTriggerParentUUID" : "E53D0EC5-E3C7-4679-A01C-503E35E1FDE7",
               "BTTIsPureAction" : true,
               "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
@@ -314,6 +268,94 @@
             "BTTNoTouchTimeout" : 0,
             "BTTHUDText" : "Connected Airpods"
           }
+        },
+        {
+          "BTTActionCategory" : 0,
+          "BTTLastUpdatedAt" : 1751719625.3868451,
+          "BTTTriggerType" : 1001,
+          "BTTTriggerTypeDescriptionReadOnly" : "Rightclick",
+          "BTTTriggerTypeDescription" : "Shift + RC -> Enter",
+          "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
+          "BTTUUID" : "7B9CCADD-0421-4468-9E81-F779B00E240F",
+          "BTTPredefinedActionType" : 366,
+          "BTTPredefinedActionName" : "Empty Placeholder",
+          "BTTNotesInsteadOfDescription" : 1,
+          "BTTEnabled" : 1,
+          "BTTEnabled2" : 1,
+          "BTTRequiredModifierKeys" : 131072,
+          "BTTOrder" : 0,
+          "BTTAdditionalActions" : [
+            {
+              "BTTActionCategory" : 0,
+              "BTTLastUpdatedAt" : 1751719625.387099,
+              "BTTTriggerParentUUID" : "7B9CCADD-0421-4468-9E81-F779B00E240F",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
+              "BTTUUID" : "BFB020E6-BF5E-4717-B7EA-1487981DFAB4",
+              "BTTShortcutToSend" : "36",
+              "BTTEnabled" : 1,
+              "BTTEnabled2" : 1,
+              "BTTOrder" : 1
+            }
+          ],
+          "BTTGestureNotes" : "Shift + RC -> Enter"
+        }
+      ]
+    },
+    {
+      "BTTAppBundleIdentifier" : "com.apple.finder",
+      "BTTAppName" : "Finder",
+      "BTTAppAutoInvertIcon" : 1,
+      "BTTTriggers" : [
+
+      ]
+    },
+    {
+      "BTTAppBundleIdentifier" : "BT.L",
+      "BTTAppName" : "Recently Used",
+      "BTTAppAutoInvertIcon" : 1,
+      "BTTTriggers" : [
+
+      ]
+    },
+    {
+      "BTTAppBundleIdentifier" : "com.microsoft.VSCode",
+      "BTTAppName" : "Code",
+      "BTTAppAutoInvertIcon" : 1,
+      "BTTAppProcessMatchMode" : 2,
+      "BTTAppProcessName" : "Code",
+      "BTTTriggers" : [
+        {
+          "BTTActionCategory" : 0,
+          "BTTLastUpdatedAt" : 1751797166.220753,
+          "BTTTriggerType" : 1000,
+          "BTTTriggerTypeDescriptionReadOnly" : "Leftclick (needs modifier key)",
+          "BTTTriggerTypeDescription" : "shift + LC -> shift + Enter",
+          "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
+          "BTTUUID" : "AEC13C43-6ECE-483C-8CF7-7151FED58B0A",
+          "BTTPredefinedActionType" : 366,
+          "BTTPredefinedActionName" : "Empty Placeholder",
+          "BTTNotesInsteadOfDescription" : 1,
+          "BTTEnabled" : 1,
+          "BTTEnabled2" : 1,
+          "BTTRequiredModifierKeys" : 1179648,
+          "BTTOrder" : 0,
+          "BTTAdditionalActions" : [
+            {
+              "BTTActionCategory" : 0,
+              "BTTLastUpdatedAt" : 1751797166.2207429,
+              "BTTTriggerParentUUID" : "AEC13C43-6ECE-483C-8CF7-7151FED58B0A",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
+              "BTTUUID" : "E9FE385E-437A-4BB7-8F38-7FA069CD594A",
+              "BTTLayoutIndependentActionChar" : "RETURN",
+              "BTTShortcutToSend" : "56,36",
+              "BTTEnabled" : 1,
+              "BTTEnabled2" : 1,
+              "BTTOrder" : 2
+            }
+          ],
+          "BTTGestureNotes" : "shift + LC -> shift + Enter"
         }
       ]
     }
