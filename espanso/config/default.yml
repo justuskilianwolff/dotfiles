@@ -39,4 +39,5 @@
 
 # For a list of all the available options, visit the official docs at: https://espanso.org/docs/
 
-search_shortcut: off
+search_shortcut: off # Hotkey used to show the Search UI
+show_notifications: false # notification window on boot
