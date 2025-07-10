@@ -45,14 +45,14 @@
     "BTTNotchBarNotchMenubarModeHideLeftFixed" : true,
     "BTTMovePastedToTop" : true,
     "BTTMaxAllowedDrawingRotation" : 30,
-    "BTTDidRegisterForUpdateStats" : "5.513",
+    "BTTDidRegisterForUpdateStats" : "5.519",
     "BTTNotchBarNotchWidgetModeHideRightFixed" : false,
     "BTTStageManagerLeaveGap" : true,
     "BTTStageManagerLeftSnappingAreaIncreasePercentage" : 0.125,
     "BTTTpFourFingerSwipeSensitivity" : 0.40000000000000002,
     "BSTMoveTreshold" : 2,
     "BTTHideFomControlStripWhenOpen" : false,
-    "BTTNumberOfStarts" : 12,
+    "BTTNumberOfStarts" : 13,
     "BTTForceNormalClickPressure3F" : 150,
     "showSiriRemoteTab" : true,
     "SIRIScrollSpeed" : 1,
@@ -158,7 +158,7 @@
     "BTTNotchBarNotchMenubarModeHideRightScrollable" : true,
     "BSTSnapAreaDefaultPictoDistanceFromLeft" : 0.10000000149011612
   },
-  "BTTPresetUUID" : "1217F7A8-A89C-407F-9714-2CE8CC0F0C4A",
+  "BTTPresetUUID" : "F9697319-AB07-48CC-BB34-F3B390A49B07",
   "BTTPresetContent" : [
     {
       "BTTAppBundleIdentifier" : "BT.G",
@@ -170,73 +170,7 @@
       "BTTTriggers" : [
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1751719625.387336,
-          "BTTTriggerType" : 1001,
-          "BTTTriggerTypeDescriptionReadOnly" : "Rightclick",
-          "BTTTriggerTypeDescription" : "Cmd + RC -> AirPods connected",
-          "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
-          "BTTUUID" : "FF180CA0-35EB-4BC2-B936-D830B49F1E77",
-          "BTTPredefinedActionType" : 366,
-          "BTTPredefinedActionName" : "Empty Placeholder",
-          "BTTNotesInsteadOfDescription" : 1,
-          "BTTEnabled" : 1,
-          "BTTEnabled2" : 1,
-          "BTTRequiredModifierKeys" : 1048576,
-          "BTTOrder" : 1,
-          "BTTAdditionalActions" : [
-            {
-              "BTTActionCategory" : 0,
-              "BTTLastUpdatedAt" : 1751719625.387496,
-              "BTTTriggerParentUUID" : "FF180CA0-35EB-4BC2-B936-D830B49F1E77",
-              "BTTIsPureAction" : true,
-              "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
-              "BTTUUID" : "165C339E-70DA-44D5-836F-479B4F8BB66C",
-              "BTTPredefinedActionType" : 274,
-              "BTTPredefinedActionName" : "Connect Bluetooth Device",
-              "BTTActionBluetoothDeviceName" : "AirPods Pro",
-              "BTTActionBluetoothDeviceAddress" : "b4-40-a4-c5-8e-f7",
-              "BTTEnabled" : 1,
-              "BTTEnabled2" : 1,
-              "BTTOrder" : 1
-            }
-          ],
-          "BTTGestureNotes" : "Cmd + RC -> AirPods connected"
-        },
-        {
-          "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1751719625.3840199,
-          "BTTTriggerType" : 173,
-          "BTTTriggerTypeDescriptionReadOnly" : "2 Finger Tap",
-          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-          "BTTUUID" : "B3111F59-9F4C-40C6-AAFC-1C37722A5637",
-          "BTTPredefinedActionType" : 366,
-          "BTTPredefinedActionName" : "Empty Placeholder",
-          "BTTEnabled" : 1,
-          "BTTEnabled2" : 1,
-          "BTTRequiredModifierKeys" : 131072,
-          "BTTOrder" : 1,
-          "BTTAdditionalActions" : [
-            {
-              "BTTActionCategory" : 0,
-              "BTTLastUpdatedAt" : 1751719625.3843551,
-              "BTTTriggerParentUUID" : "B3111F59-9F4C-40C6-AAFC-1C37722A5637",
-              "BTTIsPureAction" : true,
-              "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-              "BTTUUID" : "97E8CF4B-03A7-4B69-A2C7-85BC0523CA0E",
-              "BTTShortcutToSend" : "36",
-              "BTTEnabled" : 1,
-              "BTTEnabled2" : 1,
-              "BTTOrder" : 3
-            }
-          ],
-          "BTTTriggerConfig" : {
-            "BTTNoTouchTimeout" : 0,
-            "BTTHUDText" : "Enter"
-          }
-        },
-        {
-          "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1751719625.3876991,
+          "BTTLastUpdatedAt" : 1752146901.7549992,
           "BTTTriggerType" : 173,
           "BTTTriggerTypeDescriptionReadOnly" : "2 Finger Tap",
           "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
@@ -245,12 +179,12 @@
           "BTTPredefinedActionName" : "Empty Placeholder",
           "BTTEnabled" : 1,
           "BTTEnabled2" : 1,
-          "BTTRequiredModifierKeys" : 1048576,
+          "BTTRequiredModifierKeys" : 262144,
           "BTTOrder" : 0,
           "BTTAdditionalActions" : [
             {
               "BTTActionCategory" : 0,
-              "BTTLastUpdatedAt" : 1751719625.3878598,
+              "BTTLastUpdatedAt" : 1751862663.5086741,
               "BTTTriggerParentUUID" : "E53D0EC5-E3C7-4679-A01C-503E35E1FDE7",
               "BTTIsPureAction" : true,
               "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
@@ -271,10 +205,10 @@
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1751719625.3868451,
+          "BTTLastUpdatedAt" : 1752146798.2183881,
           "BTTTriggerType" : 1001,
           "BTTTriggerTypeDescriptionReadOnly" : "Rightclick",
-          "BTTTriggerTypeDescription" : "Shift + RC -> Enter",
+          "BTTTriggerTypeDescription" : "Cmd + RC -> Enter",
           "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
           "BTTUUID" : "7B9CCADD-0421-4468-9E81-F779B00E240F",
           "BTTPredefinedActionType" : 366,
@@ -282,12 +216,12 @@
           "BTTNotesInsteadOfDescription" : 1,
           "BTTEnabled" : 1,
           "BTTEnabled2" : 1,
-          "BTTRequiredModifierKeys" : 131072,
+          "BTTRequiredModifierKeys" : 1048576,
           "BTTOrder" : 0,
           "BTTAdditionalActions" : [
             {
               "BTTActionCategory" : 0,
-              "BTTLastUpdatedAt" : 1751719625.387099,
+              "BTTLastUpdatedAt" : 1751862663.530494,
               "BTTTriggerParentUUID" : "7B9CCADD-0421-4468-9E81-F779B00E240F",
               "BTTIsPureAction" : true,
               "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
@@ -298,8 +232,145 @@
               "BTTOrder" : 1
             }
           ],
-          "BTTGestureNotes" : "Shift + RC -> Enter"
+          "BTTGestureNotes" : "Cmd + RC -> Enter"
+        },
+        {
+          "BTTActionCategory" : 0,
+          "BTTLastUpdatedAt" : 1752146901.7550101,
+          "BTTTriggerType" : 173,
+          "BTTTriggerTypeDescriptionReadOnly" : "2 Finger Tap",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTUUID" : "B3111F59-9F4C-40C6-AAFC-1C37722A5637",
+          "BTTPredefinedActionType" : 366,
+          "BTTPredefinedActionName" : "Empty Placeholder",
+          "BTTEnabled" : 1,
+          "BTTEnabled2" : 1,
+          "BTTRequiredModifierKeys" : 1048576,
+          "BTTOrder" : 1,
+          "BTTAdditionalActions" : [
+            {
+              "BTTActionCategory" : 0,
+              "BTTLastUpdatedAt" : 1751862663.5072742,
+              "BTTTriggerParentUUID" : "B3111F59-9F4C-40C6-AAFC-1C37722A5637",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+              "BTTUUID" : "97E8CF4B-03A7-4B69-A2C7-85BC0523CA0E",
+              "BTTShortcutToSend" : "36",
+              "BTTEnabled" : 1,
+              "BTTEnabled2" : 1,
+              "BTTOrder" : 3
+            }
+          ],
+          "BTTTriggerConfig" : {
+            "BTTNoTouchTimeout" : 0,
+            "BTTHUDText" : "Enter"
+          }
+        },
+        {
+          "BTTActionCategory" : 0,
+          "BTTLastUpdatedAt" : 1752146845.3462191,
+          "BTTTriggerType" : 1001,
+          "BTTTriggerTypeDescriptionReadOnly" : "Rightclick",
+          "BTTTriggerTypeDescription" : "Cmd + shift + RC -> shift + Enter",
+          "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
+          "BTTUUID" : "5F082FC6-6DDF-4624-BB80-820F8AE14FBC",
+          "BTTPredefinedActionType" : 366,
+          "BTTPredefinedActionName" : "Empty Placeholder",
+          "BTTNotesInsteadOfDescription" : 1,
+          "BTTEnabled" : 1,
+          "BTTEnabled2" : 1,
+          "BTTRequiredModifierKeys" : 1179648,
+          "BTTOrder" : 1,
+          "BTTAdditionalActions" : [
+            {
+              "BTTActionCategory" : 0,
+              "BTTLastUpdatedAt" : 1752146790.5721412,
+              "BTTTriggerParentUUID" : "5F082FC6-6DDF-4624-BB80-820F8AE14FBC",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
+              "BTTUUID" : "E822B330-0D00-4EF9-A00F-2D15DC913B08",
+              "BTTLayoutIndependentActionChar" : "RETURN",
+              "BTTShortcutToSend" : "56,36",
+              "BTTEnabled" : 1,
+              "BTTEnabled2" : 1,
+              "BTTOrder" : 2
+            }
+          ],
+          "BTTGestureNotes" : "Cmd + shift + RC -> shift + Enter"
+        },
+        {
+          "BTTActionCategory" : 0,
+          "BTTLastUpdatedAt" : 1752146948.5001159,
+          "BTTTriggerType" : 173,
+          "BTTTriggerTypeDescriptionReadOnly" : "2 Finger Tap",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTUUID" : "0BC3DDA1-DD97-4FCB-8588-A839F4065732",
+          "BTTPredefinedActionType" : 366,
+          "BTTPredefinedActionName" : "Empty Placeholder",
+          "BTTEnabled" : 1,
+          "BTTEnabled2" : 1,
+          "BTTRequiredModifierKeys" : 1179648,
+          "BTTOrder" : 2,
+          "BTTAdditionalActions" : [
+            {
+              "BTTActionCategory" : 0,
+              "BTTLastUpdatedAt" : 1752146954.2933831,
+              "BTTTriggerParentUUID" : "0BC3DDA1-DD97-4FCB-8588-A839F4065732",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+              "BTTUUID" : "EF1F6CFA-15A8-4485-9666-49D173E55F09",
+              "BTTLayoutIndependentActionChar" : "RETURN",
+              "BTTShortcutToSend" : "56,36",
+              "BTTEnabled" : 1,
+              "BTTEnabled2" : 1,
+              "BTTOrder" : 4
+            }
+          ]
+        },
+        {
+          "BTTActionCategory" : 0,
+          "BTTLastUpdatedAt" : 1752146798.2184081,
+          "BTTTriggerType" : 1001,
+          "BTTTriggerTypeDescriptionReadOnly" : "Rightclick",
+          "BTTTriggerTypeDescription" : "Ctrl + RC -> AirPods connected",
+          "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
+          "BTTUUID" : "FF180CA0-35EB-4BC2-B936-D830B49F1E77",
+          "BTTPredefinedActionType" : 366,
+          "BTTPredefinedActionName" : "Empty Placeholder",
+          "BTTNotesInsteadOfDescription" : 1,
+          "BTTEnabled" : 1,
+          "BTTEnabled2" : 1,
+          "BTTRequiredModifierKeys" : 262144,
+          "BTTOrder" : 2,
+          "BTTAdditionalActions" : [
+            {
+              "BTTActionCategory" : 0,
+              "BTTLastUpdatedAt" : 1751862663.5305161,
+              "BTTTriggerParentUUID" : "FF180CA0-35EB-4BC2-B936-D830B49F1E77",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
+              "BTTUUID" : "165C339E-70DA-44D5-836F-479B4F8BB66C",
+              "BTTPredefinedActionType" : 274,
+              "BTTPredefinedActionName" : "Connect Bluetooth Device",
+              "BTTActionBluetoothDeviceName" : "AirPods Pro",
+              "BTTActionBluetoothDeviceAddress" : "b4-40-a4-c5-8e-f7",
+              "BTTEnabled" : 1,
+              "BTTEnabled2" : 1,
+              "BTTOrder" : 1
+            }
+          ],
+          "BTTGestureNotes" : "Ctrl + RC -> AirPods connected"
         }
+      ]
+    },
+    {
+      "BTTAppBundleIdentifier" : "com.microsoft.VSCode",
+      "BTTAppName" : "Code",
+      "BTTAppAutoInvertIcon" : 1,
+      "BTTAppProcessMatchMode" : 2,
+      "BTTAppProcessName" : "Code",
+      "BTTTriggers" : [
+
       ]
     },
     {
@@ -316,47 +387,6 @@
       "BTTAppAutoInvertIcon" : 1,
       "BTTTriggers" : [
 
-      ]
-    },
-    {
-      "BTTAppBundleIdentifier" : "com.microsoft.VSCode",
-      "BTTAppName" : "Code",
-      "BTTAppAutoInvertIcon" : 1,
-      "BTTAppProcessMatchMode" : 2,
-      "BTTAppProcessName" : "Code",
-      "BTTTriggers" : [
-        {
-          "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1751797166.220753,
-          "BTTTriggerType" : 1000,
-          "BTTTriggerTypeDescriptionReadOnly" : "Leftclick (needs modifier key)",
-          "BTTTriggerTypeDescription" : "shift + LC -> shift + Enter",
-          "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
-          "BTTUUID" : "AEC13C43-6ECE-483C-8CF7-7151FED58B0A",
-          "BTTPredefinedActionType" : 366,
-          "BTTPredefinedActionName" : "Empty Placeholder",
-          "BTTNotesInsteadOfDescription" : 1,
-          "BTTEnabled" : 1,
-          "BTTEnabled2" : 1,
-          "BTTRequiredModifierKeys" : 1179648,
-          "BTTOrder" : 0,
-          "BTTAdditionalActions" : [
-            {
-              "BTTActionCategory" : 0,
-              "BTTLastUpdatedAt" : 1751797166.2207429,
-              "BTTTriggerParentUUID" : "AEC13C43-6ECE-483C-8CF7-7151FED58B0A",
-              "BTTIsPureAction" : true,
-              "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
-              "BTTUUID" : "E9FE385E-437A-4BB7-8F38-7FA069CD594A",
-              "BTTLayoutIndependentActionChar" : "RETURN",
-              "BTTShortcutToSend" : "56,36",
-              "BTTEnabled" : 1,
-              "BTTEnabled2" : 1,
-              "BTTOrder" : 2
-            }
-          ],
-          "BTTGestureNotes" : "shift + LC -> shift + Enter"
-        }
       ]
     }
   ],

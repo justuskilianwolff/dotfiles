@@ -58,6 +58,11 @@ brew upgrade --cask
 
 Pin the versions of apps that usually make problems (spotify, stats): `brew cu pin <app_name>`. Then run all updates with: `brew cu -yaf`.
 
+### Using on multiple accounts on same machine
+
+- Followed the [untar anywhere approach](https://stackoverflow.com/questions/41840479/how-to-use-homebrew-on-a-multi-user-macos-sierra-setup)
+- Export in .zshrc: `export HOMEBREW_PREFIX="/Users/justuswolff_private/brew"`
+
 ## BetterTouchTool Preset
 
 The [`btt/Shared.bttpreset`](btt/Shared.bttpreset) file contains a set of custom [BetterTouchTool](https://folivora.ai/) triggers and settings for macOS automation.
@@ -65,12 +70,14 @@ The [`btt/Shared.bttpreset`](btt/Shared.bttpreset) file contains a set of custom
 ### Key Features
 
 - **Global Triggers:**
-  - Example: `Cmd + Right Click` connects AirPods Pro via Bluetooth.
-  - Example: `Shift + Right Click` sends an Enter key.
-  - Example: `Cmd + 2 Finger Tap` connects AirPods Pro.
-  - Example: `Shift + 2 Finger Tap` sends an Enter key.
-- **VS Code Integration:**
-  - Example: `Shift + Left Click` sends `Shift + Enter` in VS Code.
+
+| Trigger                      | Action                                     | Notes                                  |
+| ---------------------------- | ------------------------------------------ | -------------------------------------- |
+| `Cmd + Right Click`          | Sends the `Enter` key                      | Useful for quickly confirming actions. |
+| `Cmd + Shift + Right Click`  | Sends `Shift + Enter`                      | Useful for Jupyter Notebooks           |
+| `Ctrl + Right Click`         | Connects to "AirPods Pro" Bluetooth device | Quickly connect to your AirPods.       |
+
+All these triggers are also available via a two finger tap on the trackpad.
 
 ### Usage
 
@@ -78,11 +85,6 @@ The [`btt/Shared.bttpreset`](btt/Shared.bttpreset) file contains a set of custom
 2. Go to the "Manage Presets" section.
 3. Click "Import" and select the [`btt/Shared.bttpreset`](btt/Shared.bttpreset) file.
 4. Enable the "Shared" preset to activate the included triggers and settings.
-
-### Using on multiple accounts on same machine
-
-- Followed the [untar anywhere approach](https://stackoverflow.com/questions/41840479/how-to-use-homebrew-on-a-multi-user-macos-sierra-setup)
-- Export in .zshrc: `export HOMEBREW_PREFIX="/Users/justuswolff_private/brew"`
 
 ## iTerm2
 
