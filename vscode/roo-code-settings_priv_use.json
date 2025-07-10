@@ -1,0 +1,228 @@
+{
+  "providerProfiles": {
+    "currentApiConfigName": "gemini-2.5-pro",
+    "apiConfigs": {
+      "sonnet-4": {
+        "diffEnabled": true,
+        "fuzzyMatchThreshold": 1,
+        "modelTemperature": null,
+        "rateLimitSeconds": 0,
+        "enableReasoningEffort": false,
+        "openRouterModelId": "anthropic/claude-sonnet-4",
+        "openRouterBaseUrl": "",
+        "apiProvider": "openrouter",
+        "id": "49ssq3mzw78"
+      },
+      "gpt-4.1": {
+        "diffEnabled": true,
+        "fuzzyMatchThreshold": 1,
+        "modelTemperature": null,
+        "rateLimitSeconds": 0,
+        "enableReasoningEffort": false,
+        "openRouterModelId": "openai/gpt-4.1",
+        "openRouterBaseUrl": "",
+        "apiProvider": "openrouter",
+        "id": "ykesr0f9nna"
+      },
+      "gemini-2.5-pro-reasoning": {
+        "diffEnabled": true,
+        "fuzzyMatchThreshold": 1,
+        "modelTemperature": null,
+        "rateLimitSeconds": 0,
+        "enableReasoningEffort": true,
+        "modelMaxThinkingTokens": 5120,
+        "apiModelId": "gemini-2.5-pro-preview-06-05",
+        "apiProvider": "gemini",
+        "id": "t3vgyi4r2oh"
+      },
+      "gemini-2.5-flash": {
+        "diffEnabled": true,
+        "fuzzyMatchThreshold": 1,
+        "modelTemperature": null,
+        "rateLimitSeconds": 0,
+        "enableReasoningEffort": false,
+        "apiModelId": "gemini-2.5-flash-preview-05-20",
+        "apiProvider": "gemini",
+        "id": "dclynbpmwx6"
+      },
+      "gemini-2.5-pro": {
+        "diffEnabled": true,
+        "fuzzyMatchThreshold": 1,
+        "modelTemperature": null,
+        "rateLimitSeconds": 0,
+        "enableReasoningEffort": false,
+        "apiModelId": "gemini-2.5-pro-preview-06-05",
+        "apiProvider": "gemini",
+        "id": "7efr7l5nfdk"
+      }
+    },
+    "modeApiConfigs": {
+      "code": "49ssq3mzw78",
+      "architect": "t3vgyi4r2oh",
+      "ask": "ykesr0f9nna",
+      "debug": "49ssq3mzw78",
+      "orchestrator": "7efr7l5nfdk",
+      "code-junior": "dclynbpmwx6",
+      "debug-junior": "dclynbpmwx6",
+      "code-mid-level": "ykesr0f9nna",
+      "debug-mid-level": "ykesr0f9nna",
+      "documentation-writer": "dclynbpmwx6"
+    },
+    "migrations": {
+      "rateLimitSecondsMigrated": true,
+      "diffSettingsMigrated": true,
+      "openAiHeadersMigrated": true
+    }
+  },
+  "globalSettings": {
+    "pinnedApiConfigs": {},
+    "lastShownAnnouncementId": "jul-09-2025-3-23-0",
+    "customInstructions": "# Coding Assistant Guidelines\n\n## Terminal Command Execution\nExecute commands directly without unnecessary module prefixes when possible\n- Use `pytest ...` instead of `python -m pytest ...`\n- Use `coverage ...` instead of `python -m coverage ...`\n- Use `black ...` instead of `python -m black ...`\n- **Rationale**: Direct command execution is allowed for non-destructive operations, while python module execution may be restricted\n\n## Python Type Hints (Modern Syntax)\n- Use modern union syntax with `|` (pipe operator) for all type hints\n- Replace `Optional[T]` with `T | None`\n- Replace `Union[A, B, C]` with `A | B | C`\n- Replace `List[T]` with `list[T]` (Python 3.9+)\n- Replace `Dict[K, V]` with `dict[K, V]` (Python 3.9+)\n- Replace `Tuple[A, B]` with `tuple[A, B]` (Python 3.9+)\n\n### Examples:\n```python\n# Old style - avoid\nfrom typing import Optional, Union, List, Dict\n\ndef process_data(items: Optional[List[str]], config: Union[str, int, bool]) -> Dict[str, int]:\n    pass\n\n# Modern style - use this\ndef process_data(items: list[str] | None, config: str | int | bool) -> dict[str, int]:\n    pass\n```\n\n## Documentation and Context Management\n1. **Check MCP server availability** first for language-specific documentation\n2. **Language-specific MCP servers**: Query the appropriate server for documentation, examples, and best practices\n3. **Fallback strategy**: If no specific MCP server exists for the current language/framework, use context 7 for general documentation\n4. **Always verify** if MCP servers are relevant before proceeding with any coding task\n\n## Additional Best Practices\n- Follow language-specific conventions and idioms\n- Provide clear error handling and meaningful error messages\n- Include type hints for all function parameters and return values\n- Write docstrings for public functions and classes\n- Consider performance implications of code suggestions\n\n## Mode Switching and Cost-Aware Delegation\n\nWhen operating in **Architect** or **Orchestrator** mode, always consider the cost and complexity of the task before proceeding. If a task can be efficiently handled by a lower-cost mode (such as Code Junior or Code Mid Level), delegate or switch to that mode accordingly. Use the following guidelines:\n\n- **Simple, well-scoped, or boilerplate tasks**: Delegate to **Code Junior** mode for maximum cost efficiency.\n- **Moderately complex tasks**: Use **Code Mid Level** mode when the task requires more reasoning but does not need advanced capabilities.\n- **High-stakes, complex, or ambiguous tasks**: Use **Code** mode (senior) only when necessary for correctness or nuanced reasoning.\n- **Documentation tasks**: Use **Documentation Writer** mode for all documentation-related work.\n- **Debugging tasks**: Choose the appropriate debug mode (Junior, Mid Level, or Debug) based on the complexity and impact of the issue.\n\nAlways prefer the lowest-cost mode that can reliably accomplish the task. Only escalate to higher-cost modes when justified by task requirements.",
+    "condensingApiConfigId": "dclynbpmwx6",
+    "customCondensingPrompt": "",
+    "autoApprovalEnabled": true,
+    "alwaysAllowReadOnly": true,
+    "alwaysAllowReadOnlyOutsideWorkspace": false,
+    "alwaysAllowWrite": true,
+    "alwaysAllowWriteOutsideWorkspace": false,
+    "alwaysAllowWriteProtected": false,
+    "writeDelayMs": 1000,
+    "alwaysAllowBrowser": false,
+    "alwaysApproveResubmit": false,
+    "requestDelaySeconds": 10,
+    "alwaysAllowMcp": true,
+    "alwaysAllowModeSwitch": true,
+    "alwaysAllowSubtasks": true,
+    "alwaysAllowExecute": true,
+    "alwaysAllowFollowupQuestions": false,
+    "followupAutoApproveTimeoutMs": 60000,
+    "alwaysAllowUpdateTodoList": false,
+    "allowedCommands": [
+      "git log",
+      "git diff",
+      "git show",
+      "pytest",
+      "coverage"
+    ],
+    "autoCondenseContext": true,
+    "autoCondenseContextPercent": 20,
+    "maxConcurrentFileReads": 5,
+    "browserToolEnabled": true,
+    "browserViewportSize": "900x600",
+    "screenshotQuality": 75,
+    "remoteBrowserEnabled": false,
+    "enableCheckpoints": true,
+    "ttsEnabled": false,
+    "ttsSpeed": 1,
+    "soundEnabled": true,
+    "soundVolume": 0.5,
+    "maxOpenTabsContext": 20,
+    "maxWorkspaceFiles": 200,
+    "showRooIgnoredFiles": true,
+    "maxReadFileLine": 500,
+    "terminalOutputLineLimit": 500,
+    "terminalShellIntegrationTimeout": 5000,
+    "terminalShellIntegrationDisabled": false,
+    "terminalCommandDelay": 0,
+    "terminalPowershellCounter": false,
+    "terminalZshClearEolMark": true,
+    "terminalZshOhMy": false,
+    "terminalZshP10k": false,
+    "terminalZdotdir": false,
+    "terminalCompressProgressBar": true,
+    "rateLimitSeconds": 0,
+    "diffEnabled": true,
+    "fuzzyMatchThreshold": 1,
+    "experiments": { "powerSteering": true, "multiFileApplyDiff": true },
+    "codebaseIndexModels": {
+      "openai": {
+        "text-embedding-3-small": { "dimension": 1536 },
+        "text-embedding-3-large": { "dimension": 3072 },
+        "text-embedding-ada-002": { "dimension": 1536 }
+      },
+      "ollama": {
+        "nomic-embed-text": { "dimension": 768 },
+        "nomic-embed-code": { "dimension": 3584 },
+        "mxbai-embed-large": { "dimension": 1024 },
+        "all-minilm": { "dimension": 384 }
+      },
+      "openai-compatible": {
+        "text-embedding-3-small": { "dimension": 1536 },
+        "text-embedding-3-large": { "dimension": 3072 },
+        "text-embedding-ada-002": { "dimension": 1536 },
+        "nomic-embed-code": { "dimension": 3584 }
+      },
+      "gemini": { "text-embedding-004": { "dimension": 768 } }
+    },
+    "codebaseIndexConfig": {
+      "codebaseIndexEnabled": false,
+      "codebaseIndexQdrantUrl": "http://localhost:6333",
+      "codebaseIndexEmbedderProvider": "openai",
+      "codebaseIndexEmbedderBaseUrl": "",
+      "codebaseIndexEmbedderModelId": ""
+    },
+    "language": "en",
+    "telemetrySetting": "disabled",
+    "mcpEnabled": true,
+    "mode": "orchestrator",
+    "customModes": [
+      {
+        "slug": "debug-junior",
+        "name": "🐛 Debug Junior",
+        "roleDefinition": "You are Roo, an expert software debugger specializing in systematic problem diagnosis and resolution.",
+        "whenToUse": "Use this assistant for basic, low-risk debugging scenarios. Ideal for identifying syntax errors, resolving simple runtime exceptions, or scanning for typos and small logic flaws. Best suited when the error is well-localized, error messages are clear, or logs already point to the problem. Use in early QA or local development stages where speed and cost-efficiency are the priority.",
+        "customInstructions": "Reflect on 5-7 different possible sources of the problem, distill those down to 1-2 most likely sources, and then add logs to validate your assumptions. Explicitly ask the user to confirm the diagnosis before fixing the problem.",
+        "groups": ["read", "edit", "browser", "command", "mcp"],
+        "source": "global"
+      },
+      {
+        "slug": "code-mid-level",
+        "name": "🖥️ Code Mid Level",
+        "roleDefinition": "You are Roo, a highly skilled software engineer with extensive knowledge in many programming languages, frameworks, design patterns, and best practices.",
+        "whenToUse": "Use this mode for moderately complex engineering work that requires good reasoning ability and context awareness. Ideal for mid-level software engineers working on integration tasks, debugging, or designing standard systems. Use it when accuracy matters but the task doesn't require top-tier comprehension or creative problem solving. A good default when in doubt and cost is a moderate concern.",
+        "groups": ["read", "edit", "browser", "command", "mcp"],
+        "source": "global"
+      },
+      {
+        "slug": "debug-mid-level",
+        "name": "🐞 Debug Mid Level",
+        "roleDefinition": "You are Roo, a capable software debugger who can trace logic, follow stack traces, and diagnose mid-complexity issues with code and systems.",
+        "whenToUse": "Use this assistant when debugging requires tracing medium-complexity logic, following function calls across files, or analyzing less-obvious control flow issues. Effective for helping mid-level engineers walk through stack traces, inspect intermediate values, or isolate performance regressions. Recommended for issues involving moderate system knowledge but where Claude 4's deep reasoning isn't needed.",
+        "customInstructions": "Reflect on 5-7 different possible sources of the problem, distill those down to 1-2 most likely sources, and then add logs to validate your assumptions. Explicitly ask the user to confirm the diagnosis before fixing the problem.",
+        "groups": ["read", "edit", "browser", "command", "mcp"],
+        "source": "global"
+      },
+      {
+        "slug": "code-junior",
+        "name": "💾 Code Junior",
+        "roleDefinition": "You are Roo, a highly skilled software engineer with extensive knowledge in many programming languages, frameworks, design patterns, and best practices.",
+        "whenToUse": "Use this mode for simple, well-scoped tasks where cost-efficiency is key. Ideal for generating boilerplate code, refactoring small functions, writing tests, or answering straightforward programming questions. Recommended when working on non-critical paths or prototyping ideas rapidly. This assistant is well-suited for usage by junior engineers or for tasks that require speed over depth.",
+        "groups": ["read", "edit", "browser", "command", "mcp"],
+        "source": "global"
+      },
+      {
+        "slug": "documentation-writer",
+        "name": "📚 Documentation Writer",
+        "roleDefinition": "You are Roo, a technical documentation expert specializing in creating clear, comprehensive documentation for software projects. Your expertise includes:\nWriting clear, concise technical documentation\nCreating and maintaining README files, API documentation, and user guides\nFollowing documentation best practices and style guides\nUnderstanding code to accurately document its functionality\nOrganizing documentation in a logical, easily navigable structure",
+        "whenToUse": "Use this mode to create, edit, or improve technical documentation for software projects. Ideal for writing and maintaining README files, API documentation, user guides, and in-code comments. Recommended when clarity, consistency, and best practices in documentation are essential.\"",
+        "customInstructions": "Focus on creating documentation that is clear, concise, and follows a consistent style. Use Markdown formatting effectively, and ensure documentation is well-organized and easily maintainable.",
+        "groups": ["read", "edit", "command"],
+        "source": "global"
+      }
+    ],
+    "customModePrompts": {
+      "code": {
+        "whenToUse": "Use this mode for high-stakes or complex engineering challenges. Recommended for architectural decisions, multi-step code generation, interpreting ambiguous requirements, or assisting with deeply nested logic. This is the go-to mode when correctness, nuance, and deep contextual understanding are essential—especially for senior engineers or during high-leverage moments in development."
+      },
+      "debug": {
+        "whenToUse": "Use this assistant for complex, high-impact debugging tasks. Ideal for multi-module systems, flaky bugs, concurrency issues, state-machine errors, or debugging under incomplete context. Use when logs are noisy, the root cause is non-obvious, or the bug requires strong reasoning across codebases, configurations, and interactions. Best suited for production issues, architectural bugs, or deeply nested logic failures.",
+        "customInstructions": "Reflect on 5-7 different possible sources of the problem, distill those down to 1-2 most likely sources, and then add logs to validate your assumptions. Explicitly ask the user to confirm the diagnosis before fixing the problem."
+      }
+    },
+    "customSupportPrompts": {},
+    "enhancementApiConfigId": "dclynbpmwx6",
+    "historyPreviewCollapsed": false,
+    "profileThresholds": {},
+    "hasOpenedModeSelector": true
+  }
+}
