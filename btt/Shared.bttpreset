@@ -158,8 +158,129 @@
     "BTTNotchBarNotchMenubarModeHideRightScrollable" : true,
     "BSTSnapAreaDefaultPictoDistanceFromLeft" : 0.10000000149011612
   },
-  "BTTPresetUUID" : "F9697319-AB07-48CC-BB34-F3B390A49B07",
+  "BTTPresetUUID" : "F4D64F62-2530-4D7C-980B-B68452E023D8",
   "BTTPresetContent" : [
+    {
+      "BTTAppBundleIdentifier" : "com.spotify.client",
+      "BTTAppName" : "Spotify",
+      "BTTAppAutoInvertIcon" : 1,
+      "BTTAppProcessMatchMode" : 2,
+      "BTTAppProcessName" : "Spotify",
+      "BTTTriggers" : [
+        {
+          "BTTActionCategory" : 0,
+          "BTTLastUpdatedAt" : 1752215812.0451519,
+          "BTTTriggerType" : 1002,
+          "BTTTriggerTypeDescriptionReadOnly" : "Middle Mouse Button",
+          "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
+          "BTTUUID" : "DA82D0B3-E653-4661-AA12-0DCFC0B4537D",
+          "BTTPredefinedActionType" : 366,
+          "BTTPredefinedActionName" : "Empty Placeholder",
+          "BTTEnabled" : 1,
+          "BTTEnabled2" : 1,
+          "BTTOrder" : 0,
+          "BTTAdditionalActions" : [
+            {
+              "BTTActionCategory" : 0,
+              "BTTLastUpdatedAt" : 1752215724.1157579,
+              "BTTTriggerParentUUID" : "DA82D0B3-E653-4661-AA12-0DCFC0B4537D",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
+              "BTTUUID" : "5235F331-7882-4536-B7C8-AD2E1CE04037",
+              "BTTPredefinedActionType" : 23,
+              "BTTPredefinedActionName" : "Play or Pause",
+              "BTTEnabled" : 1,
+              "BTTEnabled2" : 1,
+              "BTTOrder" : 4
+            }
+          ]
+        },
+        {
+          "BTTActionCategory" : 0,
+          "BTTLastUpdatedAt" : 1752215769.0581632,
+          "BTTTriggerType" : 36,
+          "BTTTriggerTypeDescriptionReadOnly" : "1 Finger Swipe Right",
+          "BTTTriggerClass" : "BTTTriggerTypeMagicMouse",
+          "BTTUUID" : "B6213210-D433-4ACA-95EC-AE2466927307",
+          "BTTPredefinedActionType" : 366,
+          "BTTPredefinedActionName" : "Empty Placeholder",
+          "BTTEnabled" : 1,
+          "BTTEnabled2" : 1,
+          "BTTOrder" : 1,
+          "BTTAdditionalActions" : [
+            {
+              "BTTActionCategory" : 0,
+              "BTTLastUpdatedAt" : 1752215767.5919881,
+              "BTTTriggerParentUUID" : "B6213210-D433-4ACA-95EC-AE2466927307",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeMagicMouse",
+              "BTTUUID" : "09604A08-9458-4F75-9E89-C7FB104388E8",
+              "BTTPredefinedActionType" : 27,
+              "BTTPredefinedActionName" : "Next",
+              "BTTEnabled" : 1,
+              "BTTEnabled2" : 1,
+              "BTTOrder" : 4
+            }
+          ]
+        },
+        {
+          "BTTActionCategory" : 0,
+          "BTTLastUpdatedAt" : 1752215769.058197,
+          "BTTTriggerType" : 1,
+          "BTTTriggerTypeDescriptionReadOnly" : "1 Finger Tap",
+          "BTTTriggerClass" : "BTTTriggerTypeMagicMouse",
+          "BTTUUID" : "18B81C7A-C7CB-4CC4-A6F0-1462D9F9750C",
+          "BTTPredefinedActionType" : 366,
+          "BTTPredefinedActionName" : "Empty Placeholder",
+          "BTTEnabled" : 1,
+          "BTTEnabled2" : 1,
+          "BTTOrder" : 0,
+          "BTTAdditionalActions" : [
+            {
+              "BTTActionCategory" : 0,
+              "BTTLastUpdatedAt" : 1752215687.0349379,
+              "BTTTriggerParentUUID" : "18B81C7A-C7CB-4CC4-A6F0-1462D9F9750C",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeMagicMouse",
+              "BTTUUID" : "2C43D1D8-22CF-4DF7-BB88-3E64B4AA0C5B",
+              "BTTPredefinedActionType" : 23,
+              "BTTPredefinedActionName" : "Play or Pause",
+              "BTTEnabled" : 1,
+              "BTTEnabled2" : 1,
+              "BTTOrder" : 3
+            }
+          ]
+        },
+        {
+          "BTTActionCategory" : 0,
+          "BTTLastUpdatedAt" : 1752215782.305898,
+          "BTTTriggerType" : 35,
+          "BTTTriggerTypeDescriptionReadOnly" : "1 Finger Swipe Left",
+          "BTTTriggerClass" : "BTTTriggerTypeMagicMouse",
+          "BTTUUID" : "2B73AA27-B147-4AFA-9BD9-79C9F013E9ED",
+          "BTTPredefinedActionType" : 366,
+          "BTTPredefinedActionName" : "Empty Placeholder",
+          "BTTEnabled" : 1,
+          "BTTEnabled2" : 1,
+          "BTTOrder" : 2,
+          "BTTAdditionalActions" : [
+            {
+              "BTTActionCategory" : 0,
+              "BTTLastUpdatedAt" : 1752215796.498877,
+              "BTTTriggerParentUUID" : "2B73AA27-B147-4AFA-9BD9-79C9F013E9ED",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeMagicMouse",
+              "BTTUUID" : "D25A6191-C3AC-412B-8817-0AA360F333F2",
+              "BTTPredefinedActionType" : 26,
+              "BTTPredefinedActionName" : "Previous",
+              "BTTEnabled" : 1,
+              "BTTEnabled2" : 1,
+              "BTTOrder" : 5
+            }
+          ]
+        }
+      ]
+    },
     {
       "BTTAppBundleIdentifier" : "BT.G",
       "BTTAppName" : "Global",
@@ -205,7 +326,7 @@
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1752146798.2183881,
+          "BTTLastUpdatedAt" : 1752215473.583245,
           "BTTTriggerType" : 1001,
           "BTTTriggerTypeDescriptionReadOnly" : "Rightclick",
           "BTTTriggerTypeDescription" : "Cmd + RC -> Enter",
@@ -268,7 +389,7 @@
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1752146845.3462191,
+          "BTTLastUpdatedAt" : 1752215473.583262,
           "BTTTriggerType" : 1001,
           "BTTTriggerTypeDescriptionReadOnly" : "Rightclick",
           "BTTTriggerTypeDescription" : "Cmd + shift + RC -> shift + Enter",
@@ -329,7 +450,7 @@
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1752146798.2184081,
+          "BTTLastUpdatedAt" : 1752215473.583277,
           "BTTTriggerType" : 1001,
           "BTTTriggerTypeDescriptionReadOnly" : "Rightclick",
           "BTTTriggerTypeDescription" : "Ctrl + RC -> AirPods connected",
@@ -364,26 +485,142 @@
       ]
     },
     {
+      "BTTAppBundleIdentifier" : "BT.L",
+      "BTTAppName" : "Recently Used",
+      "BTTAppAutoInvertIcon" : 1,
+      "BTTTriggers" : [
+
+      ]
+    },
+    {
       "BTTAppBundleIdentifier" : "com.microsoft.VSCode",
       "BTTAppName" : "Code",
       "BTTAppAutoInvertIcon" : 1,
       "BTTAppProcessMatchMode" : 2,
       "BTTAppProcessName" : "Code",
       "BTTTriggers" : [
-
+        {
+          "BTTActionCategory" : 0,
+          "BTTLastUpdatedAt" : 1752216344.711287,
+          "BTTTriggerType" : 1002,
+          "BTTTriggerTypeDescriptionReadOnly" : "Middle Mouse Button",
+          "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
+          "BTTUUID" : "1D6A3357-DFCD-4146-847A-0DC0B797EF7B",
+          "BTTPredefinedActionType" : 366,
+          "BTTPredefinedActionName" : "Empty Placeholder",
+          "BTTEnabled" : 1,
+          "BTTEnabled2" : 1,
+          "BTTOrder" : 0,
+          "BTTAdditionalActions" : [
+            {
+              "BTTActionCategory" : 0,
+              "BTTLastUpdatedAt" : 1752216357.249644,
+              "BTTTriggerParentUUID" : "1D6A3357-DFCD-4146-847A-0DC0B797EF7B",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
+              "BTTUUID" : "48BBC803-9AE3-4CB7-A250-A4FAB8358486",
+              "BTTPredefinedActionType" : 248,
+              "BTTPredefinedActionName" : "Trigger Named Trigger (Configured in Other Tab)",
+              "BTTNamedTriggerToTrigger" : "Code Inspection",
+              "BTTEnabled" : 1,
+              "BTTEnabled2" : 1,
+              "BTTOrder" : 7
+            }
+          ]
+        },
+        {
+          "BTTActionCategory" : 0,
+          "BTTLastUpdatedAt" : 1752216328.9048729,
+          "BTTTriggerType" : 24,
+          "BTTTriggerTypeDescriptionReadOnly" : "1 Finger Tap Middle",
+          "BTTTriggerClass" : "BTTTriggerTypeMagicMouse",
+          "BTTUUID" : "22523C90-B03F-473B-8306-735CD5F5E539",
+          "BTTPredefinedActionType" : 366,
+          "BTTPredefinedActionName" : "Empty Placeholder",
+          "BTTEnabled" : 1,
+          "BTTEnabled2" : 1,
+          "BTTOrder" : 0,
+          "BTTAdditionalActions" : [
+            {
+              "BTTActionCategory" : 0,
+              "BTTLastUpdatedAt" : 1752216336.235456,
+              "BTTTriggerParentUUID" : "22523C90-B03F-473B-8306-735CD5F5E539",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeMagicMouse",
+              "BTTUUID" : "DB847DE4-9027-4D94-B4E7-673C3019A335",
+              "BTTPredefinedActionType" : 248,
+              "BTTPredefinedActionName" : "Trigger Named Trigger (Configured in Other Tab)",
+              "BTTNamedTriggerToTrigger" : "Code Inspection",
+              "BTTEnabled" : 1,
+              "BTTEnabled2" : 1,
+              "BTTOrder" : 6
+            }
+          ]
+        },
+        {
+          "BTTActionCategory" : 0,
+          "BTTLastUpdatedAt" : 1752216301.5876288,
+          "BTTTriggerType" : 643,
+          "BTTTriggerTypeDescriptionReadOnly" : "Named Trigger: Code Inspection",
+          "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
+          "BTTUUID" : "F3437458-3044-44BE-AE8E-1A34BA15E77E",
+          "BTTPredefinedActionType" : 366,
+          "BTTPredefinedActionName" : "Empty Placeholder",
+          "BTTTriggerName" : "Code Inspection",
+          "BTTEnabled" : 1,
+          "BTTEnabled2" : 1,
+          "BTTOrder" : 0,
+          "BTTAdditionalActions" : [
+            {
+              "BTTActionCategory" : 0,
+              "BTTLastUpdatedAt" : 1752216286.9762459,
+              "BTTTriggerParentUUID" : "F3437458-3044-44BE-AE8E-1A34BA15E77E",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
+              "BTTUUID" : "E2D24091-6B25-49FD-8CB4-048F3B24470A",
+              "BTTPredefinedActionType" : 119,
+              "BTTPredefinedActionName" : "Custom Mouse Buttons & Modifiers(⌃⌥⇧⌘)",
+              "BTTEnabled" : 1,
+              "BTTEnabled2" : 1,
+              "BTTOrder" : 5
+            },
+            {
+              "BTTActionCategory" : 0,
+              "BTTLastUpdatedAt" : 1752216301.584424,
+              "BTTTriggerParentUUID" : "F3437458-3044-44BE-AE8E-1A34BA15E77E",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
+              "BTTUUID" : "F45428C1-8B3D-4A51-BB73-53BB1C1E5675",
+              "BTTPredefinedActionType" : 129,
+              "BTTPredefinedActionName" : "Pause Execution  or  Delay Next Action (blocking)",
+              "BTTDelayNextActionBy" : "0.1",
+              "BTTEnabled" : 1,
+              "BTTEnabled2" : 1,
+              "BTTOrder" : 6
+            },
+            {
+              "BTTActionCategory" : 0,
+              "BTTLastUpdatedAt" : 1752216312.682322,
+              "BTTTriggerParentUUID" : "F3437458-3044-44BE-AE8E-1A34BA15E77E",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
+              "BTTUUID" : "C3909179-E355-4735-9143-2293CC7B8804",
+              "BTTLayoutIndependentActionChar" : "F12",
+              "BTTAdditionalActionData" : {
+                "sendCurrentModifiers" : true
+              },
+              "BTTShortcutToSend" : "111",
+              "BTTEnabled" : 1,
+              "BTTEnabled2" : 1,
+              "BTTOrder" : 7
+            }
+          ]
+        }
       ]
     },
     {
       "BTTAppBundleIdentifier" : "com.apple.finder",
       "BTTAppName" : "Finder",
-      "BTTAppAutoInvertIcon" : 1,
-      "BTTTriggers" : [
-
-      ]
-    },
-    {
-      "BTTAppBundleIdentifier" : "BT.L",
-      "BTTAppName" : "Recently Used",
       "BTTAppAutoInvertIcon" : 1,
       "BTTTriggers" : [
 

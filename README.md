@@ -71,13 +71,30 @@ The [`btt/Shared.bttpreset`](btt/Shared.bttpreset) file contains a set of custom
 
 - **Global Triggers:**
 
-| Trigger                      | Action                                     | Notes                                  |
-| ---------------------------- | ------------------------------------------ | -------------------------------------- |
-| `Cmd + Right Click`          | Sends the `Enter` key                      | Useful for quickly confirming actions. |
-| `Cmd + Shift + Right Click`  | Sends `Shift + Enter`                      | Useful for Jupyter Notebooks           |
-| `Ctrl + Right Click`         | Connects to "AirPods Pro" Bluetooth device | Quickly connect to your AirPods.       |
+| Trigger                     | Action                                     | Notes                                  |
+| --------------------------- | ------------------------------------------ | -------------------------------------- |
+| `Cmd + Right Click`         | Sends the `Enter` key                      | Useful for quickly confirming actions. |
+| `Cmd + Shift + Right Click` | Sends `Shift + Enter`                      | Useful for Jupyter Notebooks           |
+| `Ctrl + Right Click`        | Connects to "AirPods Pro" Bluetooth device | Quickly connect to your AirPods.       |
 
 All these triggers are also available via a two finger tap on the trackpad.
+
+- **Spotify Specific Triggers:**
+
+| Trigger              | Action         | Notes                          |
+| -------------------- | -------------- | ------------------------------ |
+| Middle Mouse Button  | Play/Pause     | Control playback with a click. |
+| 1 Finger Swipe Right | Next Track     | Skip to the next song.         |
+| 1 Finger Tap         | Play/Pause     | Control playback with a tap.   |
+| 1 Finger Swipe Left  | Previous Track | Go back to the previous song.  |
+
+- **VS Code Specific Triggers:**
+
+| Trigger                        | Action                    | Notes                                                  |
+| ------------------------------ | ------------------------- | ------------------------------------------------------ |
+| Middle Mouse Button            | Trigger "Code Inspection" | Activates a custom code inspection.                    |
+| 1 Finger Tap Middle            | Trigger "Code Inspection" | Activates a custom code inspection.                    |
+| Named Trigger: Code Inspection | `Modifiers + F12`         | Custom shortcut for code inspection at mouse location. |
 
 ### Usage
 
