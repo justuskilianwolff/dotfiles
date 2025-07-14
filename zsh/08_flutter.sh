@@ -28,6 +28,8 @@ alias fli="fl install"
 alias flup="fl upgrade"
 alias flp="fl pub"
 alias flpg="fl pub get"
+alias flpa="fl pub add"
+alias flpr="fl pub remove"
 alias flcg="flc && flpg"
 
 ## [Completion]
