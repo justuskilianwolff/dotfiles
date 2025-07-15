@@ -168,11 +168,12 @@ These shortcuts use **Capslock** + [key] to type brackets quickly:
 
 These shortcuts use **Capslock** + [key] to perform various actions:
 
-| Key Combination | Result |
-| --------------- | ------ |
-| P (Pipe)        | &#124; |
-| Ü               | \      |
-| Ä (Äquals)      | =      |
+| Key Combination                     | Result                |
+| ----------------------------------- | --------------------- |
+| P (Pipe)                            | &#124;                |
+| Ü                                   | \                     |
+| Ä (Äquals)                          | =                     |
+| Shift + Cmd + Ctrl + Option + Enter | Ctrl + Cmd + Q (Lock) |
 
 ## Hammerspoon
 
