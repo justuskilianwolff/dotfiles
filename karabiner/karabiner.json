@@ -583,7 +583,7 @@
             "manipulators": [
               {
                 "from": {
-                  "key_code": "u",
+                  "key_code": "i",
                   "modifiers": {
                     "mandatory": [
                       "left_shift",
@@ -603,7 +603,7 @@
               },
               {
                 "from": {
-                  "key_code": "i",
+                  "key_code": "u",
                   "modifiers": {
                     "mandatory": [
                       "left_shift",
@@ -643,7 +643,7 @@
               },
               {
                 "from": {
-                  "key_code": "u",
+                  "key_code": "i",
                   "modifiers": {
                     "mandatory": [
                       "left_shift",
@@ -664,7 +664,7 @@
               },
               {
                 "from": {
-                  "key_code": "i",
+                  "key_code": "u",
                   "modifiers": {
                     "mandatory": [
                       "left_shift",

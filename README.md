@@ -157,11 +157,11 @@ These shortcuts use **Capslock** + [key] to type brackets quickly:
 
 | Key Combination | Bracket |
 | --------------- | ------- |
-| U               | [       |
-| I               | (       |
+| U               | (      |
+| I               | [       |
 | O               | {       |
-| Left Cmd + U    | ]       |
-| Left Cmd + I    | )       |
+| Left Cmd + U    | )       |
+| Left Cmd + I    | ]       |
 | Left Cmd + O    | }       |
 
 ## Miscellaneous Key Bindings
