@@ -42,7 +42,7 @@ alias gcl='git clone'
 compdef gcl=git
 
 # convenienve functions and aliases (without tab completion)
-alias go='git remote get-url origin | sed "s/git@/https:\/\//; s/com:/com\//; s/\.git$//" | xargs open' # open the repo in the browser
+alias go='git remote get-url origin | sed "s/git@/https:\/\//; s/com:/com\//" | sed "s/\.git$/\/tree\/$(git branch --show-current)/" | xargs open' # open the repo in the browser
 
 # undo the last x commits (defaults to 1)
 function gundo() {
