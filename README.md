@@ -123,15 +123,14 @@ These global shortcuts use **Capslock** + [key] to quickly launch applications.
 | C   | Calendar              |
 | F   | Finder                |
 | R   | Reminders             |
-| S   | Spotify               |
+| S   | Slack                 |
 | T   | Microsoft Teams       |
 | V   | Visual Studio Code    |
 | W   | WhatsApp              |
 | X   | Microsoft Excel       |
-| N   | Notes (Obsidian)      |
-| M   | Mail                  |
-| E   | Outlook               |
-| D   | Microsoft Word        |
+| N   | Notion                |
+| M   | Spotify (Music)       |
+| D   | Microsoft To Do       |
 | #   | iTerm (# shell start) |
 | G   | System Settings       |
 | H   | Microsoft To Do       |
@@ -157,7 +156,7 @@ These shortcuts use **Capslock** + [key] to type brackets quickly:
 
 | Key Combination | Bracket |
 | --------------- | ------- |
-| U               | (      |
+| U               | (       |
 | I               | [       |
 | O               | {       |
 | Left Cmd + U    | )       |

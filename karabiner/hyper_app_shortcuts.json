@@ -72,26 +72,7 @@
       },
       "to": [
         {
-          "shell_command": "open -a 'Spotify.app'"
-        }
-      ],
-      "type": "basic"
-    },
-    {
-      "from": {
-        "key_code": "e",
-        "modifiers": {
-          "mandatory": [
-            "left_shift",
-            "right_command",
-            "left_control",
-            "left_option"
-          ]
-        }
-      },
-      "to": [
-        {
-          "shell_command": "open -a 'Microsoft Outlook.app'"
+          "shell_command": "open -a 'Slack.app'"
         }
       ],
       "type": "basic"
@@ -205,7 +186,7 @@
       },
       "to": [
         {
-          "shell_command": "open -a 'Mail.app'"
+          "shell_command": "open -a 'Spotify.app'"
         }
       ],
       "type": "basic"
@@ -243,7 +224,7 @@
       },
       "to": [
         {
-          "shell_command": "open -a 'Microsoft Word.app'"
+          "shell_command": "open -a 'Microsoft To Do.app'"
         }
       ],
       "type": "basic"
@@ -262,7 +243,7 @@
       },
       "to": [
         {
-          "shell_command": "open -a 'Obsidian.app'"
+          "shell_command": "open -a 'Notion.app'"
         }
       ],
       "type": "basic"
