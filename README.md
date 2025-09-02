@@ -130,10 +130,10 @@ These global shortcuts use **Capslock** + [key] to quickly launch applications.
 | X   | Microsoft Excel       |
 | N   | Notion                |
 | M   | Spotify (Music)       |
-| D   | Microsoft To Do       |
+| D   | Microsoft To **Do**   |
 | #   | iTerm (# shell start) |
 | G   | System Settings       |
-| H   | Microsoft To Do       |
+| E   | Mail (E-Mail)         |
 
 #### Arrow Keys
 

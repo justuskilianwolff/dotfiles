@@ -336,6 +336,14 @@
                             },
                             {
                                 "from": {
+                                    "key_code": "e",
+                                    "modifiers": { "mandatory": ["left_shift", "right_command", "left_control", "left_option"] }
+                                },
+                                "to": [{ "shell_command": "open -a 'Mail.app'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
                                     "key_code": "w",
                                     "modifiers": { "mandatory": ["left_shift", "right_command", "left_control", "left_option"] }
                                 },
@@ -436,14 +444,6 @@
                                     "modifiers": { "mandatory": ["left_shift", "right_command", "left_control", "left_option"] }
                                 },
                                 "to": [{ "shell_command": "open -a 'iTerm.app'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "h",
-                                    "modifiers": { "mandatory": ["left_shift", "right_command", "left_control", "left_option"] }
-                                },
-                                "to": [{ "shell_command": "open -a 'Microsoft To Do.app'" }],
                                 "type": "basic"
                             }
                         ]
@@ -984,6 +984,35 @@
                     "identifiers": {
                         "is_keyboard": true,
                         "product_id": 50504,
+                        "vendor_id": 1133
+                    }
+                },
+                {
+                    "fn_function_keys": [
+                        {
+                            "from": { "key_code": "f4" },
+                            "to": [{ "apple_vendor_top_case_key_code": "illumination_up" }]
+                        },
+                        {
+                            "from": { "key_code": "f5" },
+                            "to": [{ "apple_vendor_top_case_key_code": "illumination_up" }]
+                        },
+                        {
+                            "from": { "key_code": "f10" },
+                            "to": [{ "consumer_key_code": "play_or_pause" }]
+                        },
+                        {
+                            "from": { "key_code": "f11" },
+                            "to": [{ "consumer_key_code": "mute" }]
+                        },
+                        {
+                            "from": { "key_code": "f12" },
+                            "to": [{ "consumer_key_code": "volume_decrement" }]
+                        }
+                    ],
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "product_id": 45930,
                         "vendor_id": 1133
                     }
                 }
