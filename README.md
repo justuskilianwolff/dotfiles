@@ -121,19 +121,20 @@ These global shortcuts use **Capslock** + [key] to quickly launch applications.
 | --- | --------------------- |
 | B   | Browser (Brave)       |
 | C   | Calendar              |
+| D   | Microsoft To **Do**   |
+| E   | Mail (E-Mail)         |
 | F   | Finder                |
+| G   | System Settings       |
+| H   | Home Assistant        |
+| M   | Spotify (Music)       |
+| N   | Notion                |
 | R   | Reminders             |
 | S   | Slack                 |
 | T   | Microsoft Teams       |
 | V   | Visual Studio Code    |
 | W   | WhatsApp              |
 | X   | Microsoft Excel       |
-| N   | Notion                |
-| M   | Spotify (Music)       |
-| D   | Microsoft To **Do**   |
 | #   | iTerm (# shell start) |
-| G   | System Settings       |
-| E   | Mail (E-Mail)         |
 
 #### Arrow Keys
 
