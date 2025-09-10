@@ -41,6 +41,9 @@ compdef gsn=git
 alias gcl='git clone'
 compdef gcl=git
 
+alias gst='git status'
+compdef gst=git
+
 # convenienve functions and aliases (without tab completion)
 alias go='branch=$(git branch --show-current 2>/dev/null || git rev-parse --short HEAD); \
   url=$(git remote get-url origin | sed "s|^git@|https://|; s|github\.com:|github.com/|; s|\.git$||"); \
