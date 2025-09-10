@@ -1,0 +1,5 @@
+alias tm='tmux'
+alias tma='tmux attach'
+alias tmn='tmux new-session'
+alias tml='tmux list-sessions'
+alias tmk='tmux kill-session'
