@@ -65,9 +65,16 @@ function gdelloc() {
 # git checkout function
 function gs() {
     if [ $# -eq 0 ]; then
-        git switch main
+        # Try to switch to main first
+        if ! git switch main 2>/dev/null; then
+            # If main doesn't exist, try master
+            echo "Branch 'main' not found, trying 'master'..."
+            git switch master
+        fi
     else
+        # If arguments provided, pass them through to git switch
         git switch "$@"
     fi
 }
+
 compdef _git gs=git-switch
