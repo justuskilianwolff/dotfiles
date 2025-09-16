@@ -32,6 +32,9 @@ compdef gpl=git
 alias gph='git push'
 compdef gph=git
 
+alias gphf='git push --force-with-lease'
+compdef gphf=git
+
 alias gr='git restore'
 compdef gr=git
 
@@ -43,6 +46,10 @@ compdef gcl=git
 
 alias gst='git status'
 compdef gst=git
+
+# https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git
+alias glods="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset' --date=short"
+compdef glods=git
 
 # convenienve functions and aliases (without tab completion)
 alias go='branch=$(git branch --show-current 2>/dev/null || git rev-parse --short HEAD); \
