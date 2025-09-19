@@ -47,6 +47,9 @@ compdef gcl=git
 alias gst='git status'
 compdef gst=git
 
+alias glg="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset' --date=format:'%d/%m/%Y %H:%M'"
+compdef glg=git
+
 # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git
 alias glods="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset' --date=short"
 compdef glods=git
