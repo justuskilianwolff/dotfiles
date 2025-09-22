@@ -41,6 +41,9 @@ compdef gr=git
 alias gsn='git switch -c'
 compdef gsn=git
 
+alias gsd='git switch dev'
+compdef gsd=git
+
 alias gcl='git clone'
 compdef gcl=git
 
