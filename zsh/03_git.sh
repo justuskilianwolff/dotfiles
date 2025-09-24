@@ -20,11 +20,18 @@ compdef gmnc=git
 alias gd='git diff'
 compdef gd=git
 
+alias gds='git diff --staged'
+compdef gds=git
+
 alias gl='git log'
 compdef gl=git
 
 alias gc='git commit'
 compdef gc=git
+
+gcm() {
+    git commit -m "$*"
+}
 
 alias gpl='git pull'
 compdef gpl=git
