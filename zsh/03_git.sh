@@ -17,6 +17,15 @@ compdef gm=git
 alias gmnc='git merge --no-commit --no-ff'
 compdef gmnc=git
 
+alias gr='git rebase'
+compdef gr=git
+
+alias grc='git rebase --continue'
+compdef grc=git
+
+alias grab='git rebase --abort'
+compdef grab=git
+
 alias gd='git diff'
 compdef gd=git
 
@@ -42,8 +51,8 @@ compdef gph=git
 alias gphf='git push --force-with-lease'
 compdef gphf=git
 
-alias gr='git restore'
-compdef gr=git
+alias grs='git restore'
+compdef grs=git
 
 alias gsn='git switch -c'
 compdef gsn=git
