@@ -23,8 +23,8 @@ compdef gr=git
 alias grc='git rebase --continue'
 compdef grc=git
 
-alias grab='git rebase --abort'
-compdef grab=git
+alias gra='git rebase --abort'
+compdef gra=git
 
 alias gd='git diff'
 compdef gd=git
