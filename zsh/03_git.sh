@@ -1,5 +1,5 @@
 # basic aliases
-alias g='git' #
+alias g='git'
 compdef g=git
 
 alias ga='git add'
@@ -54,11 +54,14 @@ compdef gphf=git
 alias grs='git restore'
 compdef grs=git
 
-alias gsn='git switch -c'
+alias gsn='git switch -c' # git switch new
 compdef gsn=git
 
-alias gsd='git switch dev'
+alias gsd='git switch dev' # git switch dev
 compdef gsd=git
+
+alias gsth='git stash' 
+compdef gsth=git
 
 alias gcl='git clone'
 compdef gcl=git
