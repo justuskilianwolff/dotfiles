@@ -104,7 +104,7 @@
       "int" : 0
     },
     "landscapeSnapAreas" : {
-      "string" : "[3,{\"action\":32},2,{\"compound\":-4},4,{\"compound\":-2},7,{\"compound\":-9},1,{\"action\":30},8,{\"action\":33},6,{\"action\":22},5,{\"compound\":-3}]"
+      "string" : "[3,{\"action\":29},7,{\"compound\":-9},4,{\"compound\":-2},5,{\"compound\":-3},6,{\"action\":22},1,{\"action\":2},2,{\"compound\":-4},8,{\"action\":33}]"
     },
     "launchOnLogin" : {
       "bool" : true
@@ -248,8 +248,16 @@
       "keyCode" : 38,
       "modifierFlags" : 786432
     },
+    "bottomLeftSixth" : {
+      "keyCode" : 4,
+      "modifierFlags" : 786432
+    },
     "bottomRight" : {
       "keyCode" : 40,
+      "modifierFlags" : 786432
+    },
+    "bottomRightSixth" : {
+      "keyCode" : 37,
       "modifierFlags" : 786432
     },
     "center" : {
@@ -332,10 +340,18 @@
       "keyCode" : 32,
       "modifierFlags" : 786432
     },
+    "topLeftSixth" : {
+      "keyCode" : 16,
+      "modifierFlags" : 786432
+    },
     "topRight" : {
       "keyCode" : 34,
       "modifierFlags" : 786432
+    },
+    "topRightSixth" : {
+      "keyCode" : 31,
+      "modifierFlags" : 786432
     }
   },
-  "version" : "96"
+  "version" : "97"
 }
