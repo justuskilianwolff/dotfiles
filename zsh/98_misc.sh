@@ -6,3 +6,6 @@ alias bu="brew update && brew upgrade && brew cu -ayf && brew cleanup"
 alias ez="exec zsh"
 
 alias it="open -a iTerm ." # open iTerm in current directory
+
+# claude code
+export DISABLE_AUTOUPDATER=1
