@@ -12,18 +12,26 @@ $git_metrics\
 $fill\
 $cmd_duration\ 
 $python\
-$time\
+${custom.date}\
+${custom.time}\
 $line_break\
 $character"""
 
 [fill]
 symbol = " "
 
-[time]
-time_format = "%T"
-format = "🕙 $time($style)"
+[custom.date]
+command = "date +'%Y-%m-%d'"
+when = true
+format = "📅[$output]($style) "
 style = "bright-white"
-disabled = false
+
+[custom.time]
+command = "date +'%T'"
+when = true
+format = "🕙[$output]($style)"
+style = "bright-white"
+
 
 [python]
 disabled = false
