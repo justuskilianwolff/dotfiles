@@ -23,13 +23,13 @@ symbol = " "
 [custom.date]
 command = "date +'%Y-%m-%d'"
 when = true
-format = "📅[$output]($style) "
+format = "📅 [$output]($style) "
 style = "bright-white"
 
 [custom.time]
 command = "date +'%T'"
 when = true
-format = "🕙[$output]($style)"
+format = "🕙 [$output]($style)"
 style = "bright-white"
 
 
