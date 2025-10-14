@@ -21,7 +21,7 @@ $character"""
 symbol = " "
 
 [custom.date]
-command = "date +'%Y-%m-%d'"
+command = "date +'%d.%m.%Y'"
 when = true
 format = "📅 [$output]($style) "
 style = "bright-white"
