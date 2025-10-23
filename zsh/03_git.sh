@@ -64,8 +64,23 @@ alias gsth='git stash'
 compdef gsth=git
 
 gsthm() {
-    git stash push -m "$*"
+    local flags=()
+    local message=()
+    
+    # Separate flags from message words
+    while [[ $# -gt 0 ]]; do
+        case "$1" in
+            -*) flags+=("$1") ;;
+            *) message+=("$1") ;;
+        esac
+        shift
+    done
+    
+    git stash push "${flags[@]}" -m "${message[*]}"
 }
+
+alias gsthp='git stash pop'
+compdef gsthp=git
 
 alias gcl='git clone'
 compdef gcl=git
