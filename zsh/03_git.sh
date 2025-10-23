@@ -63,6 +63,10 @@ compdef gsd=git
 alias gsth='git stash' 
 compdef gsth=git
 
+gsthm() {
+    git stash push -m "$*"
+}
+
 alias gcl='git clone'
 compdef gcl=git
 
