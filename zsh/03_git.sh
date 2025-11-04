@@ -38,6 +38,8 @@ compdef gl=git
 alias gc='git commit'
 compdef gc=git
 
+alias gca="git commit --amend"
+
 gcm() {
     git commit -m "$*"
 }
