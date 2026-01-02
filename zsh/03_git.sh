@@ -26,6 +26,9 @@ compdef grc=git
 alias gra='git rebase --abort'
 compdef gra=git
 
+alias gri='git rebase --interactive'
+compdef gri=git
+
 alias gd='git diff'
 compdef gd=git
 
