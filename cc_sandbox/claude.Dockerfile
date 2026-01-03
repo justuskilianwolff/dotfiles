@@ -1,9 +1,12 @@
 FROM node:20-slim
 
+# add uv 
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
+
 # Install Claude Code CLI
 RUN npm install -g @anthropic-ai/claude-code
 
-# Install any other tools you need
+# Install basic tools
 RUN apt-get update && apt-get install -y \
     git \
     curl \
