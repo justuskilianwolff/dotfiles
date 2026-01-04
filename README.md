@@ -246,3 +246,29 @@ These triggers are active globally across all applications.
 | -------------------- | ------------------------------------------ | -------------------------------------- |
 | `Shift + Rightclick` | Sends the `Enter` key                      | Useful for quickly confirming actions. |
 | `Cmd + Rightclick`   | Connects to "AirPods Pro" Bluetooth device | Quickly connect to your AirPods.       |
+
+## Claude Code Sandbox Docker Image
+
+See the aliases in the `zsh/10_claude_code.sh` file for usage.
+
+### Settings
+
+Update the settings as needed
+
+### Building and Running
+
+Build the image using Docker Compose:
+
+```shell
+cd ~/Repositories/dotfiles/claude_code
+docker compose build
+```
+
+Use the provided aliases from your shell:
+- `sc`: Run Claude Code interactive session
+- `ss`: Open bash shell in the container
+- `sr`: Stop all running Claude Code containers
+
+Both aliases automatically mount the current directory to `/workspace` and persist data in the `claude-data` volume.
+
+See `zsh/10_claude_code.sh` for alias definitions.

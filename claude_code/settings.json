@@ -1,8 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(uv run:*)",
-      "Bash(uv add:*)",
+      "Bash(uv:*)",
+      "Bash(git:*)",
       "Bash(tree:*)",
       "Bash(find:*)",
       "Bash(grep:*)",
@@ -11,6 +11,11 @@
       "Bash(head:*)",
       "Bash(tail:*)",
       "Bash(docker:*)",
+      "Bash(curl:*)",
+      "Bash(jq:*)",
+      "Bash(echo:*)",
+      "Bash(sort:*)",
+      "Bash(wc:*)",
       "mcp__ide__getDiagnostics"
     ],
     "deny": ["Read(./.env)", "Read(./secrets/**)"]

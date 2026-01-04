@@ -1,0 +1,21 @@
+services:
+  claude-code:
+    platform: linux/amd64
+    build:
+      context: .
+      dockerfile: claude_code.Dockerfile
+    image: claude-code-image:latest
+    stdin_open: true
+    tty: true
+    volumes:
+      - claude-data:/root/
+      - ~/.claude/settings.json:/root/.claude/settings.json:ro
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - UV_PROJECT_ENVIRONMENT=.venv_claude_code
+    working_dir: /workspace
+    command: claude
+
+volumes:
+  claude-data:
+    driver: local
