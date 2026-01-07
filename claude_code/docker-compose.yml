@@ -9,7 +9,8 @@ services:
     tty: true
     volumes:
       - claude-data:/root/
-      - ~/.claude/settings.json:/root/.claude/settings.json:ro
+      - ./settings.json:/root/.claude/settings.json:ro
+      - ./CLAUDE.md:/root/.claude/CLAUDE.md:ro
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
       - UV_PROJECT_ENVIRONMENT=.venv_claude_code

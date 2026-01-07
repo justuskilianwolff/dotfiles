@@ -2,7 +2,13 @@
   "permissions": {
     "allow": [
       "Bash(uv:*)",
-      "Bash(git:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git revert:*)",
+      "Bash(git log:*)",
+      "Bash(git diff:*)",
+      "Bash(git status:*)",
+      "Bash(git checkout:*)",
       "Bash(tree:*)",
       "Bash(find:*)",
       "Bash(grep:*)",

@@ -251,9 +251,14 @@ These triggers are active globally across all applications.
 
 See the aliases in the `zsh/10_claude_code.sh` file for usage.
 
-### Settings
+### Configuration
 
-Update the settings as needed
+The Docker setup mounts two configuration files from the `claude_code` directory into the container:
+
+- **`settings.json`**: Controls tool permissions (which bash commands are allowed without prompting)
+- **`CLAUDE.md`**: Provides project-level instructions and guidelines for Claude Code
+
+Both files are read-only mounts at `/root/.claude/`, making them available as user-level configuration for all sessions.
 
 ### Building and Running
 
@@ -265,10 +270,11 @@ docker compose build
 ```
 
 Use the provided aliases from your shell:
+
 - `sc`: Run Claude Code interactive session
 - `ss`: Open bash shell in the container
 - `sr`: Stop all running Claude Code containers
 
-Both aliases automatically mount the current directory to `/workspace` and persist data in the `claude-data` volume.
+The container automatically mounts your current directory to `/workspace` and persists session data in the `claude-data` volume.
 
 See `zsh/10_claude_code.sh` for alias definitions.
