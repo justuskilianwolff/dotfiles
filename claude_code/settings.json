@@ -29,33 +29,11 @@
   "hooks": {
     "Stop": [
       {
-        "matcher": "*",
+        "matcher": "",
         "hooks": [
           {
             "type": "command",
-            "command": "curl -s -X POST http://localhost:3456/hook -H 'Content-Type: application/json' -d '{\"event\":\"Stop\"}' >> /tmp/claudecode-hooks.log 2>&1 &"
-          }
-        ]
-      }
-    ],
-    "SubagentStop": [
-      {
-        "matcher": "*",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "curl -s -X POST http://localhost:3456/hook -H 'Content-Type: application/json' -d '{\"event\":\"SubagentStop\"}' >> /tmp/claudecode-hooks.log 2>&1 &"
-          }
-        ]
-      }
-    ],
-    "PostToolUse": [
-      {
-        "matcher": "Bash",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "curl -s -X POST http://localhost:3456/hook -H 'Content-Type: application/json' -d '{\"event\":\"PostToolUse\",\"tool\":\"Bash\"}' >> /tmp/claudecode-hooks.log 2>&1 &"
+            "command": "curl -s http://host.docker.internal:3456 &"
           }
         ]
       }
