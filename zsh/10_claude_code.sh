@@ -11,5 +11,5 @@ _claude_code_run() {
 
 # Claude Code aliases
 alias sc='_claude_code_run' # sandbox claude
-alias ss='_claude_code_run /bin/bash' # sandbox shell
+alias ss='_claude_code_run /bin/zsh' # sandbox shell
 alias sr='docker ps -q --filter "ancestor=claude-code-image:latest" | xargs -r docker stop' # sandbox remove 

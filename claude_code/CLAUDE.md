@@ -1,8 +1,12 @@
 # Project Configuration
 
+## Git
+
+Don't stage or commit any files if not explicitly instructed to do so.
+
 ## Python
 
-Instructions for working with Python projects.
+Instructions for working with Python projects. Always try to use the `uv` tool to manage virtual environments and dependencies. If `uv` is not available, please ask for help.
 
 ### Testing
 

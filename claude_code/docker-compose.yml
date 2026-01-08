@@ -8,12 +8,13 @@ services:
     stdin_open: true
     tty: true
     volumes:
-      - claude-data:/root/
-      - ./settings.json:/root/.claude/settings.json:ro
-      - ./CLAUDE.md:/root/.claude/CLAUDE.md:ro
-      - /var/run/docker.sock:/var/run/docker.sock
+      - claude-data:/root/.claude
+      - ~/.claude.json:/root/.claude.json:rw # User-specific configuration
+      - ./settings.json:/root/.claude/settings.json:ro # Read-only settings
+      - ./CLAUDE.md:/root/.claude/CLAUDE.md:ro # Read-only Claude.md
+      - /var/run/docker.sock:/var/run/docker.sock # Share docker daemon
     environment:
-      - UV_PROJECT_ENVIRONMENT=.venv_claude_code
+      - UV_PROJECT_ENVIRONMENT=.venv_claude_code # Use a dedicated virtual environment
     working_dir: /workspace
     command: claude
 

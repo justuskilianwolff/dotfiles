@@ -1,25 +1,35 @@
-FROM node:20-slim
+FROM debian:bookworm-slim
 
-# add uv
+# Add uv
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
-# set uv environment variable such that venvs dont interfere (macos and linux)
-ENV UV_PROJECT_ENVIRONMENT=.venv_claude_code
 
-# Install Claude Code CLI
-RUN npm install -g @anthropic-ai/claude-code
-
-# Install basic tools
+# Install curl to install docker and cc
 RUN apt-get update && apt-get install -y \
-    git \
-    curl \
     ca-certificates \
-    tree \
-    jq \
+    curl \
     && rm -rf /var/lib/apt/lists/*
 
-# Install modern Docker CLI + Compose v2
+# Install Docker CLI and Docker Compose
 RUN curl -fsSL https://get.docker.com | sh \
     && docker compose version
+
+# Install Claude Code CLI (native)
+RUN curl -fsSL https://claude.ai/install.sh | bash
+
+# Install additional utilities (don't invalidate cache too often)
+RUN apt-get update && apt-get install -y \
+    zsh \
+    git \
+    tree \
+    jq \
+    ripgrep \
+    && rm -rf /var/lib/apt/lists/*
+
+# Add claude to PATH (native installer uses ~/.local/bin)
+ENV PATH="/root/.local/bin:$PATH"
+
+# Set zsh as default shell
+SHELL ["/bin/zsh", "-c"]
 
 WORKDIR /workspace
 
