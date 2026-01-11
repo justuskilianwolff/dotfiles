@@ -1,5 +1,6 @@
 services:
   claude-code:
+    network_mode: host
     platform: linux/amd64
     build:
       context: .
@@ -8,13 +9,14 @@ services:
     stdin_open: true
     tty: true
     volumes:
-      - claude-data:/root/.claude
-      - ~/.claude.json:/root/.claude.json:rw # User-specific configuration
+      - claude-data:/root # Persist home directory (Claude state, uv cache, credentials)
       - ./settings.json:/root/.claude/settings.json:ro # Read-only settings
       - ./CLAUDE.md:/root/.claude/CLAUDE.md:ro # Read-only Claude.md
       - /var/run/docker.sock:/var/run/docker.sock # Share docker daemon
     environment:
       - UV_PROJECT_ENVIRONMENT=.venv_claude_code # Use a dedicated virtual environment
+      - TESTCONTAINERS_HOST_OVERRIDE=host.docker.internal
+      - TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE=/var/run/docker.sock
     working_dir: /workspace
     command: claude
 

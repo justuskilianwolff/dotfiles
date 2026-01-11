@@ -10,13 +10,19 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Docker CLI and Docker Compose
-RUN curl -fsSL https://get.docker.com | sh \
-    && docker compose version
+RUN curl -fsSL https://get.docker.com | sh
 
-# Install Claude Code CLI (native)
-RUN curl -fsSL https://claude.ai/install.sh | bash
+# Install Claude to /usr/local/ (system location, survives volume mount to /root)
+RUN curl -fsSL https://claude.ai/install.sh | sed 's|rm -f "$binary_path"|:|' | bash && \
+    mkdir -p /usr/local/share/claude/versions && \
+    CLAUDE_BIN=$(ls /root/.claude/downloads/claude-*) && \
+    VERSION=$(basename "$CLAUDE_BIN" | sed 's/claude-\(.*\)-linux.*/\1/') && \
+    cp "$CLAUDE_BIN" "/usr/local/share/claude/versions/$VERSION" && \
+    chmod +x "/usr/local/share/claude/versions/$VERSION" && \
+    ln -sf "/usr/local/share/claude/versions/$VERSION" /usr/local/bin/claude && \
+    rm -rf /root/.claude
 
-# Install additional utilities (don't invalidate cache too often)
+# Install additional utilities
 RUN apt-get update && apt-get install -y \
     zsh \
     git \
@@ -25,12 +31,13 @@ RUN apt-get update && apt-get install -y \
     ripgrep \
     && rm -rf /var/lib/apt/lists/*
 
-# Add claude to PATH (native installer uses ~/.local/bin)
-ENV PATH="/root/.local/bin:$PATH"
+ENV PATH="/usr/local/bin:/root/.local/bin:$PATH"
 
 # Set zsh as default shell
 SHELL ["/bin/zsh", "-c"]
-
 WORKDIR /workspace
 
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
 CMD ["claude"]
