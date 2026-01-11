@@ -279,3 +279,18 @@ Use the provided aliases from your shell:
 The container automatically mounts your current directory to `/workspace` and persists session data in the `claude-data` volume.
 
 See `zsh/10_claude_code.sh` for alias definitions.
+
+## Web Development Aliases
+
+The `zsh/11_web.sh` file provides pnpm shortcuts:
+
+| Alias | Command        | Description              |
+| ----- | -------------- | ------------------------ |
+| `pnd` | `pnpm run dev` | Start dev server (opens) |
+| `pni` | `pnpm install` | Install dependencies     |
+| `pnr` | `pnpm run`     | Run a script             |
+| `pnb` | `pnpm build`   | Build the project        |
+| `pns` | `pnpm start`   | Start the project        |
+| `pnt` | `pnpm test`    | Run tests                |
+| `pnl` | `pnpm lint`    | Run linter               |
+| `pnx` | `pnpm dlx`     | Execute a package        |

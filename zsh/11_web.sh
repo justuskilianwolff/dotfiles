@@ -1,0 +1,8 @@
+alias pnd="pnpm run dev --open"
+alias pni="pnpm install"
+alias pnr="pnpm run"
+alias pnb="pnpm build"
+alias pns="pnpm start"
+alias pnt="pnpm test"
+alias pnl="pnpm lint"
+alias pnx="pnpm dlx"      
