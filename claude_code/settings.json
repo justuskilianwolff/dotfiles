@@ -23,8 +23,12 @@
       "Bash(find:*)",
       "Bash(sed:*)",
       "Bash(cd:*)",
+      "Bash(mv:*)",
       "Bash(grep:*)",
+      "Bash(time:*)",
+      "Bash(rg:*)",
       "Bash(ls:*)",
+      "Bash(xargs:*)",
       "Bash(cat:*)",
       "Bash(head:*)",
       "Bash(tail:*)",
@@ -33,6 +37,7 @@
       "Bash(jq:*)",
       "Bash(echo:*)",
       "Bash(sort:*)",
+      "Bash(mkdir:*)",
       "Bash(wc:*)",
       "mcp__ide__getDiagnostics"
     ],
@@ -40,6 +45,17 @@
   },
   "hooks": {
     "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "curl -s http://host.docker.internal:3456 &"
+          }
+        ]
+      }
+    ],
+    "PermissionRequest": [
       {
         "matcher": "",
         "hooks": [
