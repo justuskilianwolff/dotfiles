@@ -6,6 +6,7 @@ CC_COMPOSE_PATH="$HOME/Repositories/dotfiles/claude_code/docker-compose.yml"
 _claude_code_run() {
   docker compose -f "$CC_COMPOSE_PATH" run --rm \
     -v "$(pwd):/workspace:cached" \
+    -e UV_PROJECT_ENVIRONMENT=".venv_${PWD##*/}" \
     claude-code "$@"
 }
 
