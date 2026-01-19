@@ -31,7 +31,7 @@ RUN apt-get update && apt-get install -y \
     ripgrep \
     && rm -rf /var/lib/apt/lists/*
 
-ENV PATH="/usr/local/bin:/root/.local/bin:$PATH"
+ENV PATH="/root/.local/bin:/usr/local/bin:$PATH"
 
 # Set zsh as default shell
 SHELL ["/bin/zsh", "-c"]
