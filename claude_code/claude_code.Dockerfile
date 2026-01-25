@@ -31,6 +31,12 @@ RUN apt-get update && apt-get install -y \
     ripgrep \
     && rm -rf /var/lib/apt/lists/*
 
+# Install Node.js (includes npm) and pnpm
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && \
+    apt-get install -y nodejs && \
+    npm install -g pnpm && \
+    rm -rf /var/lib/apt/lists/*
+
 ENV PATH="/root/.local/bin:/usr/local/bin:$PATH"
 
 # Set zsh as default shell

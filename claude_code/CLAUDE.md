@@ -16,8 +16,11 @@ Below are instructions for working with different technologies.
   - Use it to manage virtual environments and dependencies
   - Use it to run python scripts and commands, e.g., `uv run python script.py`, `uv run python -m module` or `uv run pytest`
   - If `uv` is not available, please ask for help
+- Use ruff over manual formatting and linting
+  - This should automatically remove unused imports and variables, fix formatting issues, etc.
 - When working on python projects, please make sure that you run `uv run ruff check --fix` and `uv run ruff format` before committing your code
 - Always use named arguments where possible: `fun_call(arg_name=arg)` instead of `fun_calll(arg)`, `fun(x=x, k=5)` instaed of `fun(x, 5)`
+- Please don't use convenience imports in `__init__.py`files, rather use the full import path when importing modules, e.g., `from package.module import Class` instead of `from package import Class`
 
 ### Testing
 
@@ -28,7 +31,6 @@ Below are instructions for working with different technologies.
 ## Shell
 
 - When using shell commands in scripts etc, please always use the long form of the arguments, e.g., `--help` instead of `-h`, `--version` instead of `-v`, etc.
-
   - This simplifies the understanding of the code and reduces the chance of mistakes for other developers
   - When you just need to run a quick command in the terminal, i.e. not used in docs etc, short forms are fine
 

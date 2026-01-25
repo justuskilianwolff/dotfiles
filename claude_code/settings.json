@@ -38,8 +38,7 @@
       "Bash(echo:*)",
       "Bash(sort:*)",
       "Bash(mkdir:*)",
-      "Bash(wc:*)",
-      "mcp__ide__getDiagnostics"
+      "Bash(wc:*)"
     ],
     "deny": ["Read(./.env)", "Read(./secrets/**)"]
   },
