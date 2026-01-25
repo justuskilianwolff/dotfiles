@@ -247,13 +247,13 @@ These triggers are active globally across all applications.
 | `Shift + Rightclick` | Sends the `Enter` key                      | Useful for quickly confirming actions. |
 | `Cmd + Rightclick`   | Connects to "AirPods Pro" Bluetooth device | Quickly connect to your AirPods.       |
 
-## Claude Code Sandbox Docker Image
+## Code Assistant Sandbox Docker Image
 
-See the aliases in the `zsh/10_claude_code.sh` file for usage.
+See the aliases in the `zsh/10_code_assistant.sh` file for usage.
 
 ### Configuration
 
-The Docker setup mounts configuration files from the `claude_code` directory into the container:
+The Docker setup mounts configuration files from the `code_assistant` directory into the container:
 
 - **`settings.json`**: Controls tool permissions (which bash commands are allowed without prompting)
 - **`CLAUDE.md`**: Provides project-level instructions and guidelines for Claude Code
@@ -266,20 +266,20 @@ Both files are read-only mounts at `/root/.claude/`, making them available as us
 Build the image using Docker Compose:
 
 ```shell
-cd ~/Repositories/dotfiles/claude_code
+cd ~/Repositories/dotfiles/code_assistant
 docker compose build
 ```
 
 Use the provided aliases from your shell:
 
-- `sc`: Run Claude Code interactive session
-- `ss`: Open zsh shell in the container
-- `so`: Run OpenCode interactive session
-- `sr`: Stop all running Claude Code containers
+- `cc`: Run Claude Code interactive session
+- `co`: Run OpenCode interactive session
+- `cs`: Open zsh shell in the container
+- `cr`: Stop all running Code Assistant containers
 
-The container automatically mounts your current directory to `/workspace` and persists session data in the `claude-data` volume.
+The container automatically mounts your current directory to `/workspace` and persists session data in the `code-assistant-data` volume.
 
-See `zsh/10_claude_code.sh` for alias definitions.
+See `zsh/10_code_assistant.sh` for alias definitions.
 
 ## Web Development Aliases
 

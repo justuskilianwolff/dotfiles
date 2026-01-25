@@ -1,25 +1,25 @@
 services:
-  claude-code:
+  code-assistant:
     network_mode: host
     platform: linux/amd64
     build:
       context: .
-      dockerfile: claude_code.Dockerfile
-    image: claude-code-image:latest
+      dockerfile: code_assistant.Dockerfile
+    image: code-assistant-image:latest
     stdin_open: true
     tty: true
     volumes:
-      - claude-data:/root # Persist home directory (Claude state, uv cache, credentials)
+      - code-assistant-data:/root # Persist home directory (Claude state, uv cache, credentials)
       - ./settings.json:/root/.claude/settings.json:ro # Read-only settings
       - ./CLAUDE.md:/root/.claude/CLAUDE.md:ro # Read-only Claude.md
       - /var/run/docker.sock:/var/run/docker.sock # Share docker daemon
     environment:
-      - UV_PROJECT_ENVIRONMENT=.venv_claude_code # Use a dedicated virtual environment
+      - UV_PROJECT_ENVIRONMENT=.venv_code_assistant # Use a dedicated virtual environment
       - TESTCONTAINERS_HOST_OVERRIDE=host.docker.internal
       - TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE=/var/run/docker.sock
     working_dir: /workspace
     command: claude
 
 volumes:
-  claude-data:
+  code-assistant-data:
     driver: local
