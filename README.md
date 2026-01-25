@@ -274,6 +274,7 @@ Use the provided aliases from your shell:
 
 - `sc`: Run Claude Code interactive session
 - `ss`: Open zsh shell in the container
+- `so`: Run OpenCode interactive session
 - `sr`: Stop all running Claude Code containers
 
 The container automatically mounts your current directory to `/workspace` and persists session data in the `claude-data` volume.

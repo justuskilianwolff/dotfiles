@@ -4,13 +4,14 @@ CC_COMPOSE_PATH="$HOME/Repositories/dotfiles/claude_code/docker-compose.yml"
 
 # Claude Code helper function
 _claude_code_run() {
-  docker compose -f "$CC_COMPOSE_PATH" run --rm \
-    -v "$(pwd):/workspace:cached" \
-    -e UV_PROJECT_ENVIRONMENT=".venv_${PWD##*/}" \
+  docker compose --file "$CC_COMPOSE_PATH" run --rm \
+    --volume "$(pwd):/workspace:cached" \
+    --env UV_PROJECT_ENVIRONMENT=".venv_${PWD##*/}" \
     claude-code "$@"
 }
 
 # Claude Code aliases
 alias sc='_claude_code_run' # sandbox claude
 alias ss='_claude_code_run /bin/zsh' # sandbox shell
-alias sr='docker ps -q --filter "ancestor=claude-code-image:latest" | xargs -r docker stop' # sandbox remove 
+alias so='_claude_code_run opencode' # sandbox opencode
+alias sr='docker ps --quiet --filter "ancestor=claude-code-image:latest" | xargs --no-run-if-empty docker stop' # sandbox remove
