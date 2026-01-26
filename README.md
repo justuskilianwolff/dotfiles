@@ -153,16 +153,13 @@ These shortcuts use **Capslock** + [key] to emulate arrow key navigation:
 
 #### Brackets
 
-These shortcuts use **Capslock** + [key] to type brackets quickly:
+These shortcuts use **Capslock** + [key] to type bracket pairs with cursor positioned inside:
 
-| Key Combination | Bracket |
-| --------------- | ------- |
-| U               | (       |
-| I               | [       |
-| O               | {       |
-| Left Cmd + U    | )       |
-| Left Cmd + I    | ]       |
-| Left Cmd + O    | }       |
+| Key | Output |
+| --- | ------ |
+| U   | ()     |
+| I   | []     |
+| O   | {}     |
 
 ## Miscellaneous Key Bindings
 
