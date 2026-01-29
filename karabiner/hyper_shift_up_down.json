@@ -6,10 +6,10 @@
         "key_code": "up_arrow",
         "modifiers": {
           "mandatory": [
-            "left_shift",
+            "right_shift",
             "right_command",
             "left_control",
-            "left_option"
+            "right_option"
           ]
         }
       },
@@ -32,10 +32,10 @@
         "key_code": "down_arrow",
         "modifiers": {
           "mandatory": [
-            "left_shift",
+            "right_shift",
             "right_command",
             "left_control",
-            "left_option"
+            "right_option"
           ]
         }
       },

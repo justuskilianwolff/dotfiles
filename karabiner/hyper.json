@@ -8,8 +8,8 @@
       },
       "to": [
         {
-          "key_code": "left_shift",
-          "modifiers": ["right_command", "left_control", "left_option"]
+          "key_code": "right_shift",
+          "modifiers": ["right_command", "left_control", "right_option"]
         }
       ],
       "to_if_alone": [{ "key_code": "escape" }],

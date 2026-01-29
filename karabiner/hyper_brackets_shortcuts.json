@@ -6,10 +6,10 @@
         "key_code": "u",
         "modifiers": {
           "mandatory": [
-            "left_shift",
+            "right_shift",
             "right_command",
             "left_control",
-            "left_option"
+            "right_option"
           ]
         }
       },
@@ -33,10 +33,10 @@
         "key_code": "i",
         "modifiers": {
           "mandatory": [
-            "left_shift",
+            "right_shift",
             "right_command",
             "left_control",
-            "left_option"
+            "right_option"
           ]
         }
       },
@@ -60,10 +60,10 @@
         "key_code": "o",
         "modifiers": {
           "mandatory": [
-            "left_shift",
+            "right_shift",
             "right_command",
             "left_control",
-            "left_option"
+            "right_option"
           ]
         }
       },
