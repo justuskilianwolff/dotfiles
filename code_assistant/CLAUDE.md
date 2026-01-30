@@ -28,6 +28,16 @@ Below are instructions for working with different technologies.
 - Use `uv run pytest -v` for verbose output
 - Use `uv run pytest <path>` to run specific tests
 
+## Networking
+
+This Claude Code instance runs inside a Docker container. To access services running on the host machine:
+
+- Use `host.docker.internal` instead of `localhost` or `127.0.0.1`
+- Example: `curl http://host.docker.internal:8000/docs`
+- The `WebFetch` tool cannot access local services (it runs in a different network context), so use `curl` via Bash instead
+
+Note: Even though the container uses `network_mode: host`, `localhost` may not resolve to the host machine on Docker Desktop (macOS/Windows). Always prefer `host.docker.internal` for reliability.
+
 ## Shell
 
 - When using shell commands in scripts etc, please always use the long form of the arguments, e.g., `--help` instead of `-h`, `--version` instead of `-v`, etc.

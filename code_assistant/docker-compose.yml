@@ -17,7 +17,6 @@ services:
       - UV_PROJECT_ENVIRONMENT=.venv_code_assistant # Use a dedicated virtual environment
       - TESTCONTAINERS_HOST_OVERRIDE=host.docker.internal
       - TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE=/var/run/docker.sock
-    working_dir: /workspace
     command: claude
 
 volumes:

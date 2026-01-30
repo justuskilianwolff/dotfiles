@@ -5,7 +5,8 @@ CA_COMPOSE_PATH="$HOME/Repositories/dotfiles/code_assistant/docker-compose.yml"
 # Code Assistant helper function
 _code_assistant_run() {
   docker compose --file "$CA_COMPOSE_PATH" run --rm \
-    --volume "$(pwd):/workspace:cached" \
+    --volume "$(pwd):$(pwd):cached" \
+    --workdir "$(pwd)" \
     --env UV_PROJECT_ENVIRONMENT=".venv_${PWD##*/}" \
     code-assistant "$@"
 }
