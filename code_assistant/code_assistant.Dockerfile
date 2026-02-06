@@ -37,7 +37,7 @@ RUN apt-get update && apt-get install --yes \
     && rm --recursive --force /var/lib/apt/lists/*
 
 # Install Node.js (includes npm) and pnpm
-RUN curl --fail --silent --show-error --location https://deb.nodesource.com/setup_20.x | bash - && \
+RUN curl --fail --silent --show-error --location https://deb.nodesource.com/setup_24.x | bash - && \
     apt-get install --yes nodejs && \
     npm install --global pnpm && \
     rm --recursive --force /var/lib/apt/lists/*
