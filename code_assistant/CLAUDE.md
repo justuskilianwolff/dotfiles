@@ -1,6 +1,6 @@
 # Claude Code Guidelines
 
-- Don't remove comments I added for better code understanding
+- Don't remove comments that were added for better code understanding
 - When running into problems, search for known bugs, issues and solutions online
   - Prefer official and up-to-date documentation, e.g. from GitHub repositories
 

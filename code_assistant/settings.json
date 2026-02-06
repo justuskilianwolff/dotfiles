@@ -38,7 +38,10 @@
       "Bash(echo:*)",
       "Bash(sort:*)",
       "Bash(mkdir:*)",
-      "Bash(wc:*)"
+      "Bash(wc:*)",
+      "Bash(pnpm:*)",
+      "WebSearch(*)",
+      "WebFetch(*)"
     ],
     "deny": ["Read(./.env)", "Read(./secrets/**)"]
   },
