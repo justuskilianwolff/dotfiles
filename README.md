@@ -246,6 +246,8 @@ These triggers are active globally across all applications.
 
 ## Code Assistant Sandbox Docker Image
 
+**IMPORTANT**: CC currently fails in non `.git` directories. Bug from Anthropic.
+
 See the aliases in the `zsh/10_code_assistant.sh` file for usage.
 
 ### Configuration

@@ -17,6 +17,8 @@ services:
       - UV_PROJECT_ENVIRONMENT=.venv_code_assistant # Use a dedicated virtual environment
       - TESTCONTAINERS_HOST_OVERRIDE=host.docker.internal
       - TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE=/var/run/docker.sock
+      - npm_config_store_dir=/root/.local/share/pnpm/store
+      - npm_config_package_import_method=copy
     command: claude
 
 volumes:

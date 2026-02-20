@@ -47,6 +47,10 @@ gcm() {
     git commit -m "$*"
 }
 
+gacm () {
+    git add . && gcm "$*"
+}
+
 alias gpl='git pull'
 compdef gpl=git
 
