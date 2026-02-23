@@ -24,9 +24,9 @@ alias uvv='uv venv'
 # ruff format
 function rf() {
     if [[ "$1" == "--keep" ]]; then
-        ruff check --fix
+        ruff check --fix --extend-ignore F401
     else
-        ruff check --extend-select F401 --fix
+        ruff check --fix --extend-select F401
     fi
 
     ruff format
