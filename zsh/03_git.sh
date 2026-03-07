@@ -43,13 +43,15 @@ compdef gc=git
 
 alias gca="git commit --amend"
 
-gcm() {
+_gcm() {
     git commit -m "$*"
 }
+alias gcm='noglob _gcm'
 
-gacm () {
-    git add . && gcm "$*"
+_gacm () {
+    git add . && git commit -m "$*"
 }
+alias gacm='noglob _gacm'
 
 alias gpl='git pull'
 compdef gpl=git
