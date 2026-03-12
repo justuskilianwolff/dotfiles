@@ -12,6 +12,8 @@ Below are instructions for working with different technologies.
 
 ## Python
 
+When working with Python, invoke the relevant `/astral:<skill>` for uv, ty, and ruff to ensure best practices are followed. Prefer LSP navigation (go-to-definition, find-references) over text search when working with Python files.
+
 - Always try to use `uv`
   - Use it to manage virtual environments and dependencies
   - Use it to run python scripts and commands, e.g., `uv run python script.py`, `uv run python -m module` or `uv run pytest`
@@ -19,14 +21,23 @@ Below are instructions for working with different technologies.
 - Use ruff over manual formatting and linting
   - This should automatically remove unused imports and variables, fix formatting issues, etc.
 - When working on python projects, please make sure that you run `uv run ruff check --fix` and `uv run ruff format` before committing your code
-- Always use named arguments where possible: `fun_call(arg_name=arg)` instead of `fun_calll(arg)`, `fun(x=x, k=5)` instaed of `fun(x, 5)`
-- Please don't use convenience imports in `__init__.py`files, rather use the full import path when importing modules, e.g., `from package.module import Class` instead of `from package import Class`
+- Always use named arguments where possible: `fun_call(arg_name=arg)` instead of `fun_call(arg)`, `fun(x=x, k=5)` instead of `fun(x, 5)`
+- Please don't use convenience imports in `__init__.py` files, rather use the full import path when importing modules, e.g., `from package.module import Class` instead of `from package import Class`
+- Order functions top-down: if function `a` calls function `b`, define `a` before `b` in the file. This makes code readable from broad to specific without needing to scroll up.
 
 ### Testing
+
+**IMPORTANT:** Always run tests to verify your changes work correctly. You have full access to all testing tools.
 
 - Always run pytest through uv: `uv run pytest`
 - Use `uv run pytest -v` for verbose output
 - Use `uv run pytest <path>` to run specific tests
+
+**After making code changes, run relevant tests to verify correctness before considering the task complete.**
+
+## Docker
+
+This Claude Code instance has full access to Docker (the Docker socket is mounted into the container). Docker can be used freely, for example to spin up services or databases needed for tests.
 
 ## Networking
 

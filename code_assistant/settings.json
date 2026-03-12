@@ -2,6 +2,7 @@
   "permissions": {
     "allow": [
       "Bash(uv:*)",
+      "Bash(uvx ty:*)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
       "Bash(git revert:*)",
@@ -72,5 +73,19 @@
   "statusLine": {
     "type": "command",
     "command": "/root/.claude/statusline.sh"
+  },
+   "extraKnownMarketplaces": {
+    "astral-sh": {
+      "source": {
+        "source": "github",
+        "repo": "astral-sh/claude-code-plugins"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "astral@astral-sh": true
+  },"env": {
+    "ENABLE_LSP_TOOL": "1"
   }
+
 }

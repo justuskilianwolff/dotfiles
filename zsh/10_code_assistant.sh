@@ -13,7 +13,7 @@ _code_assistant_run() {
 }
 
 # Code Assistant aliases
-alias cac='_code_assistant_run claude' # code claude
+alias cac='_code_assistant_run claude --model sonnet' # code claude
 alias cao='_code_assistant_run opencode' # code open
 alias cas='_code_assistant_run /bin/zsh' # code shell
 alias car='docker ps --quiet --filter "ancestor=code-assistant-image:latest" | xargs --no-run-if-empty docker stop' # code remove
