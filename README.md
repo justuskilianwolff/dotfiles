@@ -10,7 +10,7 @@ To source all files in the `zsh` directory you can run following command in your
 ```shell
 DOTFILES_PATH="/Users/justuswolff/Repositories/dotfiles"
 
-# source all files in the zsh folder of teh dotfiles repo
+# source all files in the zsh folder of the dotfiles repo
 for file in "$DOTFILES_PATH/zsh/"*; do
   [ -f "$file" ] && source "$file"
 done
@@ -34,6 +34,42 @@ The `zsh/04_navigation.sh` file provides helpful navigation functions and aliase
   - `rdf`: Shortcut for `rm -rf`
   - `o`: Open the current directory in Finder
 
+### Zsh Plugins
+
+The `zsh/02_plugins.sh` file loads the following plugins:
+
+- **zsh-autopair**: Automatically closes brackets and quotes
+- **zsh-syntax-highlighting**: Colors the command line as you type
+- **zsh-autosuggestions**: Suggests commands based on history (accept with →)
+- **zsh-autocomplete**: Adds real-time completions as you type
+
+### Starship Prompt
+
+The `zsh/00_start.sh` file configures [Starship](https://starship.rs/) as the shell prompt, using a custom config at `starship/config.toml`. The prompt displays:
+
+- Date (📅) and time (🕙) on the right side
+- Git branch, status, and metrics
+- Python environment indicator
+- Command duration
+
+### Miscellaneous Aliases
+
+The `zsh/98_misc.sh` file provides:
+
+| Alias | Command                                                | Description                |
+| ----- | ------------------------------------------------------ | -------------------------- |
+| `bu`  | `brew update && brew upgrade && brew cu -ayf && brew cleanup` | Full Brew update    |
+| `ez`  | `exec zsh`                                             | Restart zsh                |
+| `it`  | `open -a iTerm .`                                      | Open iTerm in current dir  |
+
+### Shell Utilities
+
+The `zsh/99_end.sh` file initializes:
+
+- **Starship**: Custom prompt (initialized last to ensure all configs are loaded)
+- **Zoxide**: Smarter `cd` command (`z` to jump to frequently visited directories)
+- **fzf**: Fuzzy finder (activated with `Ctrl+R` for history search)
+
 ## Homebrew
 
 Within the `brew` directory run
@@ -48,7 +84,7 @@ to install the Brewfile (and optionally) removing your other installations. To a
 brew bundle dump --cask --formula --tap --force
 ```
 
-to list all casks and formulaes and forcing the overrride. This just handles installation. To upgrade already installed casks run
+to list all casks and formulaes and forcing the override. This just handles installation. To upgrade already installed casks run
 
 ```shell
 brew upgrade --cask
@@ -140,37 +176,52 @@ These global shortcuts use **Capslock** + [key] to quickly launch applications.
 
 These shortcuts use **Capslock** + [key] to emulate arrow key navigation:
 
-| Key          | Arrow Key           |
-| ------------ | ------------------- |
-| J            | Left                |
-| K            | Down                |
-| L            | Up                  |
-| Ö            | Right               |
-| Left Cmd + J | Left + Left Option  |
-| Left Cmd + K | Down + Left Option  |
-| Left Cmd + L | Up + Left Option    |
-| Left Cmd + Ö | Right + Left Option |
+| Key | Arrow Key |
+| --- | --------- |
+| J   | Left      |
+| K   | Down      |
+| L   | Up        |
+| Ö   | Right     |
+
+All Hyper key mappings use `optional: ["any"]`, meaning they work regardless of additional modifier keys held.
 
 #### Brackets
 
-These shortcuts use **Capslock** + [key] to type bracket pairs with cursor positioned inside:
+These shortcuts use **Capslock** + [key] to type bracket pairs with the cursor positioned inside:
 
-| Key | Output |
-| --- | ------ |
-| U   | ()     |
-| I   | []     |
-| O   | {}     |
+| Key | Output | Notes                                 |
+| --- | ------ | ------------------------------------- |
+| U   | `()`   | Types both brackets, cursor inside    |
+| I   | `[]`   | Types both brackets, cursor inside    |
+| O   | `{}`   | Types both brackets, cursor inside    |
+
+#### Jump 10 Lines
+
+**Capslock** + Up/Down jumps 10 lines at a time:
+
+| Key           | Action        |
+| ------------- | ------------- |
+| Hyper + Up    | Move up 10 lines  |
+| Hyper + Down  | Move down 10 lines |
+
+#### Teams End Call Shortcut
+
+Maps `Cmd+Shift+E` → `Cmd+Shift+H` in Microsoft Teams (to end/hang up calls).
+
+#### VSCode Function Keys
+
+Swaps function keys in VSCode to standard F1–F12 behavior (e.g., F12 sends `fn+F12`, so the default media/brightness actions become standard function key presses). Using Hyper+F1–F12 reverses this back to the original media/brightness actions.
 
 ## Miscellaneous Key Bindings
 
-These shortcuts use **Capslock** + [key] to perform various actions:
+These shortcuts use **Capslock** + [key] to perform various actions (key labels based on German keyboard layout):
 
-| Key Combination                     | Result                |
-| ----------------------------------- | --------------------- |
-| P (Pipe)                            | &#124;                |
-| Ü                                   | \                     |
-| Ä (Äquals)                          | =                     |
-| Shift + Cmd + Ctrl + Option + Enter | Ctrl + Cmd + Q (Lock) |
+| Key Combination       | Result                       |
+| --------------------- | ---------------------------- |
+| P                     | `\|` (pipe)                  |
+| Ü                     | `/` (slash)                  |
+| Ä                     | `)` (closing parenthesis)    |
+| Hyper + Enter         | Lock Screen (Ctrl+Cmd+Q)     |
 
 ## Hammerspoon
 
@@ -179,6 +230,10 @@ Since symlinking currently does not work as mentioned in this [issue](https://gi
 ### Auto-Mute Speakers
 
 The `init.lua` script automatically mutes the MacBook's built-in speakers when the audio output is switched to them. This prevents unexpected sound output from the internal speakers.
+
+### Claude Code Notification Server
+
+The `init.lua` script runs an HTTP server on port 3456 that plays a sound and shows a notification when Claude Code completes a task. This allows you to get notified when long-running tasks finish.
 
 ## Espanso
 
@@ -220,6 +275,24 @@ The configuration includes automatic text expansion for common contractions:
 - **Pronouns**: `youre` → `you're`, `theyre` → `they're`, `were` → `we're`, etc.
 - **Auxiliary verbs**: `ive` → `I've`, `youll` → `you'll`, `hed` → `he'd`, etc.
 
+### Date & Time Triggers
+
+The `match/dates.yml` file provides the following triggers:
+
+| Trigger         | Example Output              | Description              |
+| --------------- | --------------------------- | ------------------------ |
+| `:date`         | `27.06.2025`                | Current date (DD.MM.YYYY)|
+| `:time`         | `17:17`                     | Current time (HH:MM)     |
+| `:isodate`      | `2025-06-27`                | ISO date format           |
+| `:isotime`      | `17:17:00`                  | ISO time format           |
+| `:day`          | `27.`                       | Day of the month          |
+| `:weekday-en`   | `Thursday`                  | Weekday (English)         |
+| `:weekday-de`   | `Donnerstag`                | Weekday (German)          |
+| `:month-en`     | `June`                      | Month name (English)      |
+| `:month-de`     | `Juni`                      | Month name (German)       |
+| `:fulldate-de`  | `Donnerstag, 27. Juni 2025` | Full date (German)        |
+| `:fulldate-en`  | `Thursday, June 27, 2025`   | Full date (English)       |
+
 ### Usage
 
 Simply type any of the trigger words (e.g., `dont`) and espanso will automatically replace it with the correct contraction (`don't`). The expansion happens in real-time across all applications.
@@ -231,66 +304,41 @@ Simply type any of the trigger words (e.g., `dont`) and espanso will automatical
 - **View logs**: `espanso log`
 - **Test configuration**: Try typing `dont` in any text field
 
-## BetterTouchTool
+## Code Assistant
 
-The `btt/Default.bttpreset` file contains custom triggers for BetterTouchTool.
-
-### Global Triggers
-
-These triggers are active globally across all applications.
-
-| Trigger              | Action                                     | Notes                                  |
-| -------------------- | ------------------------------------------ | -------------------------------------- |
-| `Shift + Rightclick` | Sends the `Enter` key                      | Useful for quickly confirming actions. |
-| `Cmd + Rightclick`   | Connects to "AirPods Pro" Bluetooth device | Quickly connect to your AirPods.       |
-
-## Code Assistant Sandbox Docker Image
-
-**IMPORTANT**: CC currently fails in non `.git` directories. Bug from Anthropic.
-
-See the aliases in the `zsh/10_code_assistant.sh` file for usage.
+This repo provides shell aliases for interacting with a Code Assistant Docker container. The Docker setup itself lives in an external repository.
 
 ### Configuration
 
-The Docker setup mounts configuration files from the `code_assistant` directory into the container:
+The `CA_COMPOSE_PATH` variable (defined in `zsh/10_code_assistant.sh`) points to the external Docker Compose file:
 
-- **`settings.json`**: Controls tool permissions (which bash commands are allowed without prompting)
-- **`CLAUDE.md`**: Provides project-level instructions and guidelines for Claude Code
-- **`~/.claude.json`**: User-specific configuration and authentication (read-write)
-
-Both files are read-only mounts at `/root/.claude/`, making them available as user-level configuration for all sessions.
-
-### Building and Running
-
-Build the image using Docker Compose:
-
-```shell
-cd ~/Repositories/dotfiles/code_assistant
-docker compose build
+```
+CA_COMPOSE_PATH="$HOME/Repositories/code_assistant/docker-compose.yml"
 ```
 
-Use the provided aliases from your shell:
+Override this in your `.zshrc` if your compose file is in a different location.
 
-- `cc`: Run Claude Code interactive session
-- `co`: Run OpenCode interactive session
-- `cs`: Open zsh shell in the container
-- `cr`: Stop all running Code Assistant containers
+### Aliases
 
-The container automatically mounts your current directory to `/workspace` and persists session data in the `code-assistant-data` volume.
-
-See `zsh/10_code_assistant.sh` for alias definitions.
+| Alias | Command                                                   | Description             |
+| ----- | --------------------------------------------------------- | ----------------------- |
+| `oc`  | `_code_assistant_run opencode`                            | Run OpenCode session    |
+| `ocs` | `_code_assistant_run /bin/zsh`                            | Open shell in container |
+| `occ` | Stop all running Code Assistant containers                | Stop containers         |
 
 ## Web Development Aliases
 
 The `zsh/11_web.sh` file provides pnpm shortcuts:
 
-| Alias | Command        | Description              |
-| ----- | -------------- | ------------------------ |
-| `pnd` | `pnpm run dev` | Start dev server (opens) |
-| `pni` | `pnpm install` | Install dependencies     |
-| `pnr` | `pnpm run`     | Run a script             |
-| `pnb` | `pnpm build`   | Build the project        |
-| `pns` | `pnpm start`   | Start the project        |
-| `pnt` | `pnpm test`    | Run tests                |
-| `pnl` | `pnpm lint`    | Run linter               |
-| `pnx` | `pnpm dlx`     | Execute a package        |
+| Alias  | Command                       | Description              |
+| ------ | ----------------------------- | ------------------------ |
+| `pna`  | `pnpm add`                    | Add dependency           |
+| `pnad` | `pnpm add -D`                 | Add dev dependency       |
+| `pni`  | `pnpm install`                | Install dependencies     |
+| `pnr`  | `pnpm run`                    | Run a script             |
+| `pnd`  | `pnpm run dev --open`         | Start dev server (opens) |
+| `pnb`  | `pnpm build`                  | Build the project        |
+| `pnp`  | `pnpm preview`                | Preview build            |
+| `pnbp` | `pnpm build && pnpm preview`  | Build and preview        |
+| `pnl`  | `pnpm lint`                   | Run linter               |
+| `pnf`  | `pnpm format`                 | Run formatter            |

@@ -1,6 +1,6 @@
 # Code Assistant configuration
 # Overwrite this in your shell config (e.g., .zshrc):
-CA_COMPOSE_PATH="$HOME/Repositories/dotfiles/code_assistant/docker-compose.yml"
+CA_COMPOSE_PATH="$HOME/Repositories/code_assistant/docker-compose.yml"
 
 # Code Assistant helper function
 _code_assistant_run() {
@@ -13,7 +13,6 @@ _code_assistant_run() {
 }
 
 # Code Assistant aliases
-alias cac='_code_assistant_run claude --model sonnet' # code claude
-alias cao='_code_assistant_run opencode' # code open
-alias cas='_code_assistant_run /bin/zsh' # code shell
-alias car='docker ps --quiet --filter "ancestor=code-assistant-image:latest" | xargs --no-run-if-empty docker stop' # code remove
+alias oc='_code_assistant_run opencode' # open code
+alias ocs='_code_assistant_run /bin/zsh' # open code shell
+alias occ='docker ps --quiet --filter "ancestor=code-assistant-image:latest" | xargs --no-run-if-empty docker stop' # open code clean
